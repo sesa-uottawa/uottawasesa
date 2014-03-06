@@ -1,6 +1,12 @@
 Uottawasesa::Application.routes.draw do
-  resources :mains
 
+  root "static_pages#home"
+
+  get "/home" => "static_pages#home"
+  get "/events" => "static_pages#events"
+  get "/about" => "static_pages#about"
+  get "/contact" => "static_pages#contact"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

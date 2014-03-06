@@ -1,43 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyFirstApp</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-tracks" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-tracks" => true %>
+  <title>Uottawasesa</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <%= render 'layouts/shim' %>
 </head>
 <body>
 
-<div class="header" id="header">
-	<div class="container" id= "header-container"><%= image_tag "myfirstapplogo.png" %></div>
-</div>
-<div class="navigation">
-	<div class="container">
-		<%= link_to "Home", root_path, class: "nav-link" %>
-		<%= link_to "News", news_posts_path, class: "nav-link"%>
-
-		<% unless user_signed_in? %>
-			<%= link_to "Sign In", new_user_session_path, class: "nav-link" %>
-		<% else %>
-			<%= link_to "Sign Out", destroy_user_session_path,
-									method: :delete,
-									class: "nav-link" %>
-			<%= "Signed in as #{current_user.email}"%>
-		<% end %>
-	</div>
-</div>
-
-<div class="content">
-	<div class="container"><%= yield %></div>	
-</div>
-
-<div id="footer" class="navbar navbar-fixed-bottom" >
-	<div class="container">
-		<%= link_to "Contact", contact_path, class: "nav-link" %>
-		<%= link_to "About", about_path, class: "nav-link" %>
-	</div>
-</div>
+<%= yield %>
 
 </body>
 </html>
