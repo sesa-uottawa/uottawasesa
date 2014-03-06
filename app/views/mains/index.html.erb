@@ -1,0 +1,25 @@
+<h1>Listing mains</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mains.each do |main| %>
+      <tr>
+        <td><%= link_to 'Show', main %></td>
+        <td><%= link_to 'Edit', edit_main_path(main) %></td>
+        <td><%= link_to 'Destroy', main, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Main', new_main_path %>
