@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 
 require 'rbconfig'
-gem 'wdm', '>=0.1.0'
+
+gem 'listen'
+gem 'wdm', '>=0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 
 gem 'rails', '4.0.2'
 gem 'pg', '0.15.1'

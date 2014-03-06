@@ -227,6 +227,7 @@ DEPENDENCIES
   guard-spork (= 1.5.0)
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
+  listen
   pg (= 0.15.1)
   protected_attributes (= 1.0.5)
   pry
