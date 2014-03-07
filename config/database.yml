@@ -4,6 +4,7 @@ development:
   username: postgres
   password: postgres
   host: localhost
+  port: 5432
 
 test:
   adapter: postgresql

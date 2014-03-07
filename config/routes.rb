@@ -1,10 +1,10 @@
 Uottawasesa::Application.routes.draw do
 
+  resources :event_posts
+
   root "static_pages#home"
 
   get "/home" => "static_pages#home"
-  get "/events" => "static_pages#events"
-  get "/about" => "static_pages#about"
   get "/meet" => "static_pages#meet"
   get "/contact" => "static_pages#contact"
   
