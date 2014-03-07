@@ -9,4 +9,8 @@ module ApplicationHelper
 		end
 	end
 
+	def admin?
+		return true
+	end
+	
 end

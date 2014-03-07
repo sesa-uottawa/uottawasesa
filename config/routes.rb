@@ -1,5 +1,7 @@
 Uottawasesa::Application.routes.draw do
 
+  resources :event_posts
+
   root "static_pages#home"
 
   get "/home" => "static_pages#home"
