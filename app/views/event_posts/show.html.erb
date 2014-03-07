@@ -1,35 +1,28 @@
-<<<<<<< HEAD
-<p id="notice"><%= notice %></p>
+<h1><%= @event_post.title %></h1>
 
 <p>
-  <strong>Title:</strong>
-  <%= @event_post.title %>
+	Body: <%= @event_post.body %>
 </p>
 
 <p>
-  <strong>Body:</strong>
-=======
-
-<h1>
-	<%= @event_post.title %>
-</h1>
-
-<p>
->>>>>>> e76346baca1631257bdc6cf582805901445e761e
-  <%= @event_post.body %>
+	ID: <%= @event_post.id %>
 </p>
 
 <p>
-<<<<<<< HEAD
-  <strong>Signature:</strong>
-  <%= @event_post.signature %>
+	Signature: <%= @event_post.signature %>
 </p>
 
-<%= link_to 'Edit', edit_event_post_path(@event_post) %> |
-=======
-  <%= @event_post.signature %>
+<p>
+	Updated: <%= @event_post.updated_at %>
 </p>
 
-<%= link_to 'Edit Post', edit_event_post_path(@event_post) %> |
->>>>>>> e76346baca1631257bdc6cf582805901445e761e
-<%= link_to 'Back', event_posts_path %>
+<p>
+	Created: <%= @event_post.created_at %>
+</p>
+
+<% if admin? %>
+	<%= link_to "Edit News Post with ID: #{@event_post.id}", 
+	            edit_event_post_path %>
+<% end %>
+
+<%= link_to "Back to all news", event_posts_path %>

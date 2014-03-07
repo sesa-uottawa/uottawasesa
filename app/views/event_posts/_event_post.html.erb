@@ -1,19 +1,5 @@
 <div class="event-post">
-<<<<<<< HEAD
-	<div class="title">
-		<%= event_post.title %>	
-	</div>
-	<div class="body">
-		<%= event_post.body %>
-	</div>
-	<div class="sign">
-		<%= event_post.signature %>
-	</div>
-	<% if admin? %>
 
-		<div class="actions">
-			<%= link_to "edit", 
-=======
 
 	<div class="title">
 		<%= event_post.title %>	
@@ -30,17 +16,13 @@
 	<% if admin? %>
 		<div class="actions">
 			<br><%= link_to "edit", 
->>>>>>> e76346baca1631257bdc6cf582805901445e761e
 		        edit_event_post_path(event_post) %>
 			<%= link_to "destroy", 
 			            event_post, 
 			            method: :delete,
 			            confirm: "Are you sure you want to delete the event post?" %>	
 		</div>
-<<<<<<< HEAD
 
-=======
->>>>>>> e76346baca1631257bdc6cf582805901445e761e
 	<% end %>
 
 </div>
