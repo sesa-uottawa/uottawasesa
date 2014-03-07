@@ -12,5 +12,8 @@ module ApplicationHelper
 	def admin?
 		return true
 	end
+<<<<<<< HEAD
 	
+=======
+>>>>>>> e76346baca1631257bdc6cf582805901445e761e
 end

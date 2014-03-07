@@ -5,8 +5,6 @@ Uottawasesa::Application.routes.draw do
   root "static_pages#home"
 
   get "/home" => "static_pages#home"
-  get "/events" => "static_pages#events"
-  get "/about" => "static_pages#about"
   get "/meet" => "static_pages#meet"
   get "/contact" => "static_pages#contact"
   

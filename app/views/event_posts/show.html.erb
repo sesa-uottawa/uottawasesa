@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -7,13 +8,28 @@
 
 <p>
   <strong>Body:</strong>
+=======
+
+<h1>
+	<%= @event_post.title %>
+</h1>
+
+<p>
+>>>>>>> e76346baca1631257bdc6cf582805901445e761e
   <%= @event_post.body %>
 </p>
 
 <p>
+<<<<<<< HEAD
   <strong>Signature:</strong>
   <%= @event_post.signature %>
 </p>
 
 <%= link_to 'Edit', edit_event_post_path(@event_post) %> |
+=======
+  <%= @event_post.signature %>
+</p>
+
+<%= link_to 'Edit Post', edit_event_post_path(@event_post) %> |
+>>>>>>> e76346baca1631257bdc6cf582805901445e761e
 <%= link_to 'Back', event_posts_path %>

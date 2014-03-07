@@ -1,4 +1,5 @@
 <% provide(:title, 'Events') %>
+<<<<<<< HEAD
 <h1>Events</h1>
 
 <% if admin? %>
@@ -9,3 +10,16 @@
   <%= render @event_posts %>
 </div>
 
+=======
+
+<h1>Events</h1>
+
+<div class="event-posts">
+  <%= render @event_post %>
+</div>
+
+
+<% if admin? %>
+<%= link_to 'New Event post', new_event_post_path %>
+<% end %>
+>>>>>>> e76346baca1631257bdc6cf582805901445e761e

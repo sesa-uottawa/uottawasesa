@@ -1,4 +1,5 @@
 <%= form_for(@event_post) do |f| %>
+<<<<<<< HEAD
   <% if @event_post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@event_post.errors.count, "error") %> prohibited this event_post from being saved:</h2>
@@ -26,4 +27,26 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+=======
+  
+  <div>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :body %><br>
+    <%= f.text_field :body %>
+  </div>
+  
+  <div>
+    <%= f.label :signature %><br>
+    <%= f.text_field :signature %>
+  </div>
+  
+  <div>
+    <%= f.submit %>
+  </div>
+
+>>>>>>> e76346baca1631257bdc6cf582805901445e761e
 <% end %>
