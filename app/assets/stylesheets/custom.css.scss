@@ -3,15 +3,17 @@
 /* universal */
 
 body {
-  padding-top: 60px;
+  background-image: url("girl.png"); 
+  padding-top: 50px;
 }
 
-section {
-  overflow: auto;
-}
-  
-textarea {
-  resize: vertical;
+#container{
+  height: 700px;
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #eee;
+  border-radius:10px 10px 10px 10px;
 }
 
 .center {
@@ -26,6 +28,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  color: black;
 }
 
 h1 {
@@ -33,6 +36,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  padding-top: 60px;
 }
 
 h2 {
@@ -62,12 +66,11 @@ p {
 }
 
 #logo:hover {
-  color: #fff;
   text-decoration: none;
 }
 
 /* footer */
-
+/*
 footer {
   width: 1000px;
   margin: 0 auto;
@@ -92,4 +95,4 @@ footer ul li {
   padding-top: 8px;
   padding-right: 5px;
 }
-  
+  */

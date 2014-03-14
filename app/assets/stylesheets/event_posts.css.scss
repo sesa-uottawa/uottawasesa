@@ -1,3 +1,4 @@
+/*
 .event-posts {
 
 	.event-post {
@@ -5,26 +6,28 @@
 		margin:20px 0;
 
 		.title {
-			background:black;
-			color:white;
-			padding:5px;
-			border-radius:10px 10px 0 0;
+			text-transform: capitalize;
+				
 			font-size:1.5em;
+			font-family: Arial;
+			border-width: 1px;
+			border-top:solid;
+			border-color: #808080;
 		}
 
 		.body {
-			background:#ddd;			
-			padding:5px;
+			
+			font-family: Arial;
 		}
 
 		.sign {
-			background:#777;
-			padding:5px;
+			
+			font-family: Arial;
 
 		}
 		.actions {
 			background:#777;
-			padding:5px;
+
 
 			a {
 				color:black;
@@ -35,3 +38,4 @@
 	}
 
 }
+*/
