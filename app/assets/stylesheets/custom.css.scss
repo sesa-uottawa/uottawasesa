@@ -8,12 +8,20 @@ body {
   */
   background-color: #722F37;
   padding-top: 45px;
-  height:auto;
+}
+
+.quotes p{
+  text-align: center;
+  font-size: 15px;
+  font-family: Helvetica regular;
+  margin-left: 50px;
+
 }
 
 #container{
-  height: 700px;
+  height: auto;
   width: 980px;
+  padding-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   background-color: white;
@@ -33,7 +41,7 @@ body {
 .center h1 {
   width: 880px;
   margin-left: 50px;
-  margin-bottom: 30px;  
+  margin-bottom: 10px;  
   padding-bottom: 20px;
   border-bottom: gray;
   border-bottom-style: solid;
@@ -59,9 +67,10 @@ h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
-  color: #999;
+  color: black;
+  padding-left: 50px;
 }
 
 p {
@@ -86,11 +95,11 @@ p {
 }
 
 /* footer */
-/*
+
 footer {
   width: 1000px;
-  margin: 0 auto;
-  color: black;
+  margin: 0px auto;
+  color: white;
 }
 
 footer a {
@@ -111,4 +120,4 @@ footer ul li {
   padding-top: 8px;
   padding-right: 5px;
 }
-  */
+  
