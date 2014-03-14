@@ -12,6 +12,8 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'protected_attributes', '1.0.5'
 gem 'thin'
 gem 'devise'
+gem 'sprockets', '2.11.0'
+gem 'slim', '2.0.0'
 
 group :development do
 	gem 'pry'
