@@ -65,10 +65,10 @@ h1 {
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: left;
   font-weight: normal;
-  color: black;
+  color: #333333;
   padding-left: 50px;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
@@ -76,6 +76,7 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 
@@ -102,31 +103,27 @@ p {
   text-decoration: none;
 }
 
+.recruit-text {
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.border {
+
+  border-bottom: #999;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  width:500px;
+  margin-left: 240px;
+  margin-bottom: 20px;
+}
 /* footer */
 
 footer {
-  width: 1000px;
+  width: 980px;
   margin: 0px auto;
   color: white;
-}
-
-footer a {
-  color: black;
-}
-
-footer a:hover {
-  color: #999;
-  text-decoration: none;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  padding-top: 8px;
-  padding-right: 5px;
 }
 
 .people-container{
