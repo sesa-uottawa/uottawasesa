@@ -3,9 +3,7 @@
 /* universal */
 
 body {
-  /*
-  background-image: url("girl.png"); 
-  */
+  
   background-color: #722F37;
   padding-top: 60px;
 }
@@ -14,8 +12,7 @@ body {
   text-align: center;
   font-size: 15px;
   font-family: Helvetica regular;
-  margin-left: 50px;
-
+  padding-top: 30px;
 }
 
 #container{
@@ -33,25 +30,29 @@ body {
 
 }
 
-.center {
+.home-page-img {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .center h1 {
+  text-align: center;
   width: 880px;
   margin-left: 50px;
-  margin-bottom: 10px;  
+  margin-bottom: 0px;  
   padding-bottom: 20px;
   border-bottom: gray;
   border-bottom-style: solid;
   border-bottom-width: 2px;
+  color:#444;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  letter-spacing: -3px;
 }
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  color: black;
 }  
 
 h1 {
@@ -60,6 +61,8 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
   padding-top: 40px;
+  color:#333;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 h2 {
@@ -118,17 +121,34 @@ p {
   margin-left: 240px;
   margin-bottom: 20px;
 }
+
+.meet-border {
+  border-bottom: #999;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  width:900px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+}
 /* footer */
 
-footer {
+#footer {
   width: 980px;
   margin: 0px auto;
   color: white;
+  padding-left: 20px;
+
+}
+
+#footer p{
+  display: inline-block;
 }
 
 .people-container{
   padding:10px;
-  padding-left: 50px;
+  padding-left: 55px;
 }
   
 .people-container-pic {
@@ -139,7 +159,7 @@ footer {
 }
 
 .people-container-text {
-  width:400px;
+  width:450px;
   display:inline-block;
   text-align: left;
   font-size: 30px;
@@ -163,5 +183,9 @@ footer {
   font-size: 20px;
 }
 
-
+.social-links {
+  display: inline-block;
+  text-align: right;
+  padding-left: 770px;
+}
   
