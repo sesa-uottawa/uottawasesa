@@ -7,7 +7,7 @@ body {
   background-image: url("girl.png"); 
   */
   background-color: #722F37;
-  padding-top: 45px;
+  padding-top: 60px;
 }
 
 .quotes p{
@@ -27,9 +27,8 @@ body {
   background-color: white;
   border-radius:10px 10px 10px 10px;
   margin-bottom: 10px;
-
-  moz-box-shadow: 0 0 5px 5px #502F37;
-  webkit-box-shadow: 0 0 5px 5px #502F37;
+  -moz-box-shadow: 0 0 5px 5px #502F37;
+  -webkit-box-shadow: 0 0 5px 5px #502F37;
   box-shadow: 0 0 5px 5px #502F37;
 
 }
@@ -53,14 +52,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   color: black;
-}
+}  
 
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 h2 {
@@ -71,6 +70,7 @@ h2 {
   font-weight: normal;
   color: black;
   padding-left: 50px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 p {
@@ -78,7 +78,14 @@ p {
   line-height: 1.7em;
 }
 
+
 #logo {
+  float: left;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+#sesa {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -88,9 +95,10 @@ p {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+
 }
 
-#logo:hover {
+#sesa:hover {
   text-decoration: none;
 }
 
@@ -120,4 +128,41 @@ footer ul li {
   padding-top: 8px;
   padding-right: 5px;
 }
+
+.people-container{
+  padding:20px;
+}
+  
+.people-container-pic {
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:20px;
+}
+
+.people-container-text {
+  display:inline-block;
+  text-align: left;
+  font-size: 30px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+  
+.heading {
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #333;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.inner-text{
+  color:#999;
+}
+
+.outter-text{
+  color:#222;
+  font-size: 20px;
+}
+
+
   
