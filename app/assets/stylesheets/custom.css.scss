@@ -33,6 +33,10 @@ body {
 .home-page-img {
   text-align: center;
   padding-bottom: 20px;
+
+  img {
+   border-radius: 10px;
+  }
 }
 
 .center h1 {
@@ -71,7 +75,7 @@ h2 {
   margin-bottom: 10px;
   text-align: left;
   font-weight: normal;
-  color: #333333;
+  color: #555;
   padding-left: 50px;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
@@ -155,7 +159,10 @@ p {
   display:inline-block;
   margin-left: auto;
   margin-right: auto;
-  padding-left:20px;
+
+  img {
+    border-radius: 5px;
+  }
 }
 
 .people-container-text {
@@ -186,6 +193,6 @@ p {
 .social-links {
   display: inline-block;
   text-align: right;
-  padding-left: 770px;
+  padding-left: 750px;
 }
   
