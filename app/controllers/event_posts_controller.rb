@@ -29,7 +29,7 @@ class EventPostsController < ApplicationController
     @event_post = EventPost.new(event_post_params)
 
     if @event_post.save
-      redirect_to @event_post
+      redirect_to event_posts_path
     else
       #DO NOTHING
     end
@@ -40,10 +40,10 @@ class EventPostsController < ApplicationController
   # PATCH/PUT /event_posts/1.json
   def update
 
-    @event_post = EventPost.new(event_post_params)  
+    @event_post = EventPost.find(params[:id])  
 
       if @event_post.update(event_post_params)
-        redirect_to @event_post
+        redirect_to event_posts_path
       else
         #do nothing
       end

@@ -12,19 +12,19 @@
     </div>
   <% end %>
 
-  <div>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="form">
+    <%= f.label :title %>
+    <%= f.text_field :title, :cols => "75" %>
   </div>
-  <div>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
+  <div  class="form">
+    <%= f.label :body %>
+    <%= f.text_area :body, :style => "width:500px;", rows: 13  %>
   </div>
-  <div>
-    <%= f.label :signature %><br>
+  <div class="form">
+    <%= f.label :signature %>
     <%= f.text_field :signature %>
   </div>
-  <div>
+  <div class="form">
     <%= f.submit %>
   </div>
 

@@ -11,7 +11,8 @@ didn't do than by the ones that you did do<br>-Mark Twain</p>
   <%= render @event_posts %>
 </div>
 
-
 <% if admin? %>
-<%= link_to 'New Event post', new_event_post_path %>
+<div class="new-button">
+<%= link_to "New Event post", new_event_post_path %>
+</div>
 <% end %>
