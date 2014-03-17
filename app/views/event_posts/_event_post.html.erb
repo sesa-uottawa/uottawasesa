@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="sign">
-		<p><%= event_post.created_at.try(:strftime, "%a %B %Y") %> by <%= event_post.signature %> </p>
+		<p><%= event_post.created_at.try(:strftime, "%B %d, %Y") %> <%= has_signature(event_post.signature) %></p>
 	</div>
 
 	<div class="body">
