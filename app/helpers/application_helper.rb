@@ -10,7 +10,7 @@ module ApplicationHelper
 	end
 
 	def admin?
-		return true
+		return false
 	end
 	
 end
