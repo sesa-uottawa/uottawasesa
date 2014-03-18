@@ -14,6 +14,7 @@ gem 'thin'
 gem 'devise'
 gem 'sprockets', '2.11.0'
 gem 'slim', '2.0.0'
+gem 'redcarpet', "~> 3.1.1"
 
 group :development do
 	gem 'pry'

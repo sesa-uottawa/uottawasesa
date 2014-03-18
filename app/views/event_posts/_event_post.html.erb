@@ -10,9 +10,11 @@
 	</div>
 
 	<div class="body">
-		<%= event_post.body %>
+		<%= markdown event_post.body %>
 	</div>
-
+	<!-- <%= raw event_post.body %> Not the best way to implement spaces in paragraphs, 
+			easily hackable
+	-->
 	<% if admin? %>
 		<div class="actions">
 			<br><%= link_to "Edit", 
