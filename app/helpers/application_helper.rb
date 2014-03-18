@@ -10,7 +10,7 @@ module ApplicationHelper
 	end
 
 	def sign_up?
-		return true
+		return false
 	end
 	
 	def has_signature(signature)
