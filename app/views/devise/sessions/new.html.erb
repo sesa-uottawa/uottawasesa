@@ -1,6 +1,12 @@
-<h2>Sign in</h2>
+<div class="space"></div>
+
+<h2 class="user">Sign in</h2>
 
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  
+	
+	<div class="form">
+
   <div><%= f.label :email %><br />
   <%= f.email_field :email, :autofocus => true %></div>
 
@@ -12,6 +18,10 @@
   <% end -%>
 
   <div><%= f.submit "Sign in" %></div>
-<% end %>
 
+  </div>
+
+<% end %>
+<div class="form">
 <%= render "devise/shared/links" %>
+</div>

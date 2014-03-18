@@ -77,6 +77,11 @@ h2 {
   color: #555;
   padding-left: 50px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    &.user{
+      font-size: 3em;
+      text-align: center;
+    }
 }
 
 p {

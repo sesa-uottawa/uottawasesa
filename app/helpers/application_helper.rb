@@ -9,8 +9,8 @@ module ApplicationHelper
 		end
 	end
 
-	def admin?
-		return false
+	def sign_up?
+		return true
 	end
 	
 	def has_signature(signature)
