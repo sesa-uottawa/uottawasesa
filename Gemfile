@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.0.0'
 
 require 'rbconfig'
 
@@ -15,6 +15,9 @@ gem 'devise'
 gem 'sprockets', '2.11.0'
 gem 'slim', '2.0.0'
 gem 'redcarpet', "~> 3.1.1"
+gem 'devise'
+
+
 
 group :development do
 	gem 'pry'

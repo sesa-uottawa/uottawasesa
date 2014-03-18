@@ -27,7 +27,10 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.2)
     atomic (1.1.15)
+    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
     bcrypt-ruby (3.1.5-x86-mingw32)
       bcrypt (>= 3.1.3)
     bootstrap-sass (2.3.2.0)
@@ -63,8 +66,10 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (2.0.2)
+    ffi (1.9.3)
     ffi (1.9.3-x86-mingw32)
     formatador (0.2.4)
     guard (2.5.1)
@@ -103,13 +108,20 @@ GEM
     minitest (4.7.5)
     multi_json (1.9.0)
     nio4r (1.0.0)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     nokogiri (1.6.1-x86-mingw32)
       mini_portile (~> 0.5.0)
     orm_adapter (0.5.0)
+    pg (0.15.1)
     pg (0.15.1-x86-mingw32)
     polyglot (0.3.4)
     protected_attributes (1.0.5)
       activemodel (>= 4.0.1, < 5.0)
+    pry (0.9.12.6)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     pry (0.9.12.6-x86-mingw32)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -176,6 +188,7 @@ GEM
       temple (~> 0.6.5)
       tilt (~> 1.3, >= 1.3.3)
     slop (3.5.0)
+    spork (1.0.0rc4)
     spork (1.0.0rc4-x86-mingw32)
       win32-process
     spork-rails (4.0.0)
@@ -211,7 +224,6 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
     warden (1.2.3)
       rack (>= 1.0)
-    wdm (0.1.0)
     websocket (1.0.7)
     win32-process (0.7.4)
       ffi (>= 1.0.0)
@@ -220,6 +232,7 @@ GEM
       nokogiri (~> 1.3)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
@@ -249,4 +262,3 @@ DEPENDENCIES
   thin
   turbolinks (= 1.1.1)
   uglifier (= 2.1.1)
-  wdm (>= 0.1.0)

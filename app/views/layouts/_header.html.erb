@@ -10,6 +10,13 @@
           <li><%= link_to "Events",   event_posts_path %></li>
           <li><%= link_to "Meet The Team",   meet_path %></li>
           <li><%= link_to "Contact",   contact_path %></li>
+          <% unless user_signed_in? %> <!--unless is equal to if not-->
+               <li><%= link_to "Sign In", new_user_session_path%></li>
+           <% else %>
+               <li><%= link_to "Sign Out", destroy_user_session_path, 
+                    method: :delete %></li>
+                 <li><%= "Signed is as #{current_user.email}"%></li>
+          <%end%>
         </ul>
       </nav>
     </div>

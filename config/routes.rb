@@ -1,5 +1,6 @@
 Uottawasesa::Application.routes.draw do
 
+  devise_for :users
   resources :event_posts
 
   root "static_pages#home"
