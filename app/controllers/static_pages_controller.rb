@@ -1,8 +1,29 @@
 class StaticPagesController < ApplicationController
   def home
-  end
+		if request.post? 
+			# Send the e-mail
+			first_name = params['first_name']
+			last_name = params['last_name']
+			email = params['email']
+			UserMailer.new_member_confirmation(email, first_name, last_name).deliver
+			@success = true
+
+		end
+	end
+  
 
   def contact
+  	if request.post? 
+			# Send the e-mail
+			first_name = params['first_name']
+			last_name = params['last_name']
+			email = params['email']
+			message = params['message']
+		UserMailer.contact_confirmation(email, first_name, last_name, message).deliver
+			@success = true
+
+		end
+
   end
 
   def meet
