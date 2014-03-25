@@ -1,9 +1,9 @@
 <div class="event-post">
 
 
-	<div class="title">
 		<%= event_post.title %>	
 	</div>
+	<div class="title">
 
 	<div class="sign">
 		<p><%= event_post.created_at.try(:strftime, "%B %d, %Y") %> <%= has_signature(event_post.signature) %></p>
@@ -12,7 +12,7 @@
 	<div class="body">
 		<%= markdown event_post.body %>
 	</div>
-	<!-- <%= raw event_post.body %> Not the best way to implement spaces in paragraphs, 
+	<!-- <%= raw event_post.body %> Not the best way to implement <html> tags in textareas, 
 			easily hackable
 	-->
 	<% if admin? %>
