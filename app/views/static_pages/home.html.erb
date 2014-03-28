@@ -1,34 +1,70 @@
 
 <div class="center">
-  
-  <h1>Software Engineering Student Association </h1>
 
-  <div class="quotes">
+	<h1>Software Engineering Student Association </h1>
+
+	<div class="quotes">
 		<p>If you can dream it, you can do it<br>-Walt Disney</p>
-  </div>
+	</div>
 
-<div class="border"></div>
+	<div class="border"></div>
 
-<p class="recruit-text" >
-Dear new recruits,<br>
-Our mission is to provide a support group for software engineers and to define a group
-of people who see themselves connected in an important way; individuals that are part 
-of a greater whole. SESA strives to enrich student life while offering support and resourses
-for its members while building a networking platform in order to aid students
-in landing real world experiences that can be beneficial when meeting
-future potential employers.<br><br>-Hugh, Vice President</p>
+	<p class="recruit-text" >
+		Dear new recruits,<br>
+		Our mission is to provide a support group for software engineers and to define a group
+		of people who see themselves connected in an important way; individuals that are part 
+		of a greater whole. SESA strives to enrich student life while offering support and resourses
+		for its members while building a networking platform in order to aid students
+		in landing real world experiences that can be beneficial when meeting
+		future potential employers.<br><br>-Hugh, Vice President</p>
 
-<div class="border"></div>
+<div class="form">
+<% if @success %>
+	Thank you for joining the SESA!
+<% else %>
+		<p>
 
-<div class="home-page-img">
-	<%= image_tag "club.png", size: "700x900", alt: "The Abyss"%>
+			<%= form_tag do %>
+
+			<div class="field">
+				<%= label_tag :first_name, "First Name" %><br>
+				<%= text_field_tag :first_name %><br>
+			</div>
+
+			<div class="field">
+				<%= label_tag :last_name, "Last Name" %><br>
+				<%= text_field_tag :last_name %><br>
+			</div>
+
+			<div class="field">
+				<%= label_tag :email, "E-mail" %><br>
+				<%= text_field_tag :email %><br>
+			</div>
+
+			<br>
+
+			<div class="field">
+				<%= submit_tag "Join the SESA"%>
+			</div>
+
+			<% end %>
+		</p>
+		<% end %>
 </div>
+		<div class="border"></div>
 
-<div class="border"></div>
+		<div class="home-page-img">
+			<%= image_tag "club.png", size: "700x900", alt: "The Abyss"%>
+		</div>
 
-<p class="recruit-text">
-	“If you listen real close, you can hear them whisper their legacy to you. Go on, lean in. Listen, you hear it? - Carpe - hear it? – Carpe, Carpe Diem, seize the day boys, make your lives extraordinary.” 
-	<br>-N.H. Kleinbaum, Dead Poets Society
-</p>
+		<div class="border"></div>
+
+		<p class="recruit-text">
+			“If you listen real close, you can hear them whisper their legacy to you. Go on, lean in. Listen, you hear it? - Carpe - hear it? – Carpe, Carpe Diem, seize the day boys, make your lives extraordinary.” 
+			<br>-N.H. Kleinbaum, Dead Poets Society
+		</p>
+
+
+	</div>
 
 </div>

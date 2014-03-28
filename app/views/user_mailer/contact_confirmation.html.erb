@@ -1,0 +1,19 @@
+<p>
+	Dear <%= @first_name %>, 
+</p>
+
+<p>
+	Thank you for contacting the SESA. We will get back to your shortly. 
+</p>
+
+<hr>
+
+This is the message we received:
+<ul>
+	<li>First Name: <%= @first_name %> </li>
+	<li>Last Name: <%= @last_name %> </li>
+	<li>Email: <%= @email %> </li>
+	<li>Message: <%= @message %> </li>
+</ul>
+
+Visit our site <%= link_to "by clicking here", "#{root_url}"%>
