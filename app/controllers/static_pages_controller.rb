@@ -5,6 +5,10 @@ class StaticPagesController < ApplicationController
 			first_name = params['first_name']
 			last_name = params['last_name']
 			email = params['email']
+			faculty = params['faculty']
+			commitment = params['commitment']
+			why_join = params['why_join']
+			goal = params['goal']
 			UserMailer.new_member_confirmation(email, first_name, last_name).deliver
 			@success = true
 
@@ -25,6 +29,7 @@ class StaticPagesController < ApplicationController
 		end
 
   end
+
 
   def meet
   end

@@ -11,6 +11,7 @@ Uottawasesa::Application.routes.draw do
   get "/meet" => "static_pages#meet"
   get "/contact" => "static_pages#contact"
   post "/contact" => "static_pages#contact"
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

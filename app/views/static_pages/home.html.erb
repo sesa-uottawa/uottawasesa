@@ -18,7 +18,21 @@
 		in landing real world experiences that can be beneficial when meeting
 		future potential employers.<br><br>-Hugh, Vice President</p>
 
+	<p style="margin-left:50px;">
+	Please <big data-toggle="modal" data-target="#myModal" style="cursor: pointer; cursor: hand; 
+	color:#d9534f;">CLICK HERE</big> to apply to SESA</p>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:2%; bottom:1%;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">SESA FORM</h4>
+      </div>
+      <div class="modal-body" style="max-height:100%; height: auto;">
+        
 <div class="form">
+
 <% if @success %>
 	Thank you for joining the SESA!
 <% else %>
@@ -27,29 +41,57 @@
 			<%= form_tag do %>
 
 			<div class="field">
-				<%= label_tag :first_name, "First Name" %><br>
+				<%= label_tag :first_name, "First Name" %>
 				<%= text_field_tag :first_name %><br>
 			</div>
 
 			<div class="field">
-				<%= label_tag :last_name, "Last Name" %><br>
+				<%= label_tag :last_name, "Last Name" %>
 				<%= text_field_tag :last_name %><br>
 			</div>
 
 			<div class="field">
-				<%= label_tag :email, "E-mail" %><br>
+				<%= label_tag :email, "E-mail Address" %>
 				<%= text_field_tag :email %><br>
 			</div>
 
-			<br>
+			<div class="field">
+				<%= label_tag :major, "Major or Specialization" %>
+				<%= text_field_tag :major %><br>
+			</div>
+
 
 			<div class="field">
+				<%= label_tag :commitment, "Level of commitment(#hours/weeks)" %>
+				<%= text_area_tag :commitment %><br>
+			</div>
+
+
+			<div class="field">
+				<%= label_tag :why_join, "Why would you want to be a part of SESA" %>
+				<%= text_area_tag :why_join %><br>
+			</div>
+
+
+			<div class="field">
+				<%= label_tag :goal, "What goals would you like to achieve while working with SESA" %>
+				<%= text_area_tag :goal %><br>
+			</div>
+
+			<div class="field" style="text-align: center;">
 				<%= submit_tag "Join the SESA"%>
 			</div>
 
 			<% end %>
 		</p>
 		<% end %>
+</div>
+
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
 </div>
 		<div class="border"></div>
 
