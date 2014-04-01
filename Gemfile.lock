@@ -167,7 +167,7 @@ GEM
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
     rubyzip (0.9.9)
-    sass (3.2.13)
+    sass (3.3.4)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
@@ -233,7 +233,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  bootstrap-sass (~> 3.1.1.0)
+  bootstrap-sass (= 3.1.1.0)
   capybara (= 2.1.0)
   childprocess (= 0.3.6)
   coffee-rails (= 4.0.1)
@@ -250,7 +250,7 @@ DEPENDENCIES
   rails_12factor (= 0.0.2)
   redcarpet (~> 3.1.1)
   rspec-rails (= 2.13.1)
-  sass (= 3.2.13)
+  sass (= 3.3.4)
   sass-rails (= 4.0.1)
   sdoc (= 0.3.20)
   selenium-webdriver (= 2.35.1)
