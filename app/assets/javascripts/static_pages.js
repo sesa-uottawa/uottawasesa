@@ -24,45 +24,45 @@ $(".menu").click( function(){
 });
 
 $("#inner-feature-container-1").mouseenter( function(){
-	$(".text-1").fadeTo(200, 0);
-	$(".hovering-text-1").fadeTo(200, 1);
+	$(".text-1").fadeTo(100, 0);
+	$(".hovering-text-1").fadeTo(100, 1);
 	$("#inner-feature-container-1 img").css({'-webkit-transition' : 'margin-top 200ms linear'});
 	$("#inner-feature-container-1 img").css({'margin-top' : '-30px'});
 });
 
 $('#inner-feature-container-1').mouseout( function(){
-     $('.text-1').fadeTo(200, 1);
-	$(".hovering-text-1").fadeTo(200, 0);
+     $('.text-1').fadeTo(100, 1);
+	$(".hovering-text-1").fadeTo(100, 0);
 	$("#inner-feature-container-1 img").css({'-webkit-transition' : 'margin-top 200ms linear'});
 	$("#inner-feature-container-1 img").css({'margin-top' : '0px'});
 });
 
 $("#inner-feature-container-2").mouseenter( function(){
-	$(".text-2").fadeTo(200, 0);
-	$(".hovering-text-2").fadeTo(200, 1);
+	$(".text-2").fadeTo(100, 0);
+	$(".hovering-text-2").fadeTo(100, 1);
 	$("#inner-feature-container-2 img").css({'-webkit-transition' : 'margin-top 200ms linear'});
 	$("#inner-feature-container-2 img").css({'margin-top' : '-30px'});
 
 });
 
 $('#inner-feature-container-2').mouseout( function(){
-     $('.text-2').fadeTo(200, 1);
-	$(".hovering-text-2").fadeTo(200, 0);
+     $('.text-2').fadeTo(100, 1);
+	$(".hovering-text-2").fadeTo(100, 0);
 	$("#inner-feature-container-2 img").css({'-webkit-transition' : 'margin-top 200ms linear'});
 	$("#inner-feature-container-2 img").css({'margin-top' : '0px'});
 });
 
 $("#inner-feature-container-3").mouseenter( function(){
-	$(".text-3").fadeTo(200, 0);
-	$(".hovering-text-3").fadeTo(200, 1);
+	$(".text-3").fadeTo(100, 0);
+	$(".hovering-text-3").fadeTo(100, 1);
 	$("#inner-feature-container-3 img").css({'-webkit-transition' : 'margin-top 200ms linear'});
 	$("#inner-feature-container-3 img").css({'margin-top' : '-30px'});
 
 });
 
 $('#inner-feature-container-3').mouseout( function(){
-     $('.text-3').fadeTo(200, 1);
-	$(".hovering-text-3").fadeTo(200, 0);
+     $('.text-3').fadeTo(100, 1);
+	$(".hovering-text-3").fadeTo(100, 0);
 	$("#inner-feature-container-3 img").css({'-webkit-transition' : 'margin-top 200ms linear'});
 	$("#inner-feature-container-3 img").css({'margin-top' : '0px'});
 });
