@@ -15,6 +15,12 @@ class StaticPagesController < ApplicationController
 		end
 	end
   
+  def modal
+  	respond_to do |format|
+      format.html
+      format.js
+    end
+  end
 
   def contact
   	if request.post? 

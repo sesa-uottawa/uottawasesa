@@ -1,3 +1,202 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+#home-page {
+	background-image: url("green-2.png");
+  	background-repeat: repeat;
+}
+
+#home-container-1 {
+  background-image: url("kat_background.png");  
+  background-size: cover;
+  background-color: white;
+  height: 750px;
+  width:auto;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  display: block;
+  margin: auto;
+  position: relative;
+  margin-top: 0px;
+  font-family: "Myriad Pro", serif;
+  font-size: 2em;
+  line-height: 20px;
+  color: #111;
+  letter-spacing: 2px;
+}
+
+#home-container-2 {
+	background-image: url("beige-2.png");
+	padding: 50px 0;
+	height: 600px;
+	width: 100%;
+	img {
+		display: inline-block;
+		float: left;
+	}
+
+	p {
+		display: inline-block;
+		width: 450px;
+		margin-left: 100px;
+		font-family: "Myriad Pro", serif;
+		font-size: 2em;
+		line-height: 1.7em;
+	}
+}
+#home-container-3 {
+	position: relative;
+	width:980px;
+	height: 700px;
+	margin: 0 auto;
+}
+
+.sesa-logo {
+	top: 20%;
+	left: 20%;
+	position: absolute;
+}
+
+#motto-1{
+		top: 25%;
+		bottom: 0;
+		left: 40%;
+		right: 0;
+		position: absolute;
+		display: none;
+		height: 50px;
+		padding-top: 15px;
+
+}
+
+#motto-2{
+		top: 35%;
+		bottom: 0;
+		left: 45%;
+		right: 0;
+		width: 350px;
+		position: absolute;
+		display: none;
+		height: 50px;
+		padding-top: 15px;
+
+
+}
+
+#motto-3{
+		top: 45%;
+		bottom: 0;
+		left: 40%;
+		right: 0;
+		position: absolute;
+		display: none;
+		height: 50px;
+		padding-top: 15px;
+}
+
+#feature-container {
+	position: absolute;
+	height: 100%;
+	width: 980px;
+}
+
+#outer-text-container {
+	position: relative;
+}
+
+#inner-feature-container-1{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 175px 22px;
+	background-color: #222;
+	height: 350px;
+	overflow: hidden;
+	color: #eee;
+	line-height: 80px;
+	text-align: center;
+	font-family: "Nirmala UI";
+	font-size: 24px;
+}
+
+
+#inner-feature-container-2{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 22px;
+	background-color: #222;
+	height: 350px;
+	overflow: hidden;
+	color: #eee;
+	line-height: 80px;
+	text-align: center;
+	font-family: "Nirmala UI";
+	font-size: 24px;
+}
+
+#inner-feature-container-3{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 22px;
+	background-color: #222;
+	height: 350px;
+	overflow: hidden;
+	color: #eee;
+	line-height: 80px;
+	text-align: center;
+	font-family: "Nirmala UI";
+	font-size: 24px;
+
+	span a{
+		position:absolute; 
+ 		width:270px;
+  		height:350px;
+  		z-index: 1;
+	}
+}
+
+.text-1 {
+	position: absolute;
+	height: 80px;
+	width: 270px;
+}
+
+.text-2 {
+	position: absolute;
+	height: 80px;
+	width: 270px;
+}
+
+.text-3 {
+	position: absolute;
+	height: 80px;
+	width: 270px;
+}
+
+.hovering-text-1 {
+	position: absolute;
+	height: 80px;
+	width: 270px;
+}
+
+
+.hovering-text-2 {
+	position: absolute;	
+	opacity: 0;
+	height: 80px;
+	width: 270px;
+}
+
+
+.hovering-text-3 {
+	position: absolute;
+	opacity: 0;
+	height: 80px;
+	width: 270px;
+}
+
+
+
+
+
+
