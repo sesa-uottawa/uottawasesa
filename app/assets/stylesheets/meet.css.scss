@@ -1,3 +1,5 @@
+@-webkit-keyframes slideleft { 100% { left: 0; } }
+
 #meet-container {
 	background-image: url("green-2.png");
 }
@@ -15,18 +17,212 @@
 #hugh-container{
 	padding-top: 60px;
 	height: 500px;
+	position: relative;
+	overflow: hidden;
+	display: block;
 }
+
+.hugh-photo {
+	float: left;
+	position: absolute;
+	left: -900px;
+	-webkit-animation : slideleft 975ms linear 1;
+	-webkit-animation-fill-mode : forwards;
+}
+
+.hugh-photo-desc {
+	height: 100px;
+	width: 900px;
+	opacity: 0.9;
+	background-color: #222;
+	position: absolute;
+	bottom: -100px;
+}
+
+.hugh-desc {
+float: right;
+margin-right: 100px;
+height: 500px;
+line-height: 500px;
+	p {
+	display: inline-block;
+	width: 450px;
+	font-family: "Myriad Pro", serif;
+	font-size: 2em;
+	line-height: 1.7em;
+		}
+}
+
+#kat-container{
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
 .kat-photo {
+	position: absolute;
 	float: right;
+	right: 0px;
+}
+
+.kat-desc {
+float: left;
+height: 500px;
+line-height: 500px;
+	p {
+	display: inline-block;
+	width: 450px;
+	font-family: "Myriad Pro", serif;
+	font-size: 2em;
+	line-height: 1.7em;
+		}
+}
+
+.kat-photo-desc {
+	height: 100px;
+	width: 900px;
+	opacity: 0.9;
+	background-color: #222;
+	position: absolute;
+	bottom: -100px;
+	right: 0px;
+}
+
+#menelik-container{
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+.menelik-photo {
+	position: absolute;
+}
+
+.menelik-photo-desc {
+	height: 100px;
+	width: 900px;
+	opacity: 0.9;
+	background-color: #222;
+	position: absolute;
+	bottom: -100px;
+}
+
+.menelik-desc {
+float: right;
+height: 500px;
+line-height: 500px;
+	p {
+	display: inline-block;
+	width: 450px;
+	font-family: "Myriad Pro", serif;
+	font-size: 2em;
+	line-height: 1.7em;
+		}
+}
+
+#tunch-container{
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	display: block;
 }
 
 .tunch-photo {
+	position: absolute;
 	float: right;
+	right: 0px;
 }
 
-#zack-container {
-	height: 500px;
+.tunch-photo-desc {
+	height: 100px;
+	width: 900px;
+	opacity: 0.9;
+	background-color: #222;
+	position: absolute;
+	bottom: -100px;
+	right: 0px;
 }
+
+.tunch-desc {
+float: left;
+height: 500px;
+line-height: 500px;
+	p {
+	display: inline-block;
+	width: 450px;
+	font-family: "Myriad Pro", serif;
+	font-size: 2em;
+	line-height: 1.7em;
+		}
+}
+
+#ryan-container{
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+.ryan-photo {
+	position: absolute;
+}
+
+.ryan-photo-desc {
+	height: 100px;
+	width: 900px;
+	opacity: 0.9;
+	background-color: #222;
+	position: absolute;
+	bottom: -100px;
+}
+
+.ryan-desc {
+float: right;
+height: 500px;
+line-height: 500px;
+	p {
+	display: inline-block;
+	width: 450px;
+	font-family: "Myriad Pro", serif;
+	font-size: 2em;
+	line-height: 1.7em;
+		}
+}
+
+#zack-container{
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
 .zack-photo {
+	position: absolute;
 	float: right;
+	right: 0px;
+}
+
+.zack-photo-desc {
+	height: 100px;
+	width: 900px;
+	opacity: 0.9;
+	background-color: #222;
+	position: absolute;
+	bottom: -100px;
+	right: 0px;
+}
+
+.zack-desc {
+float: left;
+height: 500px;
+line-height: 500px;
+	p {
+	display: inline-block;
+	width: 450px;
+	font-family: "Myriad Pro", serif;
+	font-size: 2em;
+	line-height: 1.7em;
+		}
 }

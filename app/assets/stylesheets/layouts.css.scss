@@ -22,7 +22,7 @@
 .menu-icon {
   vertical-align: top;
   display: inline-block;
-  padding-top: 18px;
+  padding-top: 18px;	
 }
 
 .menu-box{
@@ -111,13 +111,32 @@ a.menu-link {
 #outter-footer-container {
 	height: 35px;
 	width: 100%;
-	background-color: #222;
+	background-color: #111;
 }
 
 #inner-footer-container {
 	height: 35px;
+	text-align: right;
 	line-height: 35px;
 	width: 980px;
 	margin: 0 auto;
 	color: #bbb;
+
+	big{
+		color: #bbb;
+		font-size: 14px;
+		cursor: pointer;
+		text-align: left;
+	}
+}
+
+/* Modal Partial SCSS */
+
+#myModalLabel {
+	text-align: center;
+	color: #222;
+}
+
+form {
+	text-align: left;
 }

@@ -6,10 +6,10 @@
 }
 
 #home-container-1 {
-  background-image: url("fss2-editted.jpg");  
-  background-size: cover;
+  background: url("green-2.png");
+  background-repeat: repeat;
   background-color: white;
-  height: 750px;
+  height: 700px;
   width:auto;
   top:0px;
   bottom:0px;
@@ -17,20 +17,23 @@
   right:0px;
   display: block;
   margin: auto;
-  position: relative;
   margin-top: 0px;
   font-family: "Myriad Pro", serif;
   font-size: 2em;
   line-height: 20px;
-  color: #111;
+  color: #000;
   letter-spacing: 2px;
 }
 
-#home-container-2 {
+#outter-home-container-2 {
 	background-image: url("beige-2.png");
+}
+
+#inner-home-container-2 {
 	padding: 50px 0;
 	height: 600px;
-	width: 100%;
+	width: 1300px;
+	margin: 0 auto;
 	img {
 		display: inline-block;
 		float: left;
@@ -39,12 +42,22 @@
 	p {
 		display: inline-block;
 		width: 450px;
-		margin-left: 100px;
+		margin-left: 50px;
 		font-family: "Myriad Pro", serif;
 		font-size: 2em;
 		line-height: 1.7em;
 	}
 }
+
+@media screen and (max-width: 480px) {
+	#home-container-2 {
+
+	p {
+		width: 100px;
+		}
+	}
+}
+
 #home-container-3 {
 	position: relative;
 	width:980px;
@@ -53,15 +66,15 @@
 }
 
 .sesa-logo {
-	top: 20%;
+	top: 15%;
 	left: 20%;
 	position: absolute;
 }
 
 #motto-1{
-		top: 25%;
+		top: 20%;
 		bottom: 0;
-		left: 40%;
+		left: 38%;
 		right: 0;
 		position: absolute;
 		display: none;
@@ -71,11 +84,11 @@
 }
 
 #motto-2{
-		top: 35%;
+		top: 29%;
 		bottom: 0;
-		left: 45%;
+		left: 43%;
 		right: 0;
-		width: 350px;
+		width: 600px;
 		position: absolute;
 		display: none;
 		height: 50px;
@@ -85,9 +98,9 @@
 }
 
 #motto-3{
-		top: 45%;
+		top: 40%;
 		bottom: 0;
-		left: 40%;
+		left: 39.5%;
 		right: 0;
 		position: absolute;
 		display: none;
