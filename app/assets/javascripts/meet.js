@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-$(".hugh-desc").effect("slide",{'direction': 'right'}, 1000);
 
 $(".hugh-photo").mouseover( function(){
 	$(".hugh-photo-desc").css({'-webkit-transition' : 'bottom 200ms ease'});

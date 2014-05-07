@@ -6,22 +6,14 @@
 }
 
 #home-container-1 {
-  background: url("green-2.png");
-  background-repeat: repeat;
-  background-color: white;
+	position: relative;
   height: 700px;
-  width:auto;
-  top:0px;
-  bottom:0px;
-  left:0px;
-  right:0px;
-  display: block;
-  margin: auto;
-  margin-top: 0px;
+  width: 1300px;
+  display: table;
+  margin: 0 auto;
   font-family: "Myriad Pro", serif;
-  font-size: 2em;
-  line-height: 20px;
-  color: #000;
+  font-size: 5em;
+  color: #fff;
   letter-spacing: 2px;
 }
 
@@ -49,15 +41,6 @@
 	}
 }
 
-@media screen and (max-width: 480px) {
-	#home-container-2 {
-
-	p {
-		width: 100px;
-		}
-	}
-}
-
 #home-container-3 {
 	position: relative;
 	width:980px;
@@ -66,46 +49,40 @@
 }
 
 .sesa-logo {
-	top: 15%;
-	left: 20%;
 	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: table-cell;
+}
+
+#motto-container {
+	display: table-cell;
+	width: 1000px;
+	vertical-align: middle;
 }
 
 #motto-1{
-		top: 20%;
-		bottom: 0;
-		left: 38%;
-		right: 0;
-		position: absolute;
-		display: none;
-		height: 50px;
-		padding-top: 15px;
-
+	position: relative;
+	display: none;
+	height: 50px;
+	padding-top: 30px;
 }
 
 #motto-2{
-		top: 29%;
-		bottom: 0;
-		left: 43%;
-		right: 0;
-		width: 600px;
-		position: absolute;
-		display: none;
-		height: 50px;
-		padding-top: 15px;
-
-
+	position: relative;
+	display: none;
+	text-align: center;
+	height: 50px;
+	padding-top: 30px;
 }
 
 #motto-3{
-		top: 40%;
-		bottom: 0;
-		left: 39.5%;
-		right: 0;
-		position: absolute;
-		display: none;
-		height: 50px;
-		padding-top: 15px;
+	position: relative;
+	display: none;
+	text-align: center;
+	height: 50px;
+	padding-top: 30px;
 }
 
 #feature-container {
