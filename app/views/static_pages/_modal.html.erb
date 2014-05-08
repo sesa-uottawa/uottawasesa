@@ -13,49 +13,48 @@
 	<p style="text-align:center;"> Thank you for joining the SESA! </p>
 <% else %>
 		<p>
-
-			<%= form_tag do %>
+			<%= form_for @club_member, url: {action: "home"} do |f| %>
 
 			<div class="field">
-				<%= label_tag :first_name, "First Name" %>
-				<%= text_field_tag :first_name %><br>
+				<%= f.label :first_name, "First Name" %>
+				<%= f.text_field :first_name %><br>
 			</div>
 
 			<div class="field">
-				<%= label_tag :last_name, "Last Name" %>
-				<%= text_field_tag :last_name %><br>
+				<%= f.label :last_name, "Last Name" %>
+				<%= f.text_field :last_name %><br>
 			</div>
 
 			<div class="field">
-				<%= label_tag :email, "E-mail Address" %>
-				<%= text_field_tag :email %><br>
+				<%= f.label :email, "E-mail Address" %>
+				<%= f.text_field :email %><br>
 			</div>
 
 			<div class="field">
-				<%= label_tag :major, "Major or Specialization" %>
-				<%= text_field_tag :major %><br>
-			</div>
-
-
-			<div class="field">
-				<%= label_tag :commitment, "Level of commitment(#hours/weeks)" %>
-				<%= text_area_tag :commitment %><br>
+				<%= f.label :major, "Major or Specialization" %>
+				<%= f.text_field :major %><br>
 			</div>
 
 
 			<div class="field">
-				<%= label_tag :why_join, "Why would you want to be a part of SESA" %>
-				<%= text_area_tag :why_join %><br>
+				<%= f.label :commitment, "Level of commitment(#hours/weeks)" %>
+				<%= f.text_area :commitment %><br>
 			</div>
 
 
 			<div class="field">
-				<%= label_tag :goal, "What goals would you like to achieve while working with SESA" %>
-				<%= text_area_tag :goal %><br>
+				<%= f.label :why_join, "Why would you want to be a part of SESA" %>
+				<%= f.text_area :why_join %><br>
+			</div>
+
+
+			<div class="field">
+				<%= f.label :goal, "What goals would you like to achieve while working with SESA" %>
+				<%= f.text_area :goal %><br>
 			</div>
 
 			<div class="field" >
-				<%= submit_tag "Join the SESA"%>
+				<%= f.submit "Join the SESA"%>
 			</div>
 
 			<% end %>

@@ -14,11 +14,10 @@ module ApplicationHelper
 	end
 	
 	def has_signature(signature)
-		by = "by"
 		if signature.empty?
 			#do nothing
 		else
-			"#{by} #{signature}"
+			"by #{signature}"
 		end
 	end
 
