@@ -1,14 +1,15 @@
 class StaticPagesController < ApplicationController
   def home
+    
+    @club_member = ClubMember.new
 
-  		if @club_member.nil?
-    		@club_member = ClubMember.new
-    	end
-    	
-		if request.post? 
+  end  
+
+  def modal 
 
 			if params['message'].nil?
-				# Send the e-mail
+				@club_member = ClubMember.new(club_member_params)
+
 				first_name = @club_member.first_name
 				last_name = @club_member.last_name
 				email = @club_member.email
@@ -17,10 +18,11 @@ class StaticPagesController < ApplicationController
 				why_join = @club_member.why_join
 				goal = @club_member.goal
 				UserMailer.new_member_confirmation(email, first_name, last_name).deliver
-				@club_member = ClubMember.new(club_member_params)
-				@club_member.save
+				
+				if @club_member.save
 				@success_join = true
-
+				redirect_to root_path
+				end
 			else	
 				# Send the e-mail
 				first_name = params['first_name']
@@ -29,39 +31,13 @@ class StaticPagesController < ApplicationController
 				message = params['message']
 				UserMailer.contact_confirmation(email, first_name, last_name, message).deliver
 				@success_contact = true
+				redirect_to root_path
 			end
-		end
-	end  
-
+	
+  end
 
   def meet
   	@club_member = ClubMember.new
-
-		if request.post? 
-
-			if params['message'] == nil
-				# Send the e-mail
-				first_name = params['first_name']
-				last_name = params['last_name']
-				email = params['email']
-				faculty = params['faculty']
-				commitment = params['commitment']
-				why_join = params['why_join']
-				goal = params['goal']
-				UserMailer.new_member_confirmation(email, first_name, last_name).deliver
-				@club_member = ClubMember.new(club_member_params)
-				@club_member.save
-				@success_join = true
-			else	
-				# Send the e-mail
-				first_name = params['first_name']
-				last_name = params['last_name']
-				email = params['email']
-				message = params['message']
-				UserMailer.contact_confirmation(email, first_name, last_name, message).deliver
-				@success_contact = true
-			end
-		end
   end
 
 	private

@@ -2,7 +2,7 @@ Uottawasesa::Application.routes.draw do
 
   root "static_pages#home"
 
-  post "/" => "static_pages#home"
+  post "/" => "static_pages#modal"
   get "/meet" => "static_pages#meet"
   post "/contact" => "static_pages#contact"
 
