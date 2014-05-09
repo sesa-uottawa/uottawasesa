@@ -1,11 +1,13 @@
 class StaticPagesController < ApplicationController
   def home
 
-    	@club_member = ClubMember.new
-
+  		if @club_member.nil?
+    		@club_member = ClubMember.new
+    	end
+    	
 		if request.post? 
 
-			if params['message'] == nil
+			if params['message'].nil?
 				# Send the e-mail
 				first_name = @club_member.first_name
 				last_name = @club_member.last_name
