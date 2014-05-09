@@ -10,7 +10,7 @@ class StaticPagesController < ApplicationController
 				first_name = @club_member.first_name
 				last_name = @club_member.last_name
 				email = @club_member.email
-				faculty = @club_member.faculty
+				major = @club_member.major
 				commitment = @club_member.commitment
 				why_join = @club_member.why_join
 				goal = @club_member.goal
