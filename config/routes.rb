@@ -4,7 +4,6 @@ Uottawasesa::Application.routes.draw do
 
   post "/" => "static_pages#home"
   get "/meet" => "static_pages#meet"
-  get "/contact" => "static_pages#contact"
   post "/contact" => "static_pages#contact"
 
   

@@ -4,38 +4,62 @@ class StaticPagesController < ApplicationController
     	@club_member = ClubMember.new
 
 		if request.post? 
-			# Send the e-mail
-			first_name = params['first_name']
-			last_name = params['last_name']
-			email = params['email']
-			faculty = params['faculty']
-			commitment = params['commitment']
-			why_join = params['why_join']
-			goal = params['goal']
-			UserMailer.new_member_confirmation(email, first_name, last_name).deliver
-			@club_member = ClubMember.new(club_member_params)
-			@club_member.save
-			@success = true
+
+			if params['message'] == nil
+				# Send the e-mail
+				first_name = @club_member.first_name
+				last_name = @club_member.last_name
+				email = @club_member.email
+				faculty = @club_member.faculty
+				commitment = @club_member.commitment
+				why_join = @club_member.why_join
+				goal = @club_member.goal
+				UserMailer.new_member_confirmation(email, first_name, last_name).deliver
+				@club_member = ClubMember.new(club_member_params)
+				@club_member.save
+				@success_join = true
+
+			else	
+				# Send the e-mail
+				first_name = params['first_name']
+				last_name = params['last_name']
+				email = params['email']
+				message = params['message']
+				UserMailer.contact_confirmation(email, first_name, last_name, message).deliver
+				@success_contact = true
+			end
 		end
 	end  
-
-  def contact
-  	if request.post? 
-			# Send the e-mail
-			first_name = params['first_name']
-			last_name = params['last_name']
-			email = params['email']
-			message = params['message']
-		UserMailer.contact_confirmation(email, first_name, last_name, message).deliver
-			@success = true
-
-		end
-
-  end
 
 
   def meet
   	@club_member = ClubMember.new
+
+		if request.post? 
+
+			if params['message'] == nil
+				# Send the e-mail
+				first_name = params['first_name']
+				last_name = params['last_name']
+				email = params['email']
+				faculty = params['faculty']
+				commitment = params['commitment']
+				why_join = params['why_join']
+				goal = params['goal']
+				UserMailer.new_member_confirmation(email, first_name, last_name).deliver
+				@club_member = ClubMember.new(club_member_params)
+				@club_member.save
+				@success_join = true
+			else	
+				# Send the e-mail
+				first_name = params['first_name']
+				last_name = params['last_name']
+				email = params['email']
+				message = params['message']
+				UserMailer.contact_confirmation(email, first_name, last_name, message).deliver
+				@success_contact = true
+			end
+		end
   end
 
 	private

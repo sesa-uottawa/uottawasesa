@@ -1,4 +1,4 @@
-<div class="modal hide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:2%; bottom:1%;">
+<div class="modal hide" id="join_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:2%; bottom:1%;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -9,7 +9,7 @@
         
 <div class="form">
 
-<% if @success %>
+<% if @success_join %>
 	<p style="text-align:center;"> Thank you for joining the SESA! </p>
 <% else %>
 		<p>
@@ -52,7 +52,7 @@
 				<%= f.label :goal, "What goals would you like to achieve while working with SESA" %>
 				<%= f.text_area :goal %><br>
 			</div>
-
+				
 			<div class="field" >
 				<%= f.submit "Join the SESA"%>
 			</div>
