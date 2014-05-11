@@ -13,7 +13,7 @@
 <% else %>
 <p>
 
-	<%= form_tag do %>
+	<%= form_tag "/" do %>
 
 	<div class="field">
 		<%= label_tag :first_name, "First Name" %>
@@ -34,7 +34,6 @@
 		<%= label_tag :message %>
 		<%= text_area_tag :message %><br>
 	</div>
-	<br>
 
 	<div class="field">
 		<%= submit_tag "Submit" %>

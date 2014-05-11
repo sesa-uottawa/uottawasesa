@@ -13,7 +13,7 @@
 	<p style="text-align:center;"> Thank you for joining the SESA! </p>
 <% else %>
 		<p>
-			<%= form_for @club_member, url: {action: "modal"} do |f| %>
+			<%= form_for @club_member, url: {controller: "static_pages", action: "modal"} do |f| %>
 
 			<div class="field">
 				<%= f.label :first_name, "First Name" %>

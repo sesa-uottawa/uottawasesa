@@ -1,0 +1,32 @@
+<% provide(:title, 'Exam Archive') %>
+
+<div id="exam-container">
+
+	<div id="opening-text">
+		EXAM ARCHIVE
+	</div>
+
+	<div id="inner-exam-container">	
+		<div id="opening-statement-exam-archive">
+		Exams to courses taken in the Software Engineering Program at the University of Ottawa
+		</div>
+			<% @exam_archive.all_course_name.each do | course_name | %>
+			<div class="exam_folder">
+				<div class="course_name"><%= course_name %></div>
+				<div class="lowering-icon">
+					<%= image_tag "glyphicons_432_plus.png", size: "25x25"%>
+				</div>
+				<div class="highering-icon">
+					<%= image_tag "glyphicons_433_minus.png", size: "25x25"%>
+				</div>
+				<div class="exams">
+					<% @exam_archive.all_exams_for_a_course(course_name).each do | exam | %>
+					<div class="exam-line"><%= exam %></div>
+					<% end %>
+				</div>
+			</div>
+			<% end %>
+	<%= link_to "Add Exam", new_exam_archive_path %>		
+	</div>
+
+</div>

@@ -109,6 +109,7 @@ a.menu-link {
 /* Footer Partial SCSS*/
 
 #outter-footer-container {
+	position: block;
 	height: 35px;
 	width: 100%;
 	background-color: #111;
@@ -139,4 +140,5 @@ a.menu-link {
 
 form {
 	text-align: left;
+	color: #222;
 }

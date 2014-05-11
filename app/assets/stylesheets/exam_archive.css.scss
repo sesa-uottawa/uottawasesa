@@ -1,0 +1,71 @@
+@-webkit-keyframes slidedown { 100% { display: table-row; } }
+@keyframes slidedown { 100% { display: table-row; } }
+
+#exam-container {
+	height: 100%;
+	width: 100%;
+	background-image: url("blue-2.png");
+  	background-repeat: repeat;
+}
+
+#inner-exam-container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#opening-statement-exam-archive {
+	text-align: center;
+	font-size: 1em;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 50px auto;
+	color: #fff;
+}
+
+.exam_folder {
+	display: table;
+	height: 45px;
+	width: 980px;
+	background-image: url("beige-2.png");
+  	background-repeat: repeat;
+  	border: 1px solid #000;
+	font-size: 1.5em;
+	color: #111;
+	position: relative;
+	vertical-align: middle;
+	line-height: 55px;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+
+.course_name {
+	display: table-cell;
+	white-space: nowrap;
+	padding-left: 30px;
+	padding-right: 3px;
+}
+
+.exams {
+	display: none;
+	width: 980px;
+}
+
+.exam-line {
+	font-size: 0.8em;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 50px;
+	font-family: "Myriad Pro";
+}
+
+.lowering-icon {
+	display: table-cell;
+	white-space: nowrap;
+	width: 2.5em;
+}	
+
+.highering-icon {
+	display: table-cell;
+	white-space: nowrap;
+	width: 2.5em;
+	display: none;
+}	

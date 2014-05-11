@@ -1,11 +1,14 @@
 Uottawasesa::Application.routes.draw do
 
+
   root "static_pages#home"
+
 
   post "/" => "static_pages#modal"
   get "/meet" => "static_pages#meet"
   post "/contact" => "static_pages#contact"
 
+  resources :exam_archive
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
