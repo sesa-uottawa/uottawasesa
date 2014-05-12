@@ -3,6 +3,8 @@ class ExamArchive < ActiveRecord::Base
 attr_accessible :course_name, :exam, :exam_year, :season
 has_attached_file :exam,
 				  :storage => :s3,
+				  :region => 'us-west-2',
+				  :s3_host_name => 's3-us-west-2.amazonaws.com',
 				  :s3_credentials => Proc.new{|a| a.instance.s3_credentials }
 
 
@@ -26,6 +28,7 @@ def all_course_name
 	return arr
 end
 
+
 def all_exams_for_a_course(course_name_temp)
 
 	arr_of_exams = Array.new
@@ -45,6 +48,20 @@ def all_exams_for_a_course(course_name_temp)
 	end
 
 	return arr.sort
+end
+
+def inst_url(course_name_temp, year_season)
+	year_season_arr = year_season.split 
+	year = year_season_arr.at(0)
+	season1 = year_season_arr.at(1)
+	exam_archive = ExamArchive.all
+
+	exam_archive.each do | examarc |
+		if((examarc.course_name.eql?(course_name_temp))&&(examarc.exam_year.eql?(year.to_i))&&(examarc.season.eql?(season1)))
+			  return examarc.exam.url
+		end
+	end
+
 end
 
 validates_attachment_content_type :exam, :content_type => ['application/pdf', 'application/msword', 'text/plain']
