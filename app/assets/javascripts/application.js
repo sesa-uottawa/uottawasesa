@@ -37,6 +37,7 @@ function start(){
 			$("header .row").css({'opacity' : '0'});
 			$("header").css({'background-color' : 'initial'});
 			$("header").css({'position' : 'absolute'});
+			$("header .row").css({'display' : 'none'});
 			$(".hamburger").css({'position' : 'absolute'});
 			$(".hamburger").css({ 'display' : 'block' });
 			$("header").css({'height' : '0px'});
@@ -48,6 +49,7 @@ function start(){
 				$(".hamburger path:nth-child(3)").css({"transform" : "matrix(0.7071, -0.7071, 0.7071, 0.7071, -10, 8)"});
 				$("header").css({'background-color' : '#eee'});
 				$("header").css({'position' : 'relative'});
+				$("header .row").css({'display' : 'block'});
 				$("header").css({'height' : '490px'});
 				$("header .row").delay(100).animate({ 'opacity' : '1' }, 250);
 			}else{
@@ -57,6 +59,7 @@ function start(){
 				$(".hamburger path:nth-child(3)").css({"transform" : "matrix(1, 0, 0, 1, 0, 0)"});
 				$("header").css({'position' : 'absolute'});
 				$("header .row").animate({ 'opacity' : '0' }, 50);
+				$("header .row").css({'display' : 'none'});
 				$("header").css({'background-color' : 'initial'});
 			}
 			oddClick = !oddClick;
@@ -67,6 +70,7 @@ function start(){
 		$("header").css({'position' : 'relative'});
 		$("header").css({'background-color' : '#eee'});
 		$("header .row").css({'opacity' : '1'});
+		$("header .row").css({'display' : 'block'});
 		$(".hamburger path:nth-child(1)").css({"transform" : "matrix(1, 0, 0, 1, 0, 0)"});
 		$(".hamburger path:nth-child(2)").css({"opacity" : "1"});
 		$(".hamburger path:nth-child(3)").css({"transform" : "matrix(1, 0, 0, 1, 0, 0)"});
