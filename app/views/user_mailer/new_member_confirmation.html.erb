@@ -1,19 +1,12 @@
-<p>
-	Dear <%= @first_name %>, 
+<p style="	font: 400 1.5em 'Open Sans', sans-serif;color: #333;letter-spacing: 1px;">
+	Thanks for joining SESA <%= @first_name %>!
 </p>
 
-<p>
-	Thank you for joining the SESA! We look forward to meeting you and hope to see you at the next event! Visit our <%= link_to "site", "#{root_url}"%> to see when it is.
+<p style="	font: 300 1.1em 'Open Sans', sans-serif;color: #555;">
+	 We look forward to meeting you at our next event.
+	 <br><br>
+	 If you want to get involved and help out, you can contact our president directly at hnguy104@uottawa.ca.
+	 <br><br>
+	 Regards,<br>
+	 The SESA team
 </p>
-
-<hr>
-
-This is the information we received:
-<ul>
-	<li>First Name: <%= @first_name %> </li>
-	<li>Last Name: <%= @last_name %> </li>
-	<li>Email: <%= @email %> </li>
-
-</ul>
-
-Visit our site <%= link_to "by clicking here", "#{root_url}"%>

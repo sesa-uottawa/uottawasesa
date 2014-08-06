@@ -1,7 +1,23 @@
-<div id="outter-footer-container">
-	<div id="inner-footer-container">
-		<big data-toggle="modal" data-target="#contact_modal">Contact</big> | <big data-toggle="modal" data-target="#join_modal">Join</big>
-		<%= render 'layouts/join_modal' %>
-		<%= render 'layouts/contact_modal' %>
+<footer><br>
+	<h1>Built &amp; deployed with creativity, passion and...</h1><br><br>
+	<div class="row row1">
+		<div class="small-12 medium-4 columns">
+			<%= link_to(image_tag('rails.png', size: '150x150', alt: 'Ruby Logo'), "http://rubyonrails.org/") %><br> 
+			<%= link_to 'Rails', "http://rubyonrails.org/", class: 'rails-logo' %>
+		</div>
+		<div class="small-12 medium-4 columns">
+			<%= link_to(image_tag('heroku.png', size: '150x150', alt: 'Heroku Logo'), "https://www.heroku.com/") %><br> 
+			<%= link_to 'Heroku', "https://www.heroku.com/", class: 'heroku-logo' %>
+		</div>
+		<div class="small-12 medium-4 columns">
+			<%= link_to(image_tag('foundation.svg', size: '150x150', alt: 'Foundation Logo'), "http://foundation.zurb.com/") %><br> 
+			<%= link_to 'Foundation', "http://foundation.zurb.com/", class: 'foundation-logo' %>
+		</div>
 	</div>
-</div>
+	<br><br>
+	<div class="row row2" style="max-width: 100rem;">
+		<div class="small-12 columns sign">
+			Built by <%= link_to 'Menelik Tucker', 'https://github.com/mtuck063' %>
+		</div>
+	</div>
+</footer>

@@ -28,12 +28,12 @@ ActiveRecord::Schema.define(version: 20140510044024) do
 
   create_table "exam_archives", force: true do |t|
     t.string   "course_name"
+    t.integer  "exam_year"
     t.string   "season"
     t.string   "exam_file_name"
     t.string   "exam_content_type"
     t.integer  "exam_file_size"
     t.datetime "exam_updated_at"
-    t.integer  "exam_year"
   end
 
 end

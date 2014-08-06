@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <%= favicon_link_tag 'Association_Logo.png' %>
+    <%= favicon_link_tag 's.gif' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <%= render 'layouts/shim' %>
   </head>
   <body>
@@ -15,6 +17,7 @@
     <%= yield %>
 
     <%= render 'layouts/footer'%>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   </body>
 
 </html>

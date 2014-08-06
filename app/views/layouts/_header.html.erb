@@ -1,18 +1,35 @@
+<header>
+	<div class="row" style="max-width: 80rem; height: 70px;">
+		<div class="medium-12 large-2 columns">
+			<%= link_to 'SESA', root_path %>
+		</div>
+		<div class="medium-12 large-2 columns">
+			<%= link_to 'Our Mission', root_path+'#home-container-3'%>
+		</div>
+		<div class="medium-12 large-2 columns">
+			<%= link_to 'Team Awesome', root_path+'#home-container-4' %>
+		</div>
+		<div class="medium-12 large-2 columns">
+			<%= link_to 'First Year Advice','#' %>
+		</div>
+		<div class="medium-12 large-2 columns">
+			<%= link_to 'Events','#' %>
+		</div>
+		<div class="medium-12 large-1 columns">
+			<%= link_to(image_tag("Twitter_bird_icon.png", size:"40x40"), "https://twitter.com/uOttawaSESA")%>
+		</div>
+		<div class="medium-12 large-1 columns">
+			<%= link_to(image_tag("facebook-icon.png", size:"40x40"), "https://t.co/PuWQ8jANwD")%>
+		</div>
+	</div>
+	<svg role="navigation" class="hamburger" width="32" height="32" viewBox="0 0 46 30" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                <path fill="#aaa" d="M1,0h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1C0.4,6,0,5.6,0,5V1C0,0.4,0.4,0,1,0z" style="transform: matrix(1, 0, 0, 1, 0, 0);"></path>
+                <path fill="#aaa" d="M1,12h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1c-0.6,0-1-0.4-1-1v-4C0,12.4,0.4,12,1,12z" style="opacity: 1;"></path>
+                <path fill="#aaa" d="M1,24h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1c-0.6,0-1-0.4-1-1v-4C0,24.4,0.4,24,1,24z" style="transform: matrix(1, 0, 0, 1, 0, 0);"></path>
+     </svg>
+     <svg role="navigation" class="ex" width="32" height="32" viewBox="0 0 46 30" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                <path fill="#aaa" d="M1,0h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1C0.4,6,0,5.6,0,5V1C0,0.4,0.4,0,1,0z" style="transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 10, -7);"></path>
+                <path fill="#aaa" d="M1,24h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1c-0.6,0-1-0.4-1-1v-4C0,24.4,0.4,24,1,24z" style="transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, -10, 8);"></path>
+     </svg>
 
-    <div class="menu">  
-      <%= image_tag "menu.png", class: "menu-icon", alt: "menu icon"%>
-    </div>
-    <div class="menu-box">
-      
-        <%= link_to "HOME",   root_path, class: "menu-link" %>
-        <%= link_to "FIRST YEAR TIPS",   '#' , class: "menu-link" %>
-        <%= link_to "EXEC MEMBERS",   meet_path, class: "menu-link" %>
-        <%= link_to "EXAM ARCHIVE",   exam_archive_index_path , class: "menu-link" %>
-          <%= link_to(image_tag("Twitter_bird_icon.png", size:"40x40"), "https://twitter.com/uOttawaSESA", class: "social-media-icon")%>
-          <%= link_to(image_tag("facebook-icon.png", size:"40x40"), "https://t.co/PuWQ8jANwD", 
-            class: "social-media-icon")%>
-      
-    </div>
-    <div class="close-menu-box">
-      <small>CLOSE</small> 
-    </div>
+</header>

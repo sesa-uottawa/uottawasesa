@@ -1,0 +1,66 @@
+footer{
+	background-color: #111;
+	color: #777;
+	text-transform: uppercase;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+footer h1{
+	margin-top: 0;
+	color: #eee;
+	font-weight: 300;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.sign {
+	text-align: left;
+	font-size: 0.7em;
+
+	& a{
+	color: #aaa;
+	}
+}
+
+footer .small-12.medium-4.columns{
+	letter-spacing: 3px;
+	color: #eee;
+	font-size: 1.2em;
+	-webkit-transition: 250ms linear; 
+    -moz-transition: 250ms linear;
+    -o-transition: 250ms linear;
+    transition: 250ms linear;
+
+	&:hover{
+		opacity: 0.7;
+	}
+}
+
+footer .small-12.medium-4.columns a{
+	display: block;
+	-webkit-transition: 250ms linear; 
+    -moz-transition: 250ms linear;
+    -o-transition: 250ms linear;
+    transition: 250ms linear;
+
+}
+
+footer .columns {
+	padding: 1rem;
+}
+
+footer img{
+	height: 150px;
+}
+
+.rails-logo{
+	color: #d90000;
+}
+
+.heroku-logo{
+	color: #5d00c5;
+}
+
+.foundation-logo{
+	color: #73adc0;
+}

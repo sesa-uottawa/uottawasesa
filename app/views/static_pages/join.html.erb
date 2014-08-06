@@ -1,0 +1,68 @@
+<div class="form">
+	<div class="row" style="max-width: 480px; ">
+		<%= form_for @club_member, url: {controller: "static_pages", action: "create"} do |f| %>
+
+		<% if flash[:successful_join] %>
+			<div id="successful_notice">
+				<%= flash[:successful_join] %>
+					<span id="close_successful_notice">&times;</span>
+			</div>
+		<% end %>
+
+		<% if @club_member.errors.any? %>
+		    <div id="error_explanation" style="text-align: center;">
+		      <h2 style=" font-size: 1.2rem; color: #a94442;">Darn, you filled some thing(s) incorrectly</h2>
+
+		      <ul>
+		      <% @club_member.errors.full_messages.each do |msg| %>
+		        <li style=" color: #a94442; opacity: 0.8; display: block;"> - <%= msg %></li>
+		      <% end %>
+		      </ul>
+		    </div>
+		<% end %>
+
+		<div class="field">
+			<%= f.label :first_name, "First Name *" %>
+			<%= f.text_field :first_name, autofocus: true %>
+		</div>
+
+		<div class="field">
+			<%= f.label :last_name, "Last Name *" %>
+			<%= f.text_field :last_name %>
+		</div>
+
+		<div class="field">
+			<%= f.label :email, "E-mail *" %>
+			<%= f.email_field :email %>
+		</div>
+
+		<div class="field">
+			<%= f.label :major, "Major or Specialization" %>
+			<%= f.text_field :major %>
+		</div>
+
+
+		<div class="field">
+			<%= f.label :commitment, "Level of commitment(#hours/weeks)" %>
+			<%= f.text_area :commitment, rows: 3 %>
+		</div>
+
+
+		<div class="field">
+			<%= f.label :why_join, "Why would you want to be a part of SESA" %>
+			<%= f.text_area :why_join, rows: 3 %>
+		</div>
+
+
+		<div class="field">
+			<%= f.label :goal, "What goals would you like to achieve while working with SESA" %>
+			<%= f.text_area :goal, rows: 3 %>
+		</div>
+			
+		<div class="field" >
+			<%= f.submit "Join the SESA", class: 'signup'%>
+		</div>
+
+		<% end %>
+	</div>
+</div>

@@ -4,9 +4,8 @@ Uottawasesa::Application.routes.draw do
   root "static_pages#home"
 
 
-  post "/" => "static_pages#modal"
-  get "/meet" => "static_pages#meet"
-  post "/contact" => "static_pages#contact"
+  get "/join" => "static_pages#join", as: 'join'
+  post "/join" => "static_pages#create"
 
   resources :exam_archive
   

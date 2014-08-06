@@ -9,7 +9,17 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require foundation_and_overrides
  *= require_tree .
  */
+
+
+ body{
+	margin: 0;
+	overflow-x: hidden;
+}
+
+
+
 
 
