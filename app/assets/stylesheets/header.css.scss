@@ -41,29 +41,31 @@ header a {
 	right: 20px;
 	top: 10px;
 	cursor: pointer;
-	-webkit-transition: 250ms linear; 
-    -moz-transition: 250ms linear;
-    -o-transition: 250ms linear;
-    transition: 250ms linear;
+	-webkit-transition: 250ms ; 
+    -moz-transition: 250ms ;
+    -o-transition: 250ms ;
+    transition: 250ms ;
 
-    &:hover{
-    	width: 40px;
-    	height: 40px;
-    }
+	&:hover{
+		width: 36px;
+		height: 36px;
+	}
 }
 
-.ex{
-	position: absolute;
-	right: 0;
-	top: 0;
-	cursor: pointer;
-	-webkit-transition: 250ms linear; 
-    -moz-transition: 250ms linear;
-    -o-transition: 250ms linear;
-    transition: 250ms linear;
 
-    &:hover{
-    	width: 40px;
-    	height: 40px;
-    }
+.hamburger path:nth-child(1){
+	-webkit-transition: 250ms ; 
+    -moz-transition: 250ms ;
+    -o-transition: 250ms ;
+    transition: 250ms ;
 }
+
+.hamburger path:nth-child(3){
+	-webkit-transition: 250ms ; 
+    -moz-transition: 250ms ;
+    -o-transition: 250ms ;
+    transition: 250ms ;
+}
+
+
+
