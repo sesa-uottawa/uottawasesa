@@ -79,6 +79,10 @@ hr {
 	min-height: 480px;
 }
 
+#home-container-3 hr {
+	width: 60%;
+}
+
 #home-container-3 > .text-container > p {
 	color: #fff;
 	min-width: 290px;
@@ -150,8 +154,9 @@ hr {
 }
 
 #home-container-5{
-	overflow: hidden;
 	position: relative;
+	overflow: hidden;
+	top: 1px;
 }
 
 #home-container-5 .text-container {
@@ -174,17 +179,18 @@ hr {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	opacity: 0.85;
 	text-align: center;
 	color: #fff;
-	-webkit-transition: 150ms linear; 
-    -moz-transition: 150ms linear;
-    -o-transition: 150ms linear;
-    transition: 150ms linear;
-    overflow: hidden;
+	-webkit-transition: 200ms linear; 
+    -moz-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    transition: 200ms linear;
 
 	&:hover{
-		opacity: 1;
+		-webkit-transform: scale(1.05, 1.05);
+		-moz-transform: scale(1.05, 1.05);
+		-o-transform: scale(1.05, 1.05);
+		transform: scale(1.05, 1.05);
 	}
 
 }
@@ -226,18 +232,19 @@ hr {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	opacity: 0.85;
 	text-align: center;
 	color: #fff;
-	-webkit-transition: 150ms linear; 
-    -moz-transition: 150ms linear;
-    -o-transition: 150ms linear;
-    transition: 150ms linear;
-    overflow: hidden;
+	-webkit-transition: 200ms linear; 
+    -moz-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    transition: 200ms linear;
 	background-color: #000;
 
 	&:hover{
-		opacity: 1;
+		-webkit-transform: scale(1.05, 1.05);
+		-moz-transform: scale(1.05, 1.05);
+		-o-transform: scale(1.05, 1.05);
+		transform: scale(1.05, 1.05);
 	}
 
 }
