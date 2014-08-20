@@ -1,11 +1,11 @@
 header{
 
-height: 70px;
-background-color: #eee;
-z-index: 2;
-line-height: 70px;
-text-align: center;
-letter-spacing: 1px;
+	height: 70px;
+	background-color: #eee;
+	z-index: 2;
+	line-height: 70px;
+	text-align: center;
+	letter-spacing: 1px;
 	-webkit-transition: 250ms linear; 
     -moz-transition: 250ms linear;
     -o-transition: 250ms linear;
@@ -33,6 +33,18 @@ header a {
 	&:hover{
 		color: #990012;
 		background-color: #fff;
+	}
+
+	&:after{
+		color: #333;
+	}
+
+	&:active{
+		color: #333;
+	}
+
+	&:before{
+		color: #333;
 	}
 }
 

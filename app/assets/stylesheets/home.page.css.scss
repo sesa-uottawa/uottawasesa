@@ -38,6 +38,7 @@ hr {
  	background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
  	background-image: -o-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
  	background-image: -moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
+ 	background-image: linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
  	margin: 0 auto 5px;
  	border: 0;
  	height: 2px;
@@ -51,8 +52,6 @@ hr {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	min-height: 360px;
-
-
 }
 
 #home-container-2 > .text-container {
@@ -130,6 +129,7 @@ hr {
 
 #home-container-4 {
 	display: table;
+	margin-bottom: 40px;
 }
 
 #home-container-4 > h1 {
@@ -140,12 +140,15 @@ hr {
 	letter-spacing: 4px;
 }
 
-.small-12.medium-3.columns {
+#home-container-4 .small-12.medium-4.columns {
+	text-align: center;
 	padding: 10px 0; 
 	text-transform: uppercase;
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	color: #555;
 	letter-spacing: 2px;
+	padding: 10px;
+	overflow-wrap: break-word;
 
 	& span{
 		font-size: 1.5em;
@@ -169,30 +172,6 @@ hr {
 		width: 70%;
 		margin: 0 auto;
 	}
-}
-
-#home-container-5 > .row > .small-12.large-6.columns:nth-child(1) {
-	min-height: 480px;
-	background-image: image-url('books.jpg');
-	font-family: 'Raleway', Arial, Helvetica, sans-serif;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	text-align: center;
-	color: #fff;
-	-webkit-transition: 200ms linear; 
-    -moz-transition: 200ms linear;
-    -o-transition: 200ms linear;
-    transition: 200ms linear;
-
-	&:hover{
-		-webkit-transform: scale(1.05, 1.05);
-		-moz-transform: scale(1.05, 1.05);
-		-o-transform: scale(1.05, 1.05);
-		transform: scale(1.05, 1.05);
-	}
-
 }
 
 #home-container-5  h1 {
@@ -222,6 +201,30 @@ hr {
 #home-container-5  a:hover {
 	color: #990012;
 	background-color: #fff;
+}
+
+#home-container-5 > .row > .small-12.large-6.columns:nth-child(1) {
+	min-height: 480px;
+	background-image: image-url('books_v1.jpg');
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	-webkit-transition: 200ms linear; 
+    -moz-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    transition: 200ms linear;
+
+	&:hover{
+		-webkit-transform: scale(1.05, 1.05);
+		-moz-transform: scale(1.05, 1.05);
+		-o-transform: scale(1.05, 1.05);
+		transform: scale(1.05, 1.05);
+	}
+
 }
 
 #home-container-5 > .row > .small-12.large-6.columns:nth-child(2) {

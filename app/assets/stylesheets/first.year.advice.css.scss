@@ -1,0 +1,45 @@
+#fya-container-1{
+	background-image: image-url('books_v2.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;	
+	text-transform: uppercase;
+	min-height: 480px;
+}
+
+#fya-container-1 h1 {
+	width: 100%;
+	font-size: 	5rem;
+	font-weight: 200;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	color: #fff;
+	display: table;
+	top: 0; left: 0; bottom: 0; right: 0;
+	margin: auto;
+	position: absolute;
+}
+
+#fya-container-2{
+	position: relative;	
+	min-height: 480px;
+}
+
+#fya-container-2 .small-12.medium-4.columns{
+
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	font-size: 1.1rem;	
+	& span {
+		font-family: 'Raleway', Arial, Helvetica, sans-serif;
+		color: #990012;
+		font-size: 2rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+}
+
+

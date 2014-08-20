@@ -6,6 +6,8 @@ Uottawasesa::Application.routes.draw do
 
   get "/join" => "static_pages#join", as: 'join'
   post "/join" => "static_pages#create"
+  get "/firstyearadvice" => "static_pages#firstyearadvice", as: 'firstyearadvice'
+  get "/events" => "static_pages#events", as: 'events'
 
   resources :exam_archive
   
