@@ -42,8 +42,7 @@ function start(){
 
 	//HEADER
 
-	if($(window).width() < 1300){
-
+	if(window.innerWidth < 1025){
 			$("header .row").css({'opacity' : '0'});
 			$("header").css({'background-color' : 'initial'});
 			$("header").css({'position' : 'absolute'});

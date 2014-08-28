@@ -15,9 +15,9 @@ class StaticPagesController < ApplicationController
 	@club_member.valid?
 
 	if @club_member.save
-    	flash.now[:successful_join] = "You've successfully joined!"
+    	flash[:successful_join] = "You've successfully joined!"
 		UserMailer.new_member_confirmation(@club_member.email, @club_member.first_name, @club_member.last_name).deliver
-		render 'join'
+		redirect_to join_path
 	else
 		render 'join'
 	end
