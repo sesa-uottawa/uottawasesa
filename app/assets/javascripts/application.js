@@ -128,7 +128,15 @@ function start(){
 	//FIRST YEAR ADVICE CONTAINER 1
 	$("#fya-container-1").css({'height': 0.85*$(window).height() });
 
+	//FIRST YEAR ADVICE CONTAINER 2
+	$('#budgeting').hide();
+	$('.budgeting-button').click( function(){
+		$('#budgeting').fadeTo(1000, 1);
+	});
 
+	$('.hamburger2').click(function(){
+		$('#budgeting').hide();
+	});
 
 	// PAGE JUMPING JAVASCRIPT
 	  $('a[href*=#]:not([href=#])').click(function() {
