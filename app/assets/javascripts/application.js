@@ -35,6 +35,10 @@ function start(){
 	var hash = window.location.hash;
 	var oddClick = true;
 	window.location.hash = "";
+	if( window.location.pathname == "/firstyearadvice.fya" ){
+
+		window.location.pathname = "/firstyearadvice";
+	}
 	
 	$("header, #home-container-1, #home-container-2, #home-container-3, #home-container-4, #home-container-5," 
 		+"#fya-container-1, footer").css({'width': $(window).width() });
@@ -130,12 +134,19 @@ function start(){
 
 	//FIRST YEAR ADVICE CONTAINER 2
 	$('#budgeting').hide();
+	$('#linear-algebra').hide();
 	$('.budgeting-button').click( function(){
 		$('#budgeting').fadeTo(1000, 1);
+	});
+	$('.linear-algebra-button').click( function(){
+		$('#linear-algebra').fadeTo(1000, 1);
 	});
 
 	$('.hamburger2').click(function(){
 		$('#budgeting').hide();
+	});
+	$('.hamburger5').click(function(){
+		$('#linear-algebra').hide();
 	});
 
 	// PAGE JUMPING JAVASCRIPT

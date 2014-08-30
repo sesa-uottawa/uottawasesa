@@ -25,7 +25,6 @@
 
 #fya-container-2{
 	position: relative;	
-	min-height: 480px;
 
 	& .row {
 		font-family: 'Open Sans', sans-serif;
@@ -38,6 +37,14 @@
 			padding: 15px 10px;
 			position: relative;
 		}
+	
+	& hr {
+		background-image: -webkit-linear-gradient(left,rgba(000,000,000,0),rgba(000,000,000,0.25),rgba(000,000,000,0));
+	 	background-image: -o-linear-gradient(left,rgba(000,000,000,0),rgba(000,000,000,0.25),rgba(000,000,000,0));
+	 	background-image: -moz-linear-gradient(left,rgba(000,000,000,0),rgba(000,000,000,0.25),rgba(000,000,000,0));
+	 	background-image: linear-gradient(left,rgba(000,000,000,0),rgba(000,000,000,0.25),rgba(000,000,000,0));
+	}
+
 	}
 }
 
@@ -64,31 +71,76 @@
 	width: 200px;
 	height: 55px;
 	line-height: 55px;
-	margin-top: 15px;
 	text-align: center;
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	border: 1px solid #aaa;
+	margin: 15px auto 0;
 	&:hover{
 		color: #990012;
 	}
 }
 
-.hamburger2 {
+.burger {
 	position: absolute;
 	right: 20px;
 	top: 10px;
 	cursor: pointer;
 
 	& path:nth-child(1){
+		-webkit-transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 10, -7);
+		-moz-transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 10, -7);
+		-o-transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 10, -7);
 		transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 10, -7);
 	}
 
 	& path:nth-child(2){
+		-webkit-transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, -10, 8);
+		-moz-transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, -10, 8);
+		-o-transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, -10, 8);
 		transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, -10, 8);
 	}
 }
+
+#fya-container-3 .row{
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	font-size: 1.1rem;	
+	line-height: 1.2rem;
+}
+
+#fya-container-3 .small-12.medium-4.columns a{
+	color: #333;
+	text-decoration: none;
+	width: 200px;
+	height: 200px;
+	margin-top: 15px;
+	line-height: 20px;
+	text-align: center;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	background-color: #eee;
+	overflow-wrap: break-word;
+		-webkit-transition: 200ms linear; 
+    -moz-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    transition: 200ms linear;
+	&:hover{
+		color: #990012;
+		-webkit-transform: scale(1.05);
+		background-color: #fff;
+		border: 1px solid #aaa;
+
+	}
+}
+
+
 
 
 
