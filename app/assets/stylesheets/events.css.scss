@@ -1,5 +1,5 @@
 #events-container-1{
-	background-image: image-url('books_v2.jpg');
+	background-image: image-url('space.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -24,4 +24,19 @@
 	-moz-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+#events-container-2 .row {
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+	font-size: 1.1rem;	
+	line-height: 1.2rem;
+	min-height: 480px;
+	& span{
+		font-family: 'Raleway', Arial, Helvetica, sans-serif;
+		color: #990012;
+		font-size: 2rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
 }

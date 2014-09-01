@@ -10,7 +10,6 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <%= render 'layouts/shim' %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   </head>
   <body>
     <%= render 'layouts/header' %>
@@ -18,6 +17,7 @@
     <%= yield %>
 
     <%= render 'layouts/footer'%>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   </body>
 
 </html>

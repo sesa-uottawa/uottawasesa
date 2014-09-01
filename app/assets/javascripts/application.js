@@ -146,7 +146,7 @@ function start(){
 	$('#physics').hide();
 	$('#calculus-1').hide();
 	$('#digital-systems').hide();
-	//$('#discrete').hide();
+	$('#discrete').hide();
 	$('#chemistry').hide();
 
 
@@ -201,10 +201,10 @@ function start(){
 		$('#digital-systems').fadeTo(1000, 1);
 	});
 
-	//$('.discrete-button').click( function(){
-	//	$('.course-advice').hide();
-	//	$('#discrete').fadeTo(1000, 1);
-	//});
+	$('.discrete-button').click( function(){
+		$('.course-advice').hide();
+		$('#discrete').fadeTo(1000, 1);
+	});
 
 	$('.chemistry-button').click( function(){
 		$('.course-advice').hide();
@@ -241,9 +241,9 @@ function start(){
 	$('.hamburger12').click(function(){
 		$('#digital-systems').hide();
 	});
-	//$('.hamburger13').click(function(){
-	//	$('#discrete').hide();
-	//});
+	$('.hamburger13').click(function(){
+		$('#discrete').hide();
+	});
 	$('.hamburger14').click(function(){
 		$('#chemistry').hide();
 	});
