@@ -17,10 +17,13 @@
 	text-align: center;
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	color: #fff;
-	display: table;
-	top: 0; left: 0; bottom: 0; right: 0;
-	margin: auto;
 	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 #fya-container-2{
@@ -51,7 +54,7 @@
 #fya-container-2 .medium-12.large-4.columns{
 
 	font-family: 'Open Sans', sans-serif;
-	color: #333;
+	color: #777;
 	font-size: 1.1rem;	
 	line-height: 1.2rem;
 	margin-bottom: 25px;
@@ -110,8 +113,21 @@
 	line-height: 1.2rem;
 }
 
+.general-advice {
+	background-color: #dff0d8; 
+	margin-bottom: 15px; 
+	padding-top: 60px;
+}
+
+.course-advice {
+	background-color: #dff0d8; 
+	margin-bottom: 15px; 
+	padding: 60px 10px 15px; 
+	display: block;
+}
+
 #fya-container-3 .small-12.medium-4.columns a{
-	color: #333;
+	color: #fff;
 	text-decoration: none;
 	width: 200px;
 	height: 200px;
@@ -125,14 +141,14 @@
 	display: flex;
 	justify-content: center; 
 	align-items: center; 
-	background-color: #eee;
+	background-color: #7bc8a4;
 	overflow-wrap: break-word;
 		-webkit-transition: 200ms linear; 
     -moz-transition: 200ms linear;
     -o-transition: 200ms linear;
     transition: 200ms linear;
 	&:hover{
-		color: #990012;
+		color: #7bc8a4;
 		-webkit-transform: scale(1.05);
 		background-color: #fff;
 		border: 1px solid #aaa;

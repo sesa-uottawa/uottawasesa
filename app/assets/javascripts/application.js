@@ -18,6 +18,7 @@
 //= require_tree 
 
 
+$(function(){ $(document).foundation(); });
 
 $(function(){start();});
 
@@ -45,15 +46,15 @@ function start(){
 
 
 	//HEADER
-
 	if(window.innerWidth < 1025){
 			$("header .row").css({'opacity' : '0'});
 			$("header").css({'background-color' : 'initial'});
 			$("header").css({'position' : 'absolute'});
 			$("header .row").css({'display' : 'none'});
-			$(".hamburger").css({'position' : 'absolute'});
+			$(".hamburger").css({'position' : 'fixed'});
 			$(".hamburger").css({ 'display' : 'block' });
 			$("header").css({'height' : '0px'});
+			$('.join').css({'padding-top' : '0' });
 
 		$(".hamburger").click( function(){ 
 			if(oddClick){
@@ -61,7 +62,7 @@ function start(){
 				$(".hamburger path:nth-child(2)").css({"opacity" : "0"});
 				$(".hamburger path:nth-child(3)").css({"transform" : "matrix(0.7071, -0.7071, 0.7071, 0.7071, -10, 8)"});
 				$("header").css({'background-color' : '#eee'});
-				$("header").css({'position' : 'relative'});
+				$("header").css({'position' : 'fixed'});
 				$("header .row").css({'display' : 'block'});
 				$("header").css({'height' : '490px'});
 				$("header .row").delay(100).animate({ 'opacity' : '1' }, 250);
@@ -70,7 +71,7 @@ function start(){
 				$(".hamburger path:nth-child(1)").css({"transform" : "matrix(1, 0, 0, 1, 0, 0)"});
 				$(".hamburger path:nth-child(2)").css({"opacity" : "1"});
 				$(".hamburger path:nth-child(3)").css({"transform" : "matrix(1, 0, 0, 1, 0, 0)"});
-				$("header").css({'position' : 'absolute'});
+				$("header").css({'position' : 'fixed'});
 				$("header .row").animate({ 'opacity' : '0' }, 50);
 				$("header .row").css({'display' : 'none'});
 				$("header").css({'background-color' : 'initial'});
@@ -79,9 +80,10 @@ function start(){
 			return false;
 		 });
 	}else{
+		$('.join').css({'padding-top' : '70px'});
 		$(".hamburger").css({ 'display' : 'none' });
 		$("header").css({'height' : '70px'});
-		$("header").css({'position' : 'relative'});
+		$("header").css({'position' : 'fixed'});
 		$("header").css({'background-color' : '#eee'});
 		$("header .row").css({'opacity' : '1'});
 		$("header .row").css({'display' : 'block'});
@@ -134,19 +136,125 @@ function start(){
 
 	//FIRST YEAR ADVICE CONTAINER 2
 	$('#budgeting').hide();
+	$('#time-management').hide();
+	$('#work-experience').hide();
+
 	$('#linear-algebra').hide();
+	$('#computing-1').hide();
+	$('#computing-2').hide();
+	$('#engineering-mechanics').hide();
+	$('#physics').hide();
+	$('#calculus-1').hide();
+	$('#calculus-2').hide();
+	//$('#digital-systems').hide();
+	//$('#discrete').hide();
+	$('#chemistry').hide();
+
+
 	$('.budgeting-button').click( function(){
+		$('#time-management').hide();
+		$('#work-experience').hide();
 		$('#budgeting').fadeTo(1000, 1);
 	});
+	$('.time-management-button').click( function(){
+		$('#budgeting').hide();
+		$('#work-experience').hide();
+		$('#time-management').fadeTo(1000, 1);
+	});
+	$('.work-experience-button').click( function(){
+		$('#budgeting').hide();
+		$('#time-management').hide();
+		$('#work-experience').fadeTo(1000, 1);
+	});
+
 	$('.linear-algebra-button').click( function(){
+		$('.course-advice').hide();
 		$('#linear-algebra').fadeTo(1000, 1);
+	});
+
+	$('.computing-1-button').click( function(){
+		$('.course-advice').hide();
+		$('#computing-1').fadeTo(1000, 1);
+	});
+
+	$('.computing-2-button').click( function(){
+		$('.course-advice').hide();
+		$('#computing-2').fadeTo(1000, 1);
+	});
+
+	$('.engineering-mechanics-button').click( function(){
+		$('.course-advice').hide();
+		$('#engineering-mechanics').fadeTo(1000, 1);
+	});
+
+	$('.physics-button').click( function(){
+		$('.course-advice').hide();
+		$('#physics').fadeTo(1000, 1);
+	});
+
+	$('.calculus-1-button').click( function(){
+		$('.course-advice').hide();
+		$('#calculus-1').fadeTo(1000, 1);
+	});
+
+	$('.calculus-2-button').click( function(){
+		$('.course-advice').hide();
+		$('#calculus-2').fadeTo(1000, 1);
+	});
+
+	//$('.digital-systems-button').click( function(){
+	//	$('.course-advice').hide();
+	//	$('#digital-systems').fadeTo(1000, 1);
+	//});
+
+	//$('.discrete-button').click( function(){
+	//	$('.course-advice').hide();
+	//	$('#discrete').fadeTo(1000, 1);
+	//});
+
+	$('.chemistry-button').click( function(){
+		$('.course-advice').hide();
+		$('#chemistry').fadeTo(1000, 1);
 	});
 
 	$('.hamburger2').click(function(){
 		$('#budgeting').hide();
 	});
+	$('.hamburger3').click(function(){
+		$('#time-management').hide();
+	});
+	$('.hamburger4').click(function(){
+		$('#work-experience').hide();
+	});
 	$('.hamburger5').click(function(){
 		$('#linear-algebra').hide();
+	});
+	$('.hamburger6').click(function(){
+		$('#computing-1').hide();
+	});
+	$('.hamburger7').click(function(){
+		$('#computing-2').hide();
+	});
+	$('.hamburger8').click(function(){
+		$('#engineering-mechanics').hide();
+	});
+	$('.hamburger9').click(function(){
+		$('#physics').hide();
+	});
+	$('.hamburger10').click(function(){
+		$('#calculus-1').hide();
+	});
+	$('.hamburger11').click(function(){
+		$('#calculus-2').hide();
+	});
+	//$('.hamburger12').click(function(){
+	//	$('#digital-systems').hide();
+	//});
+	//$('.hamburger13').click(function(){
+	//	$('#discrete').hide();
+	//});
+	$('.hamburger14').click(function(){
+		$('#chemistry').hide();
 	});
 
 	// PAGE JUMPING JAVASCRIPT
@@ -155,18 +263,16 @@ function start(){
 	      var target = $(this.hash);
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      if (target.length) {
-	        $('html,body').animate({scrollTop: target.offset().top}, 1000);
-
+	        $('html,body').animate({scrollTop: target.offset().top -75}, 1000);
 	        return false;
 	      }
 	    }
 	  });
   
   if(hash)
-  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top}, 1000);
+  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 75}, 1000);
 
 return false;
 
 };
 
-$(function(){ $(document).foundation(); });
