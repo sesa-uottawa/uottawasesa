@@ -42,7 +42,7 @@ function start(){
 	}
 	
 	$("header, #home-container-1, #home-container-2, #home-container-3, #home-container-4, #home-container-5," 
-		+"#fya-container-1, footer").css({'width': $(window).width() });
+		+"#fya-container-1,#fya-container-2, #fya-container-3, footer").css({'width': $(window).width() });
 
 
 	//HEADER
@@ -145,8 +145,7 @@ function start(){
 	$('#engineering-mechanics').hide();
 	$('#physics').hide();
 	$('#calculus-1').hide();
-	$('#calculus-2').hide();
-	//$('#digital-systems').hide();
+	$('#digital-systems').hide();
 	//$('#discrete').hide();
 	$('#chemistry').hide();
 
@@ -197,15 +196,10 @@ function start(){
 		$('#calculus-1').fadeTo(1000, 1);
 	});
 
-	$('.calculus-2-button').click( function(){
+	$('.digital-systems-button').click( function(){
 		$('.course-advice').hide();
-		$('#calculus-2').fadeTo(1000, 1);
+		$('#digital-systems').fadeTo(1000, 1);
 	});
-
-	//$('.digital-systems-button').click( function(){
-	//	$('.course-advice').hide();
-	//	$('#digital-systems').fadeTo(1000, 1);
-	//});
 
 	//$('.discrete-button').click( function(){
 	//	$('.course-advice').hide();
@@ -244,12 +238,9 @@ function start(){
 	$('.hamburger10').click(function(){
 		$('#calculus-1').hide();
 	});
-	$('.hamburger11').click(function(){
-		$('#calculus-2').hide();
+	$('.hamburger12').click(function(){
+		$('#digital-systems').hide();
 	});
-	//$('.hamburger12').click(function(){
-	//	$('#digital-systems').hide();
-	//});
 	//$('.hamburger13').click(function(){
 	//	$('#discrete').hide();
 	//});
@@ -257,17 +248,26 @@ function start(){
 		$('#chemistry').hide();
 	});
 
+	// EVENTS PAGE
+	$("#events-container-1").css({'height': 0.85*$(window).height() });
+
+
 	// PAGE JUMPING JAVASCRIPT
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({scrollTop: target.offset().top -75}, 1000);
-	        return false;
-	      }
-	    }
-	  });
+
+	$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top -70
+            }, 1000);
+            return false;
+        }
+    }
+});
   
   if(hash)
   	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 75}, 1000);

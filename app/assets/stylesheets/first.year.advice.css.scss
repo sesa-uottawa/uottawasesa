@@ -138,24 +138,31 @@
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	margin: 10px auto;
-	display: flex;
-	justify-content: center; 
-	align-items: center; 
+	display: block;
 	background-color: #7bc8a4;
 	overflow-wrap: break-word;
-		-webkit-transition: 200ms linear; 
+	-webkit-transition: 200ms linear; 
     -moz-transition: 200ms linear;
     -o-transition: 200ms linear;
     transition: 200ms linear;
 	&:hover{
 		color: #7bc8a4;
 		-webkit-transform: scale(1.05);
+		-moz-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		transform: scale(1.05);
 		background-color: #fff;
 		border: 1px solid #aaa;
 
 	}
 }
 
+.center-text {
+	display: table-cell;
+	vertical-align: middle;
+	width: 200px;
+	height: 200px;
+}
 
 
 

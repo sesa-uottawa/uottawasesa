@@ -1,0 +1,27 @@
+#events-container-1{
+	background-image: image-url('books_v2.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;	
+	text-transform: uppercase;
+	min-height: 480px;
+}
+
+#events-container-1 h1 {
+	width: 100%;
+	font-size: 	5rem;
+	font-weight: 200;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
