@@ -1,4 +1,4 @@
-#fya-container-1{
+	#fya-container-1{
 	background-image: image-url('books_v2.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -111,6 +111,16 @@
 	color: #333;
 	font-size: 1.1rem;	
 	line-height: 1.2rem;
+
+	& > .title {
+		display: block;
+		color: #3c763d;
+		text-transform: uppercase;
+		font-family: 'Raleway', Arial, Helvetica, sans-serif;
+		font-size: 2rem;
+		text-align: center;
+		padding: 15px 0;
+	}
 }
 
 .general-advice {

@@ -253,6 +253,7 @@ function start(){
 
 
 	// PAGE JUMPING JAVASCRIPT
+
 	$('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
@@ -261,7 +262,7 @@ function start(){
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
            if (target.length) {
              $('html,body').animate({
-                 scrollTop: target.offset().top -70
+                 scrollTop: target.offset().top -75
             }, 1000);
             return false;
         }
