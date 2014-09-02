@@ -30,6 +30,10 @@ class StaticPagesController < ApplicationController
   def events
 
   end
+
+  def members
+    @club_members = ClubMember.all
+  end
   
 	private
 	    # Never trust parameters from the scary internet, only allow the white list through.

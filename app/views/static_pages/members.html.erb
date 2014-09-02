@@ -1,0 +1,25 @@
+
+<table style="padding-top: 80px;">
+	<tr>
+		<td>First Name</td>
+		<td>Last Name</td>
+		<td>Email</td>
+		<td>Major</td>
+		<td>Commitment</td>
+		<td>Why Join</td>
+		<td>Goal</td>
+
+	</tr>
+	<% @club_members.each do |club_member| %>
+
+	<tr>
+		<td><%= club_member.first_name %></td>
+		<td><%= club_member.last_name %></td>
+		<td><%= club_member.email %></td>
+		<td><%= club_member.major %></td>
+		<td><%= club_member.commitment %></td>
+		<td><%= club_member.why_join %></td>
+		<td><%= club_member.goal %></td>
+	</tr>
+	<% end %>
+</table>
