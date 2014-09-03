@@ -274,11 +274,14 @@ function start(){
 	             $('body').animate({
 	                 scrollTop: target.offset().top
 	            }, 1000, function(){ console.log("Callback animate"); });
+	             console.log("Callback function"); 
          	}
          	else{
 	             $('body').animate({
 	                 scrollTop: target.offset().top -75
-	            }, 1000, function(){ console.log("Callback animate"); });	
+	            }, 1000, function(){ console.log("Callback animate"); });
+	             console.log("Callback function"); 
+	            	
          	}
             return false;
         }
