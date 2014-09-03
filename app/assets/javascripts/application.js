@@ -20,7 +20,8 @@
 
 $(function(){ $(document).foundation(); });
 
-$(function(){start();});
+$(document).ready(function(){ start(); });
+// $(function(){start();})
 
 window.onresize = function() {
 	start(); 
@@ -287,7 +288,6 @@ function start(){
   if(hash){
     if(window.innerWidth < 1025) {
 	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top}, 1000);
-
 	}else{
 	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 75}, 1000);
 	}
