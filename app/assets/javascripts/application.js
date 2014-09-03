@@ -271,17 +271,14 @@ function start(){
 				$("header .row").animate({ 'opacity' : '0' }, 50);
 				$("header .row").css({'display' : 'none'});
 				$("header").css({'background-color' : 'initial'});
-	             $('html,body').animate({
+	             $('body').animate({
 	                 scrollTop: target.offset().top
-	            }, 1000);
-	            console.debug("After anime");
+	            }, 1000, function(){ console.log("Callback animate"); });
          	}
          	else{
-	             $('html,body').animate({
+	             $('body').animate({
 	                 scrollTop: target.offset().top -75
-	            }, 1000);	
-	            console.debug("After anime");
-	             
+	            }, 1000, function(){ console.log("Callback animate"); });	
          	}
             return false;
         }
