@@ -274,11 +274,14 @@ function start(){
 	             $('html,body').animate({
 	                 scrollTop: target.offset().top
 	            }, 1000);
+	            console.debug("After anime");
          	}
          	else{
 	             $('html,body').animate({
 	                 scrollTop: target.offset().top -75
 	            }, 1000);	
+	            console.debug("After anime");
+	             
          	}
             return false;
         }
