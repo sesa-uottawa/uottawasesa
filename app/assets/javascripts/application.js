@@ -29,12 +29,10 @@ window.onresize = function() {
 	$(".hamburger path:nth-child(2)").css({"opacity" : "1"});
 	$(".hamburger path:nth-child(3)").css({"transform" : "matrix(1, 0, 0, 1, 0, 0)"});
 	oddClick = true;
-	console.log('resized');
 	return false;
 };
 
 function start(){
-	console.log('start');
 	
 	var hash = window.location.hash;
 	var oddClick = true;
@@ -270,9 +268,7 @@ return false;
 
 $(function(){ 
 	// PAGE JUMPING JAVASCRIPT
-	var count = 1;
 	$('a[href*=#]:not([href=#])').click(function() {
-	alert(count++);
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         && location.hostname == this.hostname) {
         var target = $(this.hash);
