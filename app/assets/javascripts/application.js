@@ -255,6 +255,20 @@ function start(){
 	$("#events-container-1").css({'height': 0.85*$(window).height() });
 
 
+
+  
+  if(hash){
+    if(window.innerWidth < 1025) {
+	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top}, 1000);
+	}else{
+	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 75}, 1000);
+	}
+}
+return false;
+
+};
+
+$(function(){ 
 	// PAGE JUMPING JAVASCRIPT
 	var count = 1;
 	$('a[href*=#]:not([href=#])').click(function() {
@@ -286,15 +300,6 @@ function start(){
         }
     }
 });
-  
-  if(hash){
-    if(window.innerWidth < 1025) {
-	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top}, 1000);
-	}else{
-	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 75}, 1000);
-	}
-}
-return false;
 
-};
+});
 
