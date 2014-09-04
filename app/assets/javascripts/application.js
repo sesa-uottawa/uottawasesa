@@ -254,30 +254,42 @@ function start(){
 
 
 	// PAGE JUMPING JAVASCRIPT
-
-  var hashTagActive = "";
-    $(".smoothScroll").click(function (event) {
-        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
-            //calculate destination place
-            var dest = 0;
-            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-                dest = $(document).height() - $(window).height() - 70;
-            } else {
-                dest = $(this.hash).offset().top - 70;
-            }
-            //go to destination
-            $('html,body').animate({
-                scrollTop: dest
-            }, 2000, 'swing');
-            hashTagActive = this.hash;
+	var count = 1;
+	$('a[href*=#]:not([href=#])').click(function() {
+	alert(count++);
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+           	if(window.innerWidth < 1025) {
+				$("header").css({'height' : '0px'});
+				$(".hamburger path:nth-child(1)").css({"transform" : "matrix(1, 0, 0, 1, 0, 0)"});
+				$(".hamburger path:nth-child(2)").css({"opacity" : "1"});
+				$(".hamburger path:nth-child(3)").css({"transform" : "matrix(1, 0, 0, 1, 0, 0)"});
+				$("header").css({'position' : 'fixed'});
+				$("header .row").animate({ 'opacity' : '0' }, 50);
+				$("header .row").css({'display' : 'none'});
+				$("header").css({'background-color' : 'initial'});
+	             $('body').animate({
+	                 scrollTop: target.offset().top
+	            }, 1000, function(){ console.log("Callback animate"); });
+         	}
+         	else{
+	             $('body').animate({
+	                 scrollTop: target.offset().top -75
+	            }, 1000, function(){ console.log("Callback animate"); });	
+         	}
+            return false;
         }
-    });
+    }
+});
   
   if(hash){
     if(window.innerWidth < 1025) {
 	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top}, 1000);
 	}else{
-	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 70}, 1000);
+	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 75}, 1000);
 	}
 }
 return false;
