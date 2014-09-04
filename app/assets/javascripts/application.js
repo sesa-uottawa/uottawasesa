@@ -253,11 +253,31 @@ function start(){
 	$("#events-container-1").css({'height': 0.85*$(window).height() });
 
 
+	// PAGE JUMPING JAVASCRIPT
+
+  var hashTagActive = "";
+    $(".smoothScroll").click(function (event) {
+        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height() - 70;
+            } else {
+                dest = $(this.hash).offset().top - 70;
+            }
+            //go to destination
+            $('html,body').animate({
+                scrollTop: dest
+            }, 2000, 'swing');
+            hashTagActive = this.hash;
+        }
+    });
+  
   if(hash){
     if(window.innerWidth < 1025) {
 	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top}, 1000);
 	}else{
-	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 75}, 1000);
+	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 70}, 1000);
 	}
 }
 return false;
