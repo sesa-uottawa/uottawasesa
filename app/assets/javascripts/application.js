@@ -259,7 +259,7 @@ function start(){
     if(window.innerWidth < 1025) {
 	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top}, 1000);
 	}else{
-	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 75}, 1000);
+	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 70}, 1000);
 	}
 }
 return false;
@@ -289,7 +289,7 @@ $(function(){
          	}
          	else{
 	             $('body').animate({
-	                 scrollTop: target.offset().top -75
+	                 scrollTop: target.offset().top -70
 	            }, 1000, function(){ console.log("Callback animate"); });	
          	}
             return false;

@@ -1,6 +1,6 @@
 
 <table style="padding-top: 80px;">
-	<tr>
+	<tr style="font-weight: bold;">
 		<td>First Name</td>
 		<td>Last Name</td>
 		<td>Email</td>
@@ -13,13 +13,13 @@
 	<% @club_members.each do |club_member| %>
 
 	<tr>
-		<td><%= club_member.first_name %></td>
-		<td><%= club_member.last_name %></td>
-		<td><%= club_member.email %></td>
-		<td><%= club_member.major %></td>
-		<td><%= club_member.commitment %></td>
-		<td><%= club_member.why_join %></td>
-		<td><%= club_member.goal %></td>
+		<td style="overflow-wrap: break-word"><%= club_member.first_name %></td>
+		<td style="overflow-wrap: break-word"><%= club_member.last_name %></td>
+		<td style="overflow-wrap: break-word"><%= club_member.email %></td>
+		<td style="overflow-wrap: break-word"><%= club_member.major %></td>
+		<td style="overflow-wrap: break-word"><%= club_member.commitment %></td>
+		<td style="overflow-wrap: break-word"><%= club_member.why_join %></td>
+		<td style="overflow-wrap: break-word"><%= club_member.goal %></td>
 	</tr>
 	<% end %>
 </table>
