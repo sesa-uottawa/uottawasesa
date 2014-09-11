@@ -283,12 +283,12 @@ $(function(){
 				$("header .row").animate({ 'opacity' : '0' }, 50);
 				$("header .row").css({'display' : 'none'});
 				$("header").css({'background-color' : 'initial'});
-	             $('body').animate({
+	             $('html,body').animate({
 	                 scrollTop: target.offset().top
 	            }, 1000, function(){ console.log("Callback animate"); });
          	}
          	else{
-	             $('body').animate({
+	             $('html,body').animate({
 	                 scrollTop: target.offset().top -70
 	            }, 1000, function(){ console.log("Callback animate"); });	
          	}
