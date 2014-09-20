@@ -26,22 +26,7 @@
 	transform: translate(-50%, -50%);
 }
 
-#events-container-2 .row {
-	font-family: 'Open Sans', sans-serif;
-	color: #333;
-	font-size: 1.1rem;	
-	line-height: 1.2rem;
-	min-height: 480px;
-	& .title{
-		font-family: 'Raleway', Arial, Helvetica, sans-serif;
-		color: #990012;
-		font-size: 2rem;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-	}
-}
-
-#events-container-3{
+#events-container-2{
 	background-image: image-url('ruby_tutorial_banner.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

@@ -251,7 +251,7 @@ function start(){
 
 	// EVENTS PAGE
 	$("#events-container-1").css({'height': 0.85*$(window).height() });
-	$("#events-container-3").css({'height': 0.85*$(window).height() });
+	$("#events-container-2").css({'height': 0.85*$(window).height() });
 
 
 
