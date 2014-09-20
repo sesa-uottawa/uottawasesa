@@ -40,3 +40,14 @@
 		letter-spacing: 2px;
 	}
 }
+
+#events-container-3{
+	background-image: image-url('ruby_tutorial_banner.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;	
+	text-transform: uppercase;
+	min-height: 480px;
+}

@@ -251,6 +251,7 @@ function start(){
 
 	// EVENTS PAGE
 	$("#events-container-1").css({'height': 0.85*$(window).height() });
+	$("#events-container-3").css({'height': 0.85*$(window).height() });
 
 
 
@@ -285,12 +286,12 @@ $(function(){
 				$("header").css({'background-color' : 'initial'});
 	             $('html,body').animate({
 	                 scrollTop: target.offset().top
-	            }, 1000, function(){ console.log("Callback animate"); });
+	            }, 1000);
          	}
          	else{
 	             $('html,body').animate({
 	                 scrollTop: target.offset().top -70
-	            }, 1000, function(){ console.log("Callback animate"); });	
+	            }, 1000);	
          	}
             return false;
         }
