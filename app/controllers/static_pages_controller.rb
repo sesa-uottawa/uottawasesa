@@ -38,7 +38,7 @@ class StaticPagesController < ApplicationController
 	private
 	    # Never trust parameters from the scary internet, only allow the white list through.
 	    def club_member_params
-	      params.require(:club_member).permit(:first_name, :last_name, :email, :major, :commitment, :why_join, :goal)
+	      params.require(:club_member).permit(:first_name, :last_name, :email, :major, :commitment, :why_join, :goal, :newsletter)
 	    end
 
 end
