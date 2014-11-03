@@ -26,13 +26,16 @@
 	transform: translate(-50%, -50%);
 }
 
-#events-container-2{
-	background-image: image-url('ruby_tutorial_banner.jpg');
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+#events-container-2, #events-container-3{
 	position: relative;	
 	text-transform: uppercase;
-	min-height: 480px;
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    background-color: black;
+
+    img {
+    	display: block;
+    	margin: 0 auto;
+    }
 }
