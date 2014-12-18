@@ -8,19 +8,7 @@ module ApplicationHelper
 			"#{base_title} | #{pages_title}"
 		end
 	end
-
-	def sign_up?
-		return false
-	end
 	
-	def has_signature(signature)
-		if signature.empty?
-			#do nothing
-		else
-			"by #{signature}"
-		end
-	end
-
 	def markdown(text)
 		markdownparser = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :space_after_headers => true)
 		markdownparser.render(text).html_safe

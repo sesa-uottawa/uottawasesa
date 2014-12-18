@@ -140,7 +140,8 @@ hr {
 	letter-spacing: 4px;
 }
 
-#home-container-4 .small-12.medium-4.columns {
+#home-container-4 .small-6.medium-4.columns,  #home-container-4 .small-3.columns, 
+	#home-container-4 .small-4.columns, #home-container-4 .small-12.columns{
 	text-align: center;
 	padding: 10px 0; 
 	text-transform: uppercase;
@@ -154,6 +155,19 @@ hr {
 		font-size: 1.5em;
 		color: #990012;
 	}
+}
+
+@media screen and (max-width: 480px){
+
+	#home-container-4 .small-6.medium-4.columns,  #home-container-4 .small-3.columns, 
+		#home-container-4 .small-4.columns, #home-container-4 .small-12.columns{
+
+		font-size: 0.6em;
+
+		& span{
+			font-size: 0.6em;
+		}
+	}	
 }
 
 #home-container-5{
