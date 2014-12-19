@@ -20,8 +20,9 @@
 
 $(function(){ $(document).foundation(); });
 
-$.stellar();
-
+if(window.innerWidth > 650){
+	$.stellar();
+}
 $(document).ready(function(){ start(); });
 // $(function(){start();})
 

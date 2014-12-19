@@ -9,7 +9,6 @@
 
 ;(function($, window, document, undefined) {
 
-if(window.innerWidth > 650){
 	var pluginName = 'stellar',
 		defaults = {
 			scrollProperty: 'scroll',
@@ -658,5 +657,4 @@ if(window.innerWidth > 650){
 
 	// Expose the plugin class so it can be modified
 	window.Stellar = Plugin;
-	}
 }(jQuery, this, document));
