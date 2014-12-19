@@ -1,13 +1,4 @@
 module ApplicationHelper
-
-	def full_title(pages_title)
-		base_title = "SESA"
-		if pages_title.empty?
-			base_title
-		else
-			"#{base_title} | #{pages_title}"
-		end
-	end
 	
 	def markdown(text)
 		markdownparser = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :space_after_headers => true)

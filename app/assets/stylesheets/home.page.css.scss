@@ -4,6 +4,7 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	color: #fff;
 	text-align: center;
@@ -15,7 +16,7 @@
 #home-container-1 > .text-container{
 	position: 	absolute;	
 	width: 100%;
-	left:0; right:0;top:30%; bottom:0;
+	left:0; right:0; top: 35%; bottom:0;
 }
 
 #home-container-1 h1 {
@@ -74,6 +75,7 @@ hr {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
 	text-align: center;
 	min-height: 480px;
 }
@@ -157,7 +159,7 @@ hr {
 	}
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 650px){
 
 	#home-container-4 .small-6.medium-4.columns,  #home-container-4 .small-3.columns, 
 		#home-container-4 .small-4.columns, #home-container-4 .small-6.columns{

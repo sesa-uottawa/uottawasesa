@@ -20,6 +20,8 @@
 
 $(function(){ $(document).foundation(); });
 
+$.stellar();
+
 $(document).ready(function(){ start(); });
 // $(function(){start();})
 
