@@ -23,6 +23,7 @@ $(function(){ $(document).foundation(); });
 if(window.innerWidth > 650){
 	$.stellar();
 }
+
 $(document).ready(function(){ start(); });
 // $(function(){start();})
 

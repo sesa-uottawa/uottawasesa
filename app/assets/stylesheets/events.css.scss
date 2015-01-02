@@ -26,16 +26,24 @@
 	transform: translate(-50%, -50%);
 }
 
-.events-container{
-	position: relative;	
-	text-transform: uppercase;
-    display: block;
-    width: 100% !important;
-    height: auto !important;
-    background-color: black;
-
-    img {
-    	display: block;
-    	margin: 0 auto;
-    }
+#events-container-2 > .row > .columns{
+	padding: 1.5rem;
 }
+
+img.effect-apollo {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+
+img.effect-apollo:hover{
+	opacity: 1;
+	-webkit-transform: scale3d(1.05,1.05,1.05);
+	transform: scale3d(1.05,1.05,1.05);
+}
+
+
+
