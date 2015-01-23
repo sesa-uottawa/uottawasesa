@@ -139,6 +139,7 @@ hr {
 	color: #990012;
 	text-align: center;
 	letter-spacing: 4px;
+	padding-top: 40px;
 }
 
 #home-container-4 .small-6.medium-4.columns,  #home-container-4 .small-3.columns, 
@@ -158,7 +159,7 @@ hr {
 	}
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
 
 	#home-container-4 .small-6.medium-4.columns,  #home-container-4 .small-3.columns, 
 		#home-container-4 .small-4.columns, #home-container-4 .small-6.columns{
