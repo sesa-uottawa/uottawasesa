@@ -239,7 +239,10 @@ hr {
 		-o-transform: scale(1.05, 1.05);
 		transform: scale(1.05, 1.05);
 	}
+}
 
+#home-container-5 > .row > .small-12.large-6.columns:nth-child(1) > .text-container {
+	padding-top: 70px;
 }
 
 #home-container-5 > .row > .small-12.large-6.columns:nth-child(2) {
@@ -264,5 +267,8 @@ hr {
 		-o-transform: scale(1.05, 1.05);
 		transform: scale(1.05, 1.05);
 	}
+}
 
+#home-container-5 > .row > .small-12.large-6.columns:nth-child(2) > .text-container {
+	padding-top: 70px;
 }
