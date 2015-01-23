@@ -17,7 +17,6 @@
 //= require turbolinks
 //= require_tree 
 
-
 $(function(){ $(document).foundation(); });
 
 if(window.innerWidth > 650){
@@ -104,7 +103,7 @@ function start(){
 	$("#home-container-3 > .text-container").css({
 		'height': ($("#home-container-3 > .text-container > p").height() +
 							 $("#home-container-3 > .text-container > h1").height() +
-							 $("#home-container-3 > .text-container > a").height() + 40)
+							 $("#home-container-3 > .text-container > a").height())
 	});
 
 	if($("#home-container-3 > .text-container").height() 

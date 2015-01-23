@@ -44,7 +44,7 @@ hr {
  	height: 2px;
 }
 
-#home-container-2{
+#home-container-2 {
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	color: #990012;
 	text-align: center;
@@ -67,7 +67,7 @@ hr {
 	font-size: 1.75em;
 }
 
-#home-container-3{
+#home-container-3 {
 	position: relative;
 	background-image: image-url('traintrack.jpg');
 	-webkit-background-size: cover;
@@ -76,6 +76,7 @@ hr {
 	background-size: cover;
 	text-align: center;
 	min-height: 480px;
+	margin-top: 40px;
 }
 
 #home-container-3 hr {
@@ -89,7 +90,6 @@ hr {
 	margin: 0 auto;
 	font: 200 1.2em 'Open Sans', sans-serif;
 	letter-spacing: 1px;
-
 }
 
 #home-container-3 > .text-container > h1 {
