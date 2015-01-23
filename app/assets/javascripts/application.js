@@ -41,18 +41,13 @@ function start(){
 	var hash = window.location.hash;
 	var oddClick = true;
 	window.location.hash = "";
-	if( window.location.pathname == "/firstyearadvice.fya" ){
-
+	if( window.location.pathname == "/firstyearadvice.fya" ) {
 		window.location.pathname = "/firstyearadvice";
 	}
-	
-	$("header, #home-container-1, #home-container-2, #home-container-3, #home-container-4, #home-container-5," 
-		+"#fya-container-1,#fya-container-2, #fya-container-3, footer").css({'width': $(window).width() });
-
 
 	//HEADER
-	if(window.innerWidth < 1025){
-			$("header .row").css({'opacity' : '0'});
+	if(window.innerWidth < 1025) {
+		$("header .row").css({'opacity' : '0'});
 
 		$(".hamburger").click( function() { 
 			if(oddClick) {
@@ -77,7 +72,7 @@ function start(){
 	}	
 
 	//JOIN PAGE
-	$("span#close_successful_notice").click( function(){ 
+	$("span#close_successful_notice").click( function() { 
 		$("#successful_notice").css({ "display" : "none" });
 		return false;
 	});
