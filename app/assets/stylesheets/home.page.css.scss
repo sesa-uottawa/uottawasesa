@@ -13,7 +13,7 @@
 }
 
 #home-container-1 > .text-container{
-	position: 	absolute;	
+	position: absolute;	
 	width: 100%;
 	left:0; right:0; top: 35%; bottom:0;
 }
@@ -265,11 +265,3 @@ hr {
 	}
 
 }
-
-@media screen and (min-width: 650px){
-
-	#home-container-1, #home-container-3, #events-container-1, #fya-container-1{
-		background-attachment: fixed;
-	}
-}
-

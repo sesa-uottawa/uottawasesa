@@ -29,7 +29,9 @@
   <body>
     <%= render 'layouts/header' %>
 
-    <%= yield %>
+    <div class="main-container">
+      <%= yield %>
+    </div>
 
     <%= render 'layouts/footer'%>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>

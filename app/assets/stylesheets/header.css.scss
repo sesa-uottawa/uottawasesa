@@ -1,5 +1,4 @@
-header{
-
+header {
 	height: 70px;
 	background-color: #eee;
 	z-index: 2;
@@ -13,6 +12,10 @@ header{
     transition: 250ms linear;
 }
 
+header .row {
+  opacity: 1;
+  display: block;
+}
 
 header .medium-12.large-2.columns{
 	padding: 0;
@@ -50,6 +53,7 @@ header a {
 }
 
 .hamburger{
+  display: none;
 	position: absolute;
 	right: 20px;
 	top: 10px;
@@ -80,5 +84,30 @@ header a {
     transition: 250ms ;
 }
 
+@media screen and (max-width: 1025px) {
+  header .row {
+    opacity: 0;
+    display: none;
+  }
 
+  header {
+    //background-color: initial;
+    position: fixed;
+    height: 0px;
+  }
 
+  .hamburger {
+    position: fixed;
+    display: block;
+  }
+
+  header.displayed {
+    height: 490px;
+    background-color: #eee;
+    position: fixed;
+  }
+
+  header.displayed .row {
+    display: block;
+  }
+}
