@@ -130,130 +130,49 @@ function start(){
 	$("#fya-container-1").css({'height': 0.85*$(window).height() });
 
 	//FIRST YEAR ADVICE CONTAINER 2
-	/*$('#budgeting').hide();
-	$('#time-management').hide();
-	$('#work-experience').hide();
-
-	$('#linear-algebra').hide();
-	$('#computing-1').hide();
-	$('#computing-2').hide();
-	$('#engineering-mechanics').hide();
-	$('#physics').hide();
-	$('#calculus-1').hide();
-	$('#digital-systems').hide();
-	$('#discrete').hide();
-	$('#chemistry').hide();
-*/
+	$(".general-advice, .course-advice").hide();
 
 	$('.budgeting-button').click( function(){
-		$('#time-management').hide();
-		$('#work-experience').hide();
+		$('.general-advice').hide();
 		$('#budgeting').fadeTo(1000, 1);
 	});
 	$('.time-management-button').click( function(){
-		$('#budgeting').hide();
-		$('#work-experience').hide();
+		$('.general-advice').hide();
 		$('#time-management').fadeTo(1000, 1);
 	});
 	$('.work-experience-button').click( function(){
-		$('#budgeting').hide();
-		$('#time-management').hide();
+		$('.general-advice').hide();
 		$('#work-experience').fadeTo(1000, 1);
 	});
 
-	$('.linear-algebra-button').click( function(){
-		$('.course-advice').hide();
-		$('#linear-algebra').fadeTo(1000, 1);
-	});
-
-	$('.computing-1-button').click( function(){
-		$('.course-advice').hide();
-		$('#computing-1').fadeTo(1000, 1);
-	});
-
-	$('.computing-2-button').click( function(){
-		$('.course-advice').hide();
-		$('#computing-2').fadeTo(1000, 1);
-	});
-
-	$('.engineering-mechanics-button').click( function(){
-		$('.course-advice').hide();
-		$('#engineering-mechanics').fadeTo(1000, 1);
-	});
-
-	$('.physics-button').click( function(){
-		$('.course-advice').hide();
-		$('#physics').fadeTo(1000, 1);
-	});
-
-	$('.calculus-1-button').click( function(){
-		$('.course-advice').hide();
-		$('#calculus-1').fadeTo(1000, 1);
-	});
-
-	$('.digital-systems-button').click( function(){
-		$('.course-advice').hide();
-		$('#digital-systems').fadeTo(1000, 1);
-	});
-
-	$('.discrete-button').click( function(){
-		$('.course-advice').hide();
-		$('#discrete').fadeTo(1000, 1);
-	});
-
-	$('.chemistry-button').click( function(){
-		$('.course-advice').hide();
-		$('#chemistry').fadeTo(1000, 1);
+	$('.course-advice-button').each(function() {
+		var containerId = $(this).prop('id').slice(0, -7);
+		$(this).click(function() {
+			$('.course-advice').hide();
+			$('#' + containerId).fadeTo(1000, 1);
+		});
 	});
 
 	$('.hamburger2').click(function(){
-		$('#budgeting').hide();
+		$('.general-advice').hide();
 	});
 	$('.hamburger3').click(function(){
-		$('#time-management').hide();
-	});
-	$('.hamburger4').click(function(){
-		$('#work-experience').hide();
-	});
-	$('.hamburger5').click(function(){
-		$('#linear-algebra').hide();
-	});
-	$('.hamburger6').click(function(){
-		$('#computing-1').hide();
-	});
-	$('.hamburger7').click(function(){
-		$('#computing-2').hide();
-	});
-	$('.hamburger8').click(function(){
-		$('#engineering-mechanics').hide();
-	});
-	$('.hamburger9').click(function(){
-		$('#physics').hide();
-	});
-	$('.hamburger10').click(function(){
-		$('#calculus-1').hide();
-	});
-	$('.hamburger12').click(function(){
-		$('#digital-systems').hide();
-	});
-	$('.hamburger13').click(function(){
-		$('#discrete').hide();
-	});
-	$('.hamburger14').click(function(){
-		$('#chemistry').hide();
+		$('.course-advice').hide();
 	});
 
 	// EVENTS PAGE
-	$("#events-container-1").css({'height': 0.85*$(window).height() });
-	$("#events-container-2").css({'height': 0.85*$(window).height() });
+	$("#events-container-1").css({
+		'height': 0.85*$(window).height() 
+	});
 
+	$("#events-container-2").css({
+		'height': 0.85*$(window).height() 
+	});
 
-
-  
   if(hash){
     if(window.innerWidth < 1025) {
 	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top}, 1000);
-	}else{
+	} else {
 	  	$('html,body').delay(400).animate({scrollTop: $(hash).offset().top - 70}, 1000);
 	}
 }
