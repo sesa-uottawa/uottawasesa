@@ -47,6 +47,8 @@ function start(){
 	//HEADER
 	if(window.innerWidth < 1025) {
 		$("header .row").css({'opacity' : '0'});
+		$("#home-container-1").data('stellar-vertical-offset', '70');
+		$("#home-container-3").data('stellar-vertical-offset', '0');
 
 		$(".hamburger").click( function() { 
 			if(oddClick) {
@@ -68,6 +70,8 @@ function start(){
 		 });
 	} else {
 		$("header .row").css({'opacity' : '1'});
+		$("#home-container-1").data('stellar-vertical-offset', '0');
+		$("#home-container-3").data('stellar-vertical-offset', '-500');
 	}	
 
 	//JOIN PAGE
