@@ -163,9 +163,9 @@ function start(){
 		'height': 0.85*$(window).height() 
 	});
 
-	$("#events-container-2").css({
+	/*$("#events-container-2").css({
 		'height': 0.85*$(window).height() 
-	});
+	});*/
 
   if(hash){
     if(window.innerWidth < 1025) {
