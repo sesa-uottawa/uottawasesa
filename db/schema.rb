@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20141003212542) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "club_members", force: true do |t|
+  create_table "club_members", force: :cascade do |t|
     t.string  "first_name"
     t.string  "last_name"
     t.string  "email"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20141003212542) do
     t.boolean "newsletter"
   end
 
-  create_table "exam_archives", force: true do |t|
+  create_table "exam_archives", force: :cascade do |t|
     t.string   "course_name"
     t.integer  "exam_year"
     t.string   "season"

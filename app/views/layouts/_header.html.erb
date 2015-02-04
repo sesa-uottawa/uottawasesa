@@ -1,6 +1,6 @@
 <header>
 	<div class="row" style="max-width: 80rem; height: 70px;">
-		<div class="medium-12 large-2 columns">
+		<div class="medium-12 large-1 columns">
 			<%= link_to 'SESA', root_path+'#home-container-1', class: 'smoothScroll' %>
 		</div>
 		<div class="medium-12 large-2 columns">
@@ -20,6 +20,9 @@
 		</div>
 		<div class="medium-12 large-1 columns">
 			<%= link_to(image_tag("facebook-icon.png", size:"40x40"), "https://t.co/PuWQ8jANwD", target: '_blank' )%>
+		</div>
+		<div class="medium-12 large-1 columns">
+			<%= mail_to( "uottawa-sesa@gmail.com", image_tag("envelope_icon.png", size:"40x40") )%>
 		</div>
 	</div>
 	<svg role="navigation" class="hamburger" width="32" height="32" viewBox="0 0 46 30" >
