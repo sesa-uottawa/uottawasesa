@@ -1,8 +1,6 @@
 Uottawasesa::Application.routes.draw do
 
-
   root "static_pages#home"
-
 
   get "/join" => "static_pages#join", as: 'join'
   post "/join" => "static_pages#create"
@@ -12,6 +10,8 @@ Uottawasesa::Application.routes.draw do
 
   resources :exam_archive
   
+  get "/2015startup" => "redirects#startup_link"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
