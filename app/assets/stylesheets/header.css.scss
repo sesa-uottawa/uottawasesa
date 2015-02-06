@@ -7,10 +7,10 @@ header {
 	text-align: center;
 	letter-spacing: 1px;
 	position: fixed;
-	-webkit-transition: 250ms linear; 
+  transition: 250ms linear;
+  	-webkit-transition: 250ms linear; 
     -moz-transition: 250ms linear;
     -o-transition: 250ms linear;
-    transition: 250ms linear;
 }
 
 header .row {
@@ -18,11 +18,12 @@ header .row {
   display: block;
 }
 
-header .medium-12.large-2.columns{
-	padding: 0;
+.header-row {
+  max-width: 80rem; 
+  height: 70px;
 }
 
-header .medium-12.large-1.columns{
+header .columns {
 	padding: 0;
 }
 
@@ -31,58 +32,58 @@ header a {
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	display: block;
-	-webkit-transition: 150ms linear; 
+  transition: 150ms linear;
+	  -webkit-transition: 150ms linear; 
     -moz-transition: 150ms linear;
     -o-transition: 150ms linear;
-    transition: 150ms linear;
-	&:hover{
+    
+	&:hover {
 		color: #990012;
 		background-color: #fff;
 	}
 
-	&:after{
+	&:after {
 		color: #333;
 	}
 
-	&:active{
+	&:active {
 		color: #333;
 	}
 
-	&:before{
+	&:before {
 		color: #333;
 	}
 }
 
-.hamburger{
+.hamburger {
   display: none;
 	position: absolute;
 	right: 20px;
 	top: 10px;
 	cursor: pointer;
-	-webkit-transition: 250ms ; 
-    -moz-transition: 250ms ;
-    -o-transition: 250ms ;
-    transition: 250ms ;
-
-	&:hover{
+  transition: 250ms;
+	  -webkit-transition: 250ms; 
+    -moz-transition: 250ms;
+    -o-transition: 250ms;
+    
+	&:hover {
 		width: 36px;
 		height: 36px;
 	}
 }
 
-
-.hamburger path:nth-child(1){
-	-webkit-transition: 250ms ; 
-    -moz-transition: 250ms ;
-    -o-transition: 250ms ;
-    transition: 250ms ;
+.hamburger path:nth-child(1) {
+	transition: 250ms;
+    -webkit-transition: 250ms; 
+    -moz-transition: 250ms;
+    -o-transition: 250ms;
 }
 
-.hamburger path:nth-child(3){
-	-webkit-transition: 250ms ; 
-    -moz-transition: 250ms ;
-    -o-transition: 250ms ;
-    transition: 250ms ;
+.hamburger path:nth-child(3) {
+	transition: 250ms;
+    -webkit-transition: 250ms; 
+    -moz-transition: 250ms;
+    -o-transition: 250ms;
 }
 
 @media screen and (max-width: 1025px) {
