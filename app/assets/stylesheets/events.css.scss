@@ -30,6 +30,23 @@
 	padding: 1.5rem;
 }
 
+#events-container-2 h3 {
+	width: 100%;
+	font-size: 	3rem;
+	font-weight: 200;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	color: #000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
 img.effect-apollo {
 	opacity: 0.95;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
