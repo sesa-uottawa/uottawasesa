@@ -10,7 +10,9 @@ Uottawasesa::Application.routes.draw do
 
   resources :exam_archive
   
-  get "/2015startup" => "redirects#startup_link"
+  get '/:startupweekend', 
+    to: "redirects#startup_link", 
+    startupweekend: /2015(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
