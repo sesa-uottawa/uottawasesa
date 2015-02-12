@@ -14,6 +14,8 @@ Uottawasesa::Application.routes.draw do
     to: "redirects#startup_link", 
     startupweekend: /2015(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
 
+  get '/2015startup/count' => "redirects#startup_count"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
