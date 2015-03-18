@@ -23,7 +23,7 @@ body {
   padding-top: 70px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
   .main-container {
     position: relative;
     padding-top: 0px;
