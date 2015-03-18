@@ -157,6 +157,14 @@ hr {
 		font-size: 1.5em;
 		color: #990012;
 	}
+
+	& a{
+		color: #990012;
+	}
+
+	& a:hover{
+		font-weight: bold;
+	}
 }
 
 @media screen and (max-width: 650px) {
@@ -166,7 +174,7 @@ hr {
 
 		font-size: 0.4em;
 
-		& span{
+		& span, a{
 			font-size: 0.4em;
 		}
 	}	
