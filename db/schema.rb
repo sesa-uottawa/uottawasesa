@@ -16,23 +16,11 @@ ActiveRecord::Schema.define(version: 20150212164524) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blog_posts", force: :cascade do |t|
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
-    t.string   "title",                        null: false
-    t.boolean  "is_published", default: false
-    t.date     "published_on"
-    t.integer  "user_id"
-    t.text     "body_field"
-  end
-
-  add_index "blog_posts", ["user_id"], name: "index_blog_posts_on_user_id", using: :btree
-
   create_table "club_members", force: :cascade do |t|
-    t.string  "first_name"
-    t.string  "last_name"
-    t.string  "email"
-    t.string  "major"
+    t.string  "first_name", limit: 255
+    t.string  "last_name",  limit: 255
+    t.string  "email",      limit: 255
+    t.string  "major",      limit: 255
     t.text    "commitment"
     t.text    "why_join"
     t.text    "goal"
@@ -40,11 +28,11 @@ ActiveRecord::Schema.define(version: 20150212164524) do
   end
 
   create_table "exam_archives", force: :cascade do |t|
-    t.string   "course_name"
+    t.string   "course_name",       limit: 255
     t.integer  "exam_year"
-    t.string   "season"
-    t.string   "exam_file_name"
-    t.string   "exam_content_type"
+    t.string   "season",            limit: 255
+    t.string   "exam_file_name",    limit: 255
+    t.string   "exam_content_type", limit: 255
     t.integer  "exam_file_size"
     t.datetime "exam_updated_at"
   end
@@ -55,24 +43,5 @@ ActiveRecord::Schema.define(version: 20150212164524) do
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
   end
-
-  create_table "users", force: :cascade do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.inet     "current_sign_in_ip"
-    t.inet     "last_sign_in_ip"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "username",                            null: false
-  end
-
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end
