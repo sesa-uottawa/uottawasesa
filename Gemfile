@@ -25,6 +25,7 @@ gem 'jquery-rails', '>=3.0.4'
 gem 'jquery-ui-rails'
 gem 'turbolinks', '>=1.1.1'
 gem 'jbuilder', '>=1.0.2'
+gem 'actionview-encoded_mail_to'
 
 group :development do
 	gem 'pry'
