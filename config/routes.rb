@@ -2,13 +2,14 @@ Uottawasesa::Application.routes.draw do
 
   root "static_pages#home"
 
-  get "/join" => "static_pages#join", as: 'join'
-  post "/join" => "static_pages#create"
-  get "/firstyearadvice" => "static_pages#firstyearadvice", as: 'firstyearadvice'
-  get "/events" => "static_pages#events", as: 'events'
-  get "/members" => "static_pages#members", as: 'members'
+  namespace :static_pages, path: '/', as: nil do
+    get 'join'
+    get 'firstyearadvice'
+    get 'events'
+    get 'members'
+  end
 
-  resources :exam_archive
+  post 'join', to: "static_pages#create"
   
   get '/:startupweekend', 
     to: "redirects#startup_link", 

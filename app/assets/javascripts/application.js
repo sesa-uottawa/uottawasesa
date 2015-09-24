@@ -19,12 +19,7 @@
 
 $(function(){ $(document).foundation(); });
 
-if(window.innerWidth > 650){
-	$.stellar();
-}
-
 $(document).ready(function(){ start(); });
-// $(function(){start();})
 
 window.onresize = function() {
 	start(); 
@@ -47,8 +42,6 @@ function start(){
 	//HEADER
 	if(window.innerWidth < 1200) {
 		$("header .row").css({'opacity' : '0'});
-		$("#home-container-1").data('stellar-vertical-offset', '70');
-		$("#home-container-3").data('stellar-vertical-offset', '0');
 
 		$(".hamburger").click( function() { 
 			if(oddClick) {
@@ -70,8 +63,6 @@ function start(){
 		 });
 	} else {
 		$("header .row").css({'opacity' : '1'});
-		$("#home-container-1").data('stellar-vertical-offset', '0');
-		$("#home-container-3").data('stellar-vertical-offset', '-500');
 	}	
 
 	//JOIN PAGE
@@ -83,27 +74,17 @@ function start(){
 	//HOME PAGE
 
 	//HOME PAGE CONTAINER 1
-	$("#home-container-1").css({
-		'height': 0.85*$(window).height() 
-	});
 
 	$("#home-container-1 > .text-container >  hr").css({
 		'width': $("#home-container-1 > .text-container > span").width() 
 	});
 
 	//HOME PAGE CONTAINER 2
-	$("#home-container-2").css({
-		'height': 0.5*$(window).height() 
-	});
-
 	$("#home-container-2 > .text-container").css({
 		'height': ($("#home-container-2 > .text-container > p").height()) 
 	});
 
 	//HOMEPAGE CONTAINER 3
-	$("#home-container-3").css({
-		'height': 0.85*$(window).height() 
-	});
 	$("#home-container-3 > .text-container").css({
 		'height': ($("#home-container-3 > .text-container > p").height() +
 							 $("#home-container-3 > .text-container > h1").height() +
@@ -117,15 +98,7 @@ function start(){
 		});
 	}
 
-	//HOME PAGE CONTAINER 5
-	$("#home-container-5 > .row > .small-12.large-6.columns").css({
-		'height': 0.65*$(window).height() 
-	});
-
 	//FIRST YEAR ADVICE
-
-	//FIRST YEAR ADVICE CONTAINER 1
-	$("#fya-container-1").css({'height': 0.85*$(window).height() });
 
 	//FIRST YEAR ADVICE CONTAINER 2
 	$(".general-advice, .course-advice").hide();
@@ -158,14 +131,6 @@ function start(){
 		$('.course-advice').hide();
 	});
 
-	// EVENTS PAGE
-	$("#events-container-1").css({
-		'height': 0.85*$(window).height() 
-	});
-
-	/*$("#events-container-2").css({
-		'height': 0.85*$(window).height() 
-	});*/
 
   if(hash){
     if(window.innerWidth < 1200) {

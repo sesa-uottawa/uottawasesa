@@ -1,0 +1,67 @@
+#events-container-1{
+	background-image: image-url('space.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	text-transform: uppercase;
+	min-height: 480px;
+}
+
+#events-container-1 h1 {
+	width: 100%;
+	font-size: 	5rem;
+	font-weight: 200;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	@media screen and (max-width: 395px) {
+		font-size: 4rem;
+	}
+}
+
+#events-container-2 > .row > .columns{
+	padding: 1.5rem;
+}
+
+#events-container-2 h3 {
+	width: 100%;
+	font-size: 	3rem;
+	font-weight: 200;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	color: #000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+img.effect-apollo {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+
+img.effect-apollo:hover{
+	opacity: 1;
+	-webkit-transform: scale3d(1.05,1.05,1.05);
+	transform: scale3d(1.05,1.05,1.05);
+}

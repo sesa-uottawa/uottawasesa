@@ -1,0 +1,275 @@
+#home-container-1{
+  background-image: image-url('schooltime_v3.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  position: relative; 
+  text-transform: uppercase;
+  min-height: 480px;
+  height: 85vh;
+}
+
+#home-container-1 > .text-container{
+  position: absolute; 
+  width: 100%;
+  left:0; right:0; top: 35%; bottom:0;
+}
+
+#home-container-1 h1 {
+  font-size:  5.8rem;
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1;
+
+}
+
+#home-container-1 > .text-container > span {
+  font-size:  125%;
+  letter-spacing: 0.2em;
+}
+
+hr {
+  background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
+  background-image: -o-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
+  background-image: linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
+  margin: 0 auto 5px;
+  border: 0;
+  height: 2px;
+}
+
+#home-container-2 {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: #990012;
+  text-align: center;
+  position: relative; 
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  min-height: 360px;
+  height: 50vh;
+}
+
+#home-container-2 > .text-container {
+  position: absolute;
+  width: 100%;
+  font-weight: 400;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+}
+
+#home-container-2 > .text-container > p{
+  margin: 0;
+  font-size: 1.75em;
+}
+
+#home-container-3 {
+  position: relative;
+  background-image: image-url('traintrack.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  min-height: 480px;
+  margin-top: 40px;
+  height: 85vh;
+}
+
+#home-container-3 hr {
+  width: 60%;
+}
+
+#home-container-3 > .text-container > p {
+  color: #fff;
+  min-width: 290px;
+  max-width: 60%;
+  margin: 0 auto;
+  font: 200 1.2em 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+#home-container-3 > .text-container > h1 {
+  margin: 0;
+  opacity: 0.9;
+  color: #eee;
+  font: 400 2.5em 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  width: 100%;
+}
+
+#home-container-3 > .text-container > a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  background-color: #eee;
+  height: 55px;
+  margin: 0 auto;
+  line-height: 55px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#home-container-3 > .text-container > a:hover {
+  color: #990012;
+  background-color: #fff;
+}
+
+#home-container-3 > .text-container {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+}
+
+#home-container-4 {
+  display: table;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#home-container-4 > h1 {
+  text-transform: uppercase;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: #990012;
+  text-align: center;
+  letter-spacing: 4px;
+  padding-top: 40px;
+}
+
+#home-container-4 .small-6.medium-4.columns,  #home-container-4 .small-3.columns, 
+  #home-container-4 .small-4.columns, #home-container-4 .small-6.columns {
+  text-align: center;
+  padding: 10px 0; 
+  text-transform: uppercase;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: #555;
+  letter-spacing: 2px;
+  padding: 10px;
+  overflow-wrap: break-word;
+
+  & span{
+    font-size: 1.5em;
+    color: #990012;
+  }
+
+  & a{
+    color: #990012;
+  }
+
+  & a:hover{
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  #home-container-4 .small-6.medium-4.columns,  #home-container-4 .small-3.columns, 
+    #home-container-4 .small-4.columns, #home-container-4 .small-6.columns{
+
+    font-size: 0.4em;
+
+    & span, a{
+      font-size: 0.4em;
+    }
+  } 
+}
+
+#home-container-5{
+  position: relative;
+  overflow: hidden;
+  top: 1px;
+}
+
+#home-container-5 .text-container {
+  position: absolute;
+  width: 100%;
+  top: 20%; left: 0; bottom: 0; right: 0;
+  margin: auto;
+
+  & p{
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+#home-container-5  h1 {
+  font: 400 2.5em 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  width: 100%;
+  color: #fff;
+
+}
+
+#home-container-5  a{
+
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  background-color: #eee;
+  height: 55px;
+  margin: 0 auto;
+  line-height: 55px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#home-container-5  a:hover {
+  color: #990012;
+  background-color: #fff;
+}
+
+div.wrapper{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+#home-container-5 .row .small-12.large-6.columns {
+  min-height: 480px;
+  height: 65vh;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  transition: 200ms linear;
+    -webkit-transition: 200ms linear; 
+    -moz-transition: 200ms linear;
+    -o-transition: 200ms linear;
+
+  &:nth-child(1){
+    background-image: image-url('books_v1.jpg');
+  }
+
+  &:nth-child(2){
+    background-image: image-url('openwater.jpg');
+  }
+
+  &:hover{
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+  }
+}
+
+#home-container-5 > .row > .small-12.large-6.columns > .text-container {
+  padding-top: 70px;
+}
+
