@@ -152,14 +152,11 @@ $(function(){
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
            if (target.length) {
            	if(window.innerWidth < 1200) {
-				$("header").css({'height' : '0px'});
 				$(".hamburger path:nth-child(1)").css({"transform" : "matrix(1, 0, 0, 1, 0, 0)"});
 				$(".hamburger path:nth-child(2)").css({"opacity" : "1"});
 				$(".hamburger path:nth-child(3)").css({"transform" : "matrix(1, 0, 0, 1, 0, 0)"});
-				$("header").css({'position' : 'fixed'});
 				$("header .row").animate({ 'opacity' : '0' }, 50);
-				$("header .row").css({'display' : 'none'});
-				$("header").css({'background-color' : 'initial'});
+				$("header").removeClass("displayed");
 	             $('html,body').animate({
 	                 scrollTop: target.offset().top
 	            }, 1000);
