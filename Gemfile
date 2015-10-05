@@ -3,21 +3,14 @@ ruby '2.2.1'
 
 require 'rbconfig'
 
-gem 'listen'
 gem 'wdm', '>=0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 
 gem 'rails', '4.2.0'
 gem 'pg'
 gem 'foundation-rails', '>=5.3.1.0'
 gem 'sass', '>=3.2.13'
-gem 'protected_attributes', '>=1.0.5'
 gem 'thin'
-gem 'devise'
 gem 'sprockets', '>=2.11.0'
-gem 'slim', '>=2.0.0'
-gem 'redcarpet', ">=3.1.1"
-gem 'paperclip', '>=3.5.3'
-gem 'paperclip-aws'
 gem 'aws-sdk'
 gem 'sass-rails', '>=4.0.1'
 gem 'uglifier', '>=2.1.1'
@@ -29,18 +22,6 @@ gem 'actionview-encoded_mail_to'
 
 group :development do
 	gem 'pry'
-end
-
-group :development, :test do
-  gem 'rspec-rails', '>=2.13.1'
-  gem 'guard-rspec', '>=2.5.0'
-  gem 'spork-rails', '>=4.0.0'
-  gem 'guard-spork', '>=1.5.0'
-  gem 'childprocess', '>=0.3.6'
-end
-
-group :doc do
-  gem 'sdoc', '>=0.3.20', require: false
 end
 
 group :production do
