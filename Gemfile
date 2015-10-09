@@ -7,7 +7,7 @@ gem 'wdm', '>=0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 
 gem 'rails', '4.2.0'
 gem 'pg'
-gem 'foundation-rails', '5.3.1.0'
+gem 'foundation-rails', '5.5.1.2'
 gem 'sass', '>=3.2.13'
 gem 'thin'
 gem 'sprockets', '>=2.11.0'
