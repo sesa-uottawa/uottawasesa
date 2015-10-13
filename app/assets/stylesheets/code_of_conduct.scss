@@ -1,0 +1,19 @@
+#code_of_conduct_container {
+  color: #777;
+
+  h1 {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size:  3.5rem;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: #777;
+
+    @media screen and (max-width: 395px) {
+      margin-top: 0;
+      font-size: 2.7rem;
+    }
+  }
+}

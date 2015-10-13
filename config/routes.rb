@@ -7,6 +7,7 @@ Uottawasesa::Application.routes.draw do
     get 'firstyearadvice'
     get 'events'
     get 'members'
+    get 'code_of_conduct'
   end
 
   post 'join', to: "static_pages#create"
