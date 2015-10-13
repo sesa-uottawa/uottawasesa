@@ -25,6 +25,10 @@ header .row {
 
 header .columns {
 	padding: 0;
+
+  &:last-child{
+    float: left !important;
+  }
 }
 
 header a {
@@ -32,6 +36,7 @@ header a {
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	display: block;
+  font-size: 0.85rem;
   transition: 150ms linear;
 	  -webkit-transition: 150ms linear; 
     -moz-transition: 150ms linear;
