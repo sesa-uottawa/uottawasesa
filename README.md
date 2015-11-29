@@ -1,4 +1,4 @@
-# Software Engineering Student Association (SESA) | L'Assoication des Étudiants en Génie Logiciel (AÉGL)
+# Software Engineering Student Association (SESA) | L'Association des Étudiants en Génie Logiciel (AÉGL)
 
 This is our home page:
 [*SESA*](http://uottawa-sesa.herokuapp.com/)
