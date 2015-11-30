@@ -19,6 +19,7 @@ gem 'jquery-ui-rails'
 gem 'turbolinks', '>=1.1.1'
 gem 'jbuilder', '>=1.0.2'
 gem 'actionview-encoded_mail_to'
+gem 'medium-scrapper', '~> 0.0.5'
 
 group :development do
 	gem 'pry'
@@ -26,4 +27,4 @@ end
 
 group :production do
   gem 'rails_12factor', '>=0.0.2'
-end 
+end

@@ -8,12 +8,13 @@ Uottawasesa::Application.routes.draw do
     get 'events'
     get 'members'
     get 'code_of_conduct'
+    get 'blog'
   end
 
   post 'join', to: "static_pages#create"
-  
-  get '/:startupweekend', 
-    to: "redirects#startup_link", 
+
+  get '/:startupweekend',
+    to: "redirects#startup_link",
     startupweekend: /2015(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
 
   get '/2015startup/count' => "redirects#startup_count"

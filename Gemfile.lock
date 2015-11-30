@@ -82,6 +82,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    medium-scrapper (0.0.5)
     method_source (0.8.2)
     mime-types (2.5)
     mini_portile (0.6.2)
@@ -176,6 +177,7 @@ DEPENDENCIES
   jbuilder (>= 1.0.2)
   jquery-rails (>= 3.0.4)
   jquery-ui-rails
+  medium-scrapper (~> 0.0.5)
   pg
   pry
   rails (= 4.2.0)
@@ -186,3 +188,6 @@ DEPENDENCIES
   thin
   turbolinks (>= 1.1.1)
   uglifier (>= 2.1.1)
+
+BUNDLED WITH
+   1.10.5
