@@ -1,0 +1,23 @@
+<% provide(:title, "SESA | Events")%>
+
+<span class="events"></span>
+
+<div id="events-container-1">
+  <h1>Events</h1>
+</div>
+
+<div id="events-container-2" >
+  <div class="row" style="max-width: 85rem;">
+    <!-- PREVIOUS EVENTS -->
+    <h3>PAST EVENTS</h3>
+    <div id="events-container-2" >
+      <div class="row" style="max-width: 85rem;">
+        <% @events.each do |event| %>
+          <div class="small-12 medium-12 large-7 large-centered medium-centered columns">
+            <%= link_to(image_tag("data:image/png;base64, #{event[:banner]}", class: 'effect-apollo', title: "#{event[:name]} on #{event[:event_date].strftime("%A, %B %d %Y")}"), "#{event[:facebook_link]}") %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

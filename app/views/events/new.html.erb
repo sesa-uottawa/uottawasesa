@@ -1,0 +1,32 @@
+<% provide(:title, "SESA | New Event")%>
+
+<div class="row" style="max-width: 85rem">
+  <h3>Create a new event</h3>
+  <%= form_for(@event, multipart: true) do |f| %>
+  <div class="form-group">
+    <div class="field">
+      <%= f.label :name, "Event name" %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :description, "Event description" %>
+      <%= f.text_field :description %>
+    </div>
+    <div class="field">
+      <%= f.label :facebook_link, "Facebook Event Link (format: https://www.facebook.com/events/event_id/)" %>
+      <%= f.text_field :facebook_link %>
+    </div>
+    <div class="field">
+      <%= f.label :event_date, "Event date" %>
+      <%= f.date_field :event_date %>
+    </div>
+    <div class="field">
+      <%= f.label :banner, "Event Banner (Must be under 10 mb and of png file extension)" %>
+      <%= f.file_field :banner %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Create Event"%>
+    </div>
+  </div>
+  <% end %>
+</div>
