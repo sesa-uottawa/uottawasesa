@@ -1,5 +1,6 @@
 Uottawasesa::Application.routes.draw do
 
+  devise_for :users
   root "static_pages#home"
 
   namespace :static_pages, path: '/', as: nil do
