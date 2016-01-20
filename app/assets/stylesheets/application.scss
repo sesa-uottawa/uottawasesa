@@ -12,28 +12,3 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
-
-body {
-	margin: 0;
-	overflow-x: hidden;
-}
-
-.main-container {
-  position: relative;
-  padding-top: 70px;
-}
-
-@media screen and (max-width: 1200px) {
-  .main-container {
-    position: relative;
-    padding-top: 0px;
-  }
-}
-
-.notice {
-  position: absolute;
-  background-color: #98fb98;
-  padding: 20px;
-  z-index: 20;
-  opacity: 0.3;
-}

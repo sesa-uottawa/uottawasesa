@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+a{
+  &::visited{
+    color: #333;
+  }
+}
+
+.main-container {
+  position: relative;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    position: relative;
+    padding-top: 0px;
+  }
+}
+
+.notice {
+  position: absolute;
+  background-color: #98fb98;
+  padding: 20px;
+  z-index: 20;
+  opacity: 0.3;
+}

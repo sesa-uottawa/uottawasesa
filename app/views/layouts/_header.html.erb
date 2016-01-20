@@ -1,50 +1,30 @@
 <header>
   <div class="row header-row">
-	  <div class="medium-12 large-9 columns">
-      <div class="row">
-
-  	    <div class="medium-12 large-2 columns">
-  	      <%= link_to 'SESA', root_path+'#home-container-1', class: 'smoothScroll' %>
-  	    </div>
-  	    <div class="medium-12 large-2 columns">
-  	      <%= link_to 'Our Mission', root_path+'#home-container-3', class: 'smoothScroll' %>
-  	    </div>
-  	    <div class="medium-12 large-2 columns">
-  	      <%= link_to 'First Year Tips', firstyearadvice_path+'.fya' %>
-  	    </div>
-  	    <div class="medium-12 large-2 columns">
-  	      <%= link_to 'Events', events_path %>
-  	    </div>
-        <div class="medium-12 large-2 columns">
-          <%= link_to 'Code of Conduct', code_of_conduct_path %>
-        </div>
-      </div>
-	  </div>
-
     <div class="medium-12 large-3 columns">
-      <div class="row">
-
-        <div class="small-3 columns">
-          <%= link_to(image_tag("Twitter_bird_icon.png", size:"40x40"), "https://twitter.com/uOttawaSESA", target: '_blank' )%>
-        </div>
-        <div class="small-3 columns">
-          <%= link_to(image_tag("facebook-icon.png", size:"40x40"), "https://t.co/PuWQ8jANwD", target: '_blank' )%>
-        </div>
-        <div class="small-3 columns">
-          <%= link_to(image_tag("instagram_icon.png", size:"40x40"), "http://instagram.com/uottawasesa", target: '_blank' )%>
-        </div>
-        <div class="small-3 columns">
-          <%= mail_to( "uottawa.sesa@gmail.com", image_tag("envelope_icon.png", size:"40x40"), encode: 'hex' )%>
-        </div>
-
-      </div>
+      <%= link_to root_path+'#home-container-1' do %>
+        <span>SESA</span>
+      <% end %>
     </div>
-    
+    <div class="medium-12 large-3 columns">
+      <%= link_to root_path+'#home-container-3' do %>
+        <span>Our Mission</span>
+      <% end %>
+    </div>
+    <div class="medium-12 large-3 columns">
+      <%= link_to firstyearadvice_path do %>
+        <span>First Year Tips</span>
+      <% end %>
+    </div>
+    <div class="medium-12 large-3 columns">
+      <%= link_to events_path do %>
+        <span>Events</span>
+      <% end %>
+    </div>
   </div>
-  <svg role="navigation" class="hamburger" width="32" height="32" viewBox="0 0 46 30" >
-    <path fill="#aaa" d="M1,0h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1C0.4,6,0,5.6,0,5V1C0,0.4,0.4,0,1,0z" ></path>
-    <path fill="#aaa" d="M1,12h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1c-0.6,0-1-0.4-1-1v-4C0,12.4,0.4,12,1,12z"></path>
-    <path fill="#aaa" d="M1,24h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1c-0.6,0-1-0.4-1-1v-4C0,24.4,0.4,24,1,24z" ></path>
-  </svg>
-
 </header>
+
+<svg role="navigation" class="hamburger" width="32" height="32" viewBox="0 0 46 30" >
+  <path fill="#aaa" d="M1,0h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1C0.4,6,0,5.6,0,5V1C0,0.4,0.4,0,1,0z" ></path>
+  <path fill="#aaa" d="M1,12h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1c-0.6,0-1-0.4-1-1v-4C0,12.4,0.4,12,1,12z"></path>
+  <path fill="#aaa" d="M1,24h44c0.6,0,1,0.4,1,1v4c0,0.6-0.4,1-1,1H1c-0.6,0-1-0.4-1-1v-4C0,24.4,0.4,24,1,24z" ></path>
+</svg>
