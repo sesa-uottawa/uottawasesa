@@ -9,7 +9,6 @@ $(document).on('click', 'header a', function(){
 });
 
 $(document).on('click', '.hamburger', function(){
-  console.log(hamburgerOddClick);
   if(hamburgerOddClick) {
     showMobileHeader();
   } else {

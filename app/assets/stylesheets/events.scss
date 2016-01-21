@@ -1,12 +1,11 @@
 #events-container-1{
 	background-image: image-url('space.jpg');
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	position: relative;
+  background-attachment: fixed;
 	text-transform: uppercase;
-	min-height: 480px;
+  min-height: 480px;
+  height: 85vh;
 }
 
 #events-container-1 h1 {

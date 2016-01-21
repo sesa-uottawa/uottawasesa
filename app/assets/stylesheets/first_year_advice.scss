@@ -1,8 +1,5 @@
 	#fya-container-1{
 	background-image: image-url('books_v2.jpg');
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 	position: relative;	
 	background-attachment: fixed;
@@ -38,7 +35,7 @@
 
 		& > span {
 			display: inline-block;
-			padding: 15px 10px;
+			padding: 50px;
 			position: relative;
 		}
 	
@@ -55,10 +52,10 @@
 #fya-container-2 .medium-12.large-4.columns{
 
 	font-family: 'Open Sans', sans-serif;
-	color: #777;
-	font-size: 1.1rem;	
-	line-height: 1.2rem;
-	margin-bottom: 25px;
+	color: #333;
+	font-size: 1rem;	
+	line-height: 1.5;
+	margin-bottom: 50px;
 
 	& span {
 		font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -66,6 +63,7 @@
 		font-size: 2rem;
 		text-transform: uppercase;
 		letter-spacing: 2px;
+    margin-bottom: 30px;
 	}
 }
 
@@ -81,16 +79,19 @@
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	border: 1px solid #aaa;
-	margin: 15px auto 0;
+	margin: 50px auto 0;
+  transition: all 250ms linear;
+
 	&:hover{
 		color: #990012;
+    border-color: #990012;
 	}
 }
 
 .burger {
 	position: absolute;
 	right: 20px;
-	top: 10px;
+	top: 20px;
 	cursor: pointer;
 
 	& path:nth-child(1){
@@ -121,21 +122,30 @@
 		font-family: 'Raleway', Arial, Helvetica, sans-serif;
 		font-size: 2rem;
 		text-align: center;
-		padding: 15px 0;
+		padding: 40px 0;
 	}
 }
 
 .general-advice {
-	background-color: #dff0d8; 
-	margin-bottom: 15px; 
+	background-color: #eee;
+	margin-bottom: 50px; 
 	padding-top: 60px;
+
+  a{
+    color: #990012 !important;
+  }
 }
 
 .course-advice {
-	background-color: #dff0d8; 
-	margin-bottom: 15px; 
-	padding: 60px 10px 15px; 
+  background-color: #eee;
+  margin: 0 0 50px; 
+  padding: 50px;
 	display: block;
+
+  a{
+    color: #990012 !important;
+  }
+
 }
 
 #fya-container-3 .small-12.medium-4.columns a{
@@ -164,7 +174,7 @@
 		-o-transform: scale(1.05);
 		transform: scale(1.05);
 		background-color: #fff;
-		border: 1px solid #aaa;
+		border: 1px solid #7bc8a4;
 
 	}
 }
