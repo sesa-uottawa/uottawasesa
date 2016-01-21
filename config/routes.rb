@@ -11,10 +11,14 @@ Uottawasesa::Application.routes.draw do
   end
 
   post 'join', to: "static_pages#create"
-  
-  get '/:startupweekend', 
-    to: "redirects#startup_link", 
+
+  get '/:startupweekend',
+    to: "redirects#startup_link_2015",
     startupweekend: /2015(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
+
+  get '/:startupweekend',
+    to: "redirects#startup_link_2016",
+    startupweekend: /2016(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
 
   get '/2015startup/count' => "redirects#startup_count"
 
