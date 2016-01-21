@@ -13,7 +13,7 @@ $(document).on('page:change', function(){
 
 });
 
-$(document).on('click', 'a[href*=#]:not([href=#])', function(){
+$(document).on('click', "a[href*=#]:not([href=#])", function(){
 
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
     && location.hostname == this.hostname) {
