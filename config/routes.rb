@@ -1,19 +1,20 @@
 Uottawasesa::Application.routes.draw do
 
+  resource :events, only: [:new, :show, :create]
+
   root "static_pages#home"
 
   namespace :static_pages, path: '/', as: nil do
     get 'join'
     get 'firstyearadvice'
-    get 'events'
     get 'members'
     get 'code_of_conduct'
   end
 
   post 'join', to: "static_pages#create"
-  
-  get '/:startupweekend', 
-    to: "redirects#startup_link", 
+
+  get '/:startupweekend',
+    to: "redirects#startup_link",
     startupweekend: /2015(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
 
   get '/2015startup/count' => "redirects#startup_count"
