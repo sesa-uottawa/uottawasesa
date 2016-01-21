@@ -2,6 +2,7 @@ header{
   position: fixed;
   transition: all 250ms linear;
   width: 100vw;
+  display: none;
   top: 0;
   left: 0;
   z-index: 1;
@@ -56,6 +57,10 @@ header{
       background-color: #fff;
     }
 
+    &:visited{
+      color: #333;
+    }
+
     &:after {
       color: #333;
     }
@@ -97,7 +102,7 @@ header{
 
 @media screen and (min-width: 1025px) {
   header{
-    opacity: 1 !important;
+    display: block;
   }
 }
 @media screen and (max-width: 1025px) {

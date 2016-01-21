@@ -60,6 +60,8 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.7)
     execjs (2.5.2)
+    font-awesome-rails (4.3.0.0)
+      railties (>= 3.2, < 5.0)
     foundation-rails (5.5.1.2)
       railties (>= 3.1.0)
       sass (>= 3.3.0, < 3.5)
@@ -172,6 +174,7 @@ PLATFORMS
 DEPENDENCIES
   actionview-encoded_mail_to
   aws-sdk
+  font-awesome-rails
   foundation-rails (= 5.5.1.2)
   jbuilder (>= 1.0.2)
   jquery-rails (>= 3.0.4)
@@ -180,8 +183,7 @@ DEPENDENCIES
   pry
   rails (= 4.2.0)
   rails_12factor (>= 0.0.2)
-  sass (>= 3.2.13)
-  sass-rails (>= 4.0.1)
+  sass-rails (~> 5.0)
   sprockets (>= 2.11.0)
   thin
   turbolinks (>= 1.1.1)

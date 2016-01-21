@@ -1,5 +1,9 @@
 $(document).on('page:change', function(){
 
+  // HOME PAGE CONTAINER 1
+
+  $("#home-container-1 > .text-container").css({ top: "35%", opacity: 1 });
+
   // JOIN
   
   $("span#close_successful_notice").click( function() { 
