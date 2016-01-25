@@ -30,3 +30,11 @@ a{
   z-index: 20;
   opacity: 0.3;
 }
+
+@media screen and (min-width: 800px) {
+
+  #events-container-1, #fya-container-1, #home-container-1, #home-container-3{
+    background-attachment: fixed;
+  }
+
+}
