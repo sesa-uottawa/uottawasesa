@@ -43,5 +43,11 @@ ActiveRecord::Schema.define(version: 20150212164524) do
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
   end
-
+  
+  create_table "events", force: :cascade do |t|
+    t.string "name", limit: 255
+    t.string "image", limit: 255
+    t.string "link",  limit: 255
+    t.datetime "created_at",                        null: false
+  end
 end
