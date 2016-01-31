@@ -11,6 +11,12 @@ header {
   	-webkit-transition: 250ms linear; 
     -moz-transition: 250ms linear;
     -o-transition: 250ms linear;
+
+@media screen and (min-width: 1200px){
+    #sign-out{
+      width: 12%;
+    }
+  }
 }
 
 header .row {
