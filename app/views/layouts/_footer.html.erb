@@ -1,23 +1,36 @@
-<footer><br>
-	<h1>Built &amp; deployed with creativity, passion and...</h1><br><br>
-	<div class="row row1">
-		<div class="small-12 medium-4 columns">
-			<%= link_to(image_tag('rails.png', size: '150x150', alt: 'Ruby Logo'), "http://rubyonrails.org/") %><br> 
-			<%= link_to 'Rails', "http://rubyonrails.org/", class: 'rails-logo' %>
-		</div>
-		<div class="small-12 medium-4 columns">
-			<%= link_to(image_tag('heroku.png', size: '150x150', alt: 'Heroku Logo'), "https://www.heroku.com/") %><br> 
-			<%= link_to 'Heroku', "https://www.heroku.com/", class: 'heroku-logo' %>
-		</div>
-		<div class="small-12 medium-4 columns">
-			<%= link_to(image_tag('foundation.svg', size: '150x150', alt: 'Foundation Logo'), "http://foundation.zurb.com/") %><br> 
-			<%= link_to 'Foundation', "http://foundation.zurb.com/", class: 'foundation-logo' %>
-		</div>
-	</div>
-	<br><br>
-	<div class="row row2" style="max-width: 100%;">
-		<div class="small-12 columns sign">
-			Built by <%= link_to 'Menelik Tucker', 'https://github.com/mtuck063' %>
-		</div>
-	</div>
+<footer>
+  <div class="row">
+    <div class="proud small-12 medium-12 large-3 columns">
+      Proudly Made in SITE Labratory<br>
+      © SESA 2016 | Built by  <%= link_to "Tucker", "http://meneliktucker.me/" %>
+    </div>
+
+    <div class="links small-12 medium-12 large-7 columns">
+      <div class="row">
+        <div class="columns small-12 medium-12 large-4">
+          <%= mail_to "uottawa.sesa@gmail.com", "Contact Us", encode: 'hex' %>
+        </div>
+        <div class="columns small-12 medium-12 large-4">
+          <%= link_to "Join SESA", join_path %>
+        </div>
+        <div class="columns small-12 medium-12 large-4">
+          <%= link_to "Code of Conduct", code_of_conduct_path %>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-media small-12 medium-12 large-2 columns">
+      <div class="row">
+        <div class="columns small-4">
+          <%= link_to fa_icon("facebook"), "https://t.co/PuWQ8jANwD", target: '_blank' %>
+        </div>
+        <div class="columns small-4">
+          <%= link_to fa_icon("twitter"), "https://twitter.com/uOttawaSESA", target: '_blank' %>
+        </div>
+        <div class="columns small-4">
+          <%= link_to fa_icon("instagram"), "http://instagram.com/uottawasesa", target: '_blank' %>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
