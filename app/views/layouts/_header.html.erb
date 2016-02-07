@@ -1,24 +1,42 @@
 <header>
   <div class="row header-row">
-    <div class="medium-12 large-3 columns">
+    <div class="medium-12 large-2 columns">
       <%= link_to root_path do %>
         <span>SESA</span>
       <% end %>
     </div>
-    <div class="medium-12 large-3 columns">
+    <div class="medium-12 large-2 columns">
       <%= link_to root_path+'#home-container-3' do %>
         <span>Our Mission</span>
       <% end %>
     </div>
-    <div class="medium-12 large-3 columns">
+    <div class="medium-12 large-2 columns">
       <%= link_to firstyearadvice_path do %>
         <span>First Year Tips</span>
       <% end %>
     </div>
-    <div class="medium-12 large-3 columns">
+    <div class="medium-12 large-2 columns">
       <%= link_to events_path do %>
         <span>Events</span>
       <% end %>
+    </div>
+    <div class="medium-12 large-2 columns">
+      <%= link_to "https://medium.com/@uottawa.sesa" do %>
+        <span>Newsletter</span>
+      <% end %>
+    </div>
+    <div class="medium-12 large-2 columns">
+        <div class="row">
+          <div class="columns large-4">
+            <%= link_to fa_icon("facebook"), "https://t.co/PuWQ8jANwD", target: '_blank' %>
+          </div>
+          <div class="columns large-4">
+            <%= link_to fa_icon("twitter"), "https://twitter.com/uOttawaSESA", target: '_blank' %>
+          </div>
+          <div class="columns large-4">
+            <%= link_to fa_icon("instagram"), "http://instagram.com/uottawasesa", target: '_blank' %>
+          </div>
+        </div>
     </div>
   </div>
 </header>
