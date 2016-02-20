@@ -4,41 +4,30 @@
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   color: #fff;
   text-align: center;
-  position: relative; 
   text-transform: uppercase;
-  min-height: 480px;
-  height: 85vh;
-}
+  padding: 30vh 0;
 
-#home-container-1 > .text-container{
-  transition: 1.5s cubic-bezier(0.7,0,0.3,1);
-  position: absolute; 
-  width: 100%;
-  opacity: 0;
-  left:0; right:0; top: 0; bottom:0;
-}
+  hr{
+    width: 50%;
+  }
 
-#home-container-1 h1 {
-  font-size:  5.8rem;
-  font-weight: 200;
-  letter-spacing: 0.2em;
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  color: #fff;
-  margin-bottom: 0;
-  line-height: 1;
+  .main-logo{
+    height: 10rem;
+    margin: 0 auto 1rem;
+  }
 
-}
+  .subtitle{
+    font-size: 1.2rem;
+    letter-spacing: 1px; 
+  }
 
-#home-container-1 > .text-container > span {
-  font-size:  125%;
-  letter-spacing: 0.2em;
 }
 
 hr {
-  background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
-  background-image: -o-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
-  background-image: -moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
-  background-image: linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.25),rgba(255,255,255,0));
+  background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+  background-image: -o-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+  background-image: linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
   margin: 0 auto 5px;
   border: 0;
   height: 2px;
@@ -48,60 +37,40 @@ hr {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   color: #990012;
   text-align: center;
-  position: relative; 
-  text-transform: uppercase;
+  font-size: 1.75rem;
+  padding: 10vh 10px;
   letter-spacing: 4px;
-  min-height: 360px;
-  height: 50vh;
-}
-
-#home-container-2 > .text-container {
-  position: absolute;
-  width: 100%;
-  font-weight: 400;
-  top: 0; left: 0; bottom: 0; right: 0;
-  margin: auto;
-}
-
-#home-container-2 > .text-container > p{
-  margin: 0;
-  font-size: 1.75em;
+  text-transform: uppercase;
 }
 
 #home-container-3 {
-  position: relative;
   background-image: image-url('traintrack.jpg');
   background-size: cover;
   text-align: center;
-  min-height: 480px;
-  margin-top: 40px;
-  height: 85vh;
-}
-
-#home-container-3 hr {
-  width: 60%;
-}
-
-#home-container-3 > .text-container > p {
+  padding: 25vh 10px;
   color: #fff;
-  min-width: 290px;
-  max-width: 60%;
-  margin: 0 auto;
-  font: 300 1em 'Open Sans', sans-serif;
-  letter-spacing: 1px;
+
+  .title{
+    opacity: 0.9;
+    font: 400 2.5em 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    width: 100%; 
+  }
+
+  hr{
+    width: 60%;
+  }
+
+  p{
+    max-width: 50rem;
+    margin: 0 auto;
+    font: 300 1em 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+  }
 }
 
-#home-container-3 > .text-container > h1 {
-  margin: 0;
-  opacity: 0.9;
-  color: #eee;
-  font: 400 2.5em 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  width: 100%;
-}
-
-#home-container-3 > .text-container > a {
+#home-container-3 a {
   transition: all 250ms linear;
   color: #333;
   text-decoration: none;

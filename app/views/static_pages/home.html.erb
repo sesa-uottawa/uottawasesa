@@ -1,31 +1,25 @@
 <% provide(:title, "SESA | Software Engineering Student Association")%>
 
 <div id="home-container-1">
-  <div class="text-container">
-    <h1>SESA</h1>
-    <hr>
-    <span>Software Engineering Student Association</span>
-  </div>
+  <%= image_tag "white-sesa-logo.png", class: "main-logo" %>
+  <hr>
+  <div class="subtitle" >Software Engineering Student Association</div>
 </div>
 
 <div id="home-container-2">
-  <div class="text-container">
-    <p> Make the opportunities <br><br>
-    Find your people <br><br>
-    Hustle > Role Definition</p>
-  </div>
+  Make the opportunities <br><br>
+  Find your people <br><br>
+  Hustle > Role Definition
 </div>
 
 <div id="home-container-3">
-  <div class="text-container">
-    <h1> Our Mission </h1>
-    <hr>
-    <p>Our mission is to provide a support group for software engineers and to define a group
-    of people who see themselves connected in an important way. SESA strives to enrich student
-    life while building a networking platform in order to aid students in landing real world experiences.</p>
-    <br>
-    <%= link_to 'Join', join_path+".form" %>
-  </div>
+  <div class="title"> Our Mission </div>
+  <hr>
+  <p>Our mission is to provide a support group for software engineers and to define a group
+  of people who see themselves connected in an important way. SESA strives to enrich student
+  life while building a networking platform in order to aid students in landing real world experiences.</p>
+  <br>
+  <%= link_to 'Join', join_path+".form" %>
 </div>
 
 <div id="home-container-4">
