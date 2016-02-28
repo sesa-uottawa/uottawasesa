@@ -1,32 +1,52 @@
 <header>
   <div class="row header-row">
-    <div class="medium-12 large-3 columns">
+    <div class="medium-12 large-2 columns">
       <%= link_to root_path do %>
         <span>SESA</span>
       <% end %>
     </div>
-    <div class="medium-12 large-3 columns">
+     <div class="medium-12 large-2 columns">
       <%= link_to root_path+'#home-container-3' do %>
         <span>Our Mission</span>
       <% end %>
     </div>
-    <div class="medium-12 large-3 columns">
+    <div class="medium-12 large-2 columns">
       <%= link_to firstyearadvice_path do %>
         <span>First Year Tips</span>
       <% end %>
     </div>
-    <div class="medium-12 large-3 columns">
+    <div class="medium-12 large-2 columns">
       <%= link_to events_path do %>
         <span>Events</span>
       <% end %>
     </div>
-    <% if user_signed_in? %>
-         <div class="medium-12 large-3 columns">
+     <div class="medium-12 large-2 columns">
+      <%= link_to "https://medium.com/@uottawa.sesa" do %>
+        <span>Newsletter</span>
+      <% end %>
+    </div> 
+     <% if user_signed_in? %>
+         <div class="medium-12 large-2 columns">
           <%= link_to destroy_user_session_path, data: {method: :delete} do %>
           <span>Sign Out</span>
           <%end %>
         </div>
     <% end %>
+    <% if !user_signed_in? %>
+    <div class="medium-12 large-2 columns">
+        <div class="row no-margin">
+          <div class="columns large-4">
+            <%= link_to fa_icon("facebook"), "https://goo.gl/dxDTdx", target: '_blank' %>
+          </div>
+          <div class="columns large-4">
+            <%= link_to fa_icon("twitter"), "https://goo.gl/hqXZ68", target: '_blank' %>
+          </div>
+          <div class="columns large-4">
+            <%= link_to fa_icon("instagram"), "https://goo.gl/FHrd7a", target: '_blank' %>
+          </div>
+        </div>
+    </div>
+    <%end %>
   </div>
 </header>
 
