@@ -28,7 +28,11 @@ class StaticPagesController < ApplicationController
   def events; end
 
   def members
-    @club_members = ClubMember.all
+    if user_signed_in?
+      @club_members = ClubMember.all
+    else
+      redirect_to root_path, alert: "You are not authorized to view that page"
+    end
   end
   
   private

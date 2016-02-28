@@ -21,8 +21,10 @@
       <% end %>
     </div>
     <% if user_signed_in? %>
-         <div class="medium-12 large-3 columns" id="sign-out">
-          <%= link_to 'Sign out',destroy_user_session_path, data:{method: :delete}  %>
+         <div class="medium-12 large-3 columns">
+          <%= link_to destroy_user_session_path, data: {method: :delete} do %>
+          <span>Sign Out</span>
+          <%end %>
         </div>
     <% end %>
   </div>
