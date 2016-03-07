@@ -96,7 +96,16 @@ class StaticPagesController < ApplicationController
   end
 
   def members
-    @club_members = ClubMember.all
+    if user_signed_in?
+      @club_members = ClubMember.all
+
+      respond_to do |format|
+        format.html 
+        format.csv {send_data @club_members.to_csv, filename: "sesa_members.csv"}
+      end
+    else
+      redirect_to root_path, alert: "You are not authorized"
+    end
   end
 
   private

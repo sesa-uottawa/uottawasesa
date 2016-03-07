@@ -30,9 +30,18 @@ a{
 .notice {
   position: absolute;
   background-color: #98fb98;
-  padding: 20px;
+  font-color: #000000;
+  padding: 17.5px;
   z-index: 20;
-  opacity: 0.3;
+  opacity: 0.8;
+}
+.alert {
+  position: absolute;
+  background-color: #FF4258;
+  font-color: #000000;
+  padding: 17.5px;
+  z-index: 20;
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 800px) {
