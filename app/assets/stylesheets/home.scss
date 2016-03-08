@@ -18,9 +18,16 @@
 
   .subtitle{
     font-size: 1.2rem;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
   }
 
+}
+
+.apply-now{
+  &:hover {
+    background-color: tomato;
+    text-decoration: underline;
+  }
 }
 
 hr {
@@ -55,7 +62,7 @@ hr {
     font: 400 2.5em 'Open Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 8px;
-    width: 100%; 
+    width: 100%;
   }
 
   hr{
@@ -117,7 +124,7 @@ hr {
 
 #home-container-4 .row .columns{
   text-align: center;
-  padding: 10px 0; 
+  padding: 10px 0;
   text-transform: uppercase;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   color: #555;
@@ -148,7 +155,7 @@ hr {
   .row{
     max-width: 100vw;
   }
-} 
+}
 
 #home-container-5 .columns {
   display: inline-block;
@@ -180,7 +187,7 @@ hr {
     font-weight: 300;
     letter-spacing: 1px;
 
-    h1{ 
+    h1{
       font: 400 2.5em 'Open Sans', sans-serif;
       text-transform: uppercase;
       letter-spacing: 8px;
@@ -210,7 +217,7 @@ hr {
     & span, a{
       font-size: 1em;
     }
-  } 
+  }
 }
 
 

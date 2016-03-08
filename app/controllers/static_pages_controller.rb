@@ -27,6 +27,21 @@ class StaticPagesController < ApplicationController
 
   def events
     @events = [
+      {
+        banner: 'events_2016/feb_march_april_RoR_TutoRails.jpg',
+        event: 'Winter 2016 Ruby on Rails TutoRails',
+        facebook_url: 'https://www.facebook.com/events/528667590639068/'
+        },
+      {
+        banner: 'events_2016/feb_resume_review.jpg',
+        event: 'Resume Review - Feb. 2016',
+        facebook_url: 'https://www.facebook.com/events/1042983599073715/'
+        },
+      {
+        banner: 'events_2016/feb_startup_weeknd.jpg',
+        event: 'uOttawa Startup Weekend - Feb. 2016',
+        facebook_url: 'https://www.facebook.com/events/1693474737537934/'
+        },
       {:banner => 'events_2016/feb_html_css_js_tut.jpg',
         :event => 'HTML5/JavaScript/CSS Workshop',
         :facebook_url => 'https://www.facebook.com/events/1513986038908447/'},
@@ -100,7 +115,7 @@ class StaticPagesController < ApplicationController
       @club_members = ClubMember.all
 
       respond_to do |format|
-        format.html 
+        format.html
         format.csv {send_data @club_members.to_csv, filename: "sesa_members.csv"}
       end
     else
