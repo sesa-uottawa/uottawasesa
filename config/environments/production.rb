@@ -23,9 +23,14 @@ Uottawasesa::Application.configure do
   config.serve_static_files = true
 
   # Compress JavaScripts and CSS.
-  config.assets.compress = false 
-  #config.assets.js_compressor = :uglifier
-  # config.assets.css_compressor = :sass
+  #
+  # config.assets.compress = false
+  #
+  # The config.assets.compress initialization option is no longer used in
+  # Rails 4 to enable either CSS or JavaScript compression.
+  #
+  config.assets.js_compressor = :uglifier
+  config.assets.css_compressor = :yui
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
