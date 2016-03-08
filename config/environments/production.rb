@@ -30,7 +30,7 @@ Uottawasesa::Application.configure do
   # Rails 4 to enable either CSS or JavaScript compression.
   #
   config.assets.js_compressor = :uglifier
-  config.assets.css_compressor = :yui
+  config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
