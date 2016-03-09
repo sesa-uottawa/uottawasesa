@@ -123,6 +123,10 @@ class StaticPagesController < ApplicationController
     end
   end
 
+  def open_positions
+    render "open_positions"
+  end
+
   private
     def club_member_params
       params.require(:club_member).permit(:first_name, :last_name, :email,

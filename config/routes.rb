@@ -11,6 +11,8 @@ Uottawasesa::Application.routes.draw do
     get 'code_of_conduct'
   end
 
+  get '/super/sekret/not/public/open-positions', to: 'static_pages#open_positions'
+
   post 'join', to: "static_pages#create"
 
   get '/:startupweekend',
@@ -22,6 +24,10 @@ Uottawasesa::Application.routes.draw do
     startupweekend: /2016(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
 
   get '/2015startup/count' => "redirects#startup_count"
+
+  if Rails.env.production?
+    get '*path' => redirect('/')
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
