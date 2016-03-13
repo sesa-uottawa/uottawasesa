@@ -19,10 +19,11 @@ gem 'jquery-ui-rails'
 gem 'turbolinks', '>=1.1.1'
 gem 'jbuilder', '>=1.0.2'
 gem 'actionview-encoded_mail_to'
-gem 'devise'
+gem 'devise', github: 'plataformatec/devise'
 
 group :development do
 	gem 'pry'
+  gem 'listen', '~> 3.0', '>= 3.0.6'
 end
 
 group :production do
