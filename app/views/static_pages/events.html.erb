@@ -6,18 +6,34 @@
   <h1>Events</h1>
 </div>
 
-<div id="events-container-2" >
+<div id="events-container-2">
   <div class="row" style="max-width: 85rem;">
-    <!-- PREVIOUS EVENTS -->
-    <h3>PAST EVENTS</h3>
-    <div id="events-container-2" >
-      <div class="row" style="max-width: 85rem;">
-        <% @events.each do |event| %>
-          <div class="small-12 medium-12 large-7 large-centered medium-centered columns">
-            <%= link_to(image_tag("#{event[:banner]}", class: 'effect-apollo', alt: "#{event[:event]}", size:"716x265"), "#{event[:facebook_url]}") %>
-          </div>
+    <% @events.each do |event| %>
+      <% if event[:type] == 'recurring' %>
+        <% unless @recurring_status_posted %>
+          <% @recurring_status_posted = true %>
+          <h3>RECURRING EVENTS</h3>
         <% end %>
+      <% end %>
+      <% if event[:type] == 'upcoming' %>
+        <% unless @upcoming_status_posted %>
+          <% @upcoming_status_posted = true %>
+          <h3>UPCOMING EVENTS</h3>
+        <% end %>
+      <% end %>
+      <% if event[:type] == 'past' %>
+        <% unless @past_status_posted %>
+          <% @past_status_posted = true %>
+          <h3>PAST EVENTS</h3>
+        <% end %>
+      <% end %>
+      <div class="row" style="max-width: 85rem;">
+        <div id="events-container-2" >
+          <div class="small-12 medium-12 large-7 large-centered medium-centered columns">
+            <%= link_to(image_tag("#{event[:banner]}", class: 'effect-apollo', alt: "#{event[:event]}"), "#{event[:facebook_url]}") %>
+          </div>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
 </div>
