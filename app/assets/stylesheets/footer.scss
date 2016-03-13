@@ -1,51 +1,47 @@
-footer{
-  background-color: #eee;
-  padding: 20px;
-
-  h5{
-    display: inline-block;
-    font-weight: 400;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
-    min-width: 150px;
-    font-size: 1.35rem;
-  }
-
-  a{
-    color: #333 !important;
-  }
-
-  .row{
-    max-width: 100%;
-  }
-
-  .proud{
-    text-align: center;
-    font-size: 0.9rem;
-    line-height: 2;
-    letter-spacing: 0.05rem; 
-  }
-
-  .links{
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 500;
-    height: 100%;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    line-height: 3.5rem;
-    min-height: 3.5rem;
-  }
-
-  .social-media{
-    line-height: 3.5rem;
-    min-height: 3.5rem;
-    font-size: 1.2rem;
-    text-align: center;
-
-    a{
-      color: #990012 !important;
+footer {
+    background-color: #eee;
+    padding: 20px;
+    h5 {
+        display: inline-block;
+        font-weight: 400;
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        min-width: 150px;
+        font-size: 1.35rem;
     }
-  }
+    a {
+        color: #333 !important;
+    }
+    .row {
+        max-width: 100%;
+    }
+    .proud {
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 2;
+        letter-spacing: 0.05rem;
+        #outside-link {
+            border-bottom: 1px solid #990012;
+        }
+    }
+    .links {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+        height: 100%;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        line-height: 3.5rem;
+        min-height: 3.5rem;
+    }
+    .social-media {
+        line-height: 3.5rem;
+        min-height: 3.5rem;
+        font-size: 1.2rem;
+        text-align: center;
+        a {
+            color: #990012 !important;
+        }
+    }
 }
