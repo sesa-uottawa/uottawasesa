@@ -1,5 +1,5 @@
 .centered-container{
-  padding-top: 1em;
+  padding: 25px;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -21,6 +21,7 @@
 
 .open-positions-container{
   flex-grow: 2;
+  max-width: 480px;
 }
 
 .open-positions-right-spacer{

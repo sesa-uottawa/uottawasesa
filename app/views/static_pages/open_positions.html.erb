@@ -1,6 +1,5 @@
 <% provide(:title, "SESA | Open Positions")%>
 <div class="centered-container">
-  <div class="open-positions-left-spacer"></div>
   <div class="open-positions-container">
     <div class="open-positions-heading">
       <h1>Open Positions</h1>
@@ -48,87 +47,11 @@
         </div>
         <div class="position-form-container">
           <div class="position-form">
-            <form>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Your Full Name
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Faculty
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Program of Study
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Please enter your preferred email address for contact
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Other commitments during the year (e.g. Co-op, Exchange, Part-time job, Other extracurriculars, Other clubs, etc.)
-                    <textarea rows="3"></textarea>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>LinkedIn URL
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Github URL
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Why would you be a good candidate?
-                    <textarea rows="3"></textarea>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Resume URL (Dropbox, Google Docs, etc.)
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Anything else?
-                    <textarea rows="1"></textarea>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <input type="submit" class="button expand" data-position="RoR" />
-                </div>
-              </div>
-            </form>
+            <%= react_component ('MyFormInput') %>
+             <!-- react_component ('MyFormInput') -->
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="open-positions-right-spacer"></div>
 </div>
