@@ -16,10 +16,9 @@ var MyFormInput = React.createClass({
   },
   handleSubmit: function(e) {
     e.preventDefault();
-    var data =  {
-      'data' : [{
-        'type': 'form',
-        'id': $('meta[name=csrf-token]').attr('content'),
+    var application =  {
+      'data' : {
+        'type': 'application',
         'attributes':{
           'firstName': this.state.firstName.trim(),
           'lastName':  this.state.lastName.trim(),
@@ -33,9 +32,21 @@ var MyFormInput = React.createClass({
           'resumeUrl': this.state.resumeUrl.trim(),
           'additionalInfo':  this.state.additionalInfo.trim()
         }
-      }]
+      }
     };
-    window.console.log(data);
+    $.ajax({
+      url: '/applications',
+      dataType: 'json',
+      type: 'POST',
+      data: application,
+      success: function(data) {
+        debugger;
+        this.setState({data: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
   },
   render: function() {
     var csrfToken = $('meta[name=csrf-token]').attr('content');
