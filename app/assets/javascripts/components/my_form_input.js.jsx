@@ -86,7 +86,6 @@ var MyFormInput = React.createClass({
     this.setState({programOfStudy: e.target.value});
   },
   handleEmailChange: function(e) {
-    debugger;
     this.setState({email: e.target.value});
   },
   handleCommitmentsChange: function(e) {
