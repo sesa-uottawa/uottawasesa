@@ -58,16 +58,16 @@ var MyFormInput = React.createClass({
         <input type='hidden' name='_method' value='patch' />
         <input type='hidden' name='utf8' value='✓' />
         <input type='hidden' name='authenticity_token' value={csrfToken} />
-        {this.renderTextInput('firstName', 'First Name', this.state.firstName ,this.handleFirstNameChange)}
-        {this.renderTextInput('lastName', 'Last Name', this.state.lastName, this.handleLastNameChange)}
-        {this.renderTextInput('faculty', 'Faculty', this.state.faculty, this.handleFacultyChange)}
-        {this.renderTextInput('programOfStudy', 'Program of Study', this.state.programOfStudy, this.handleProgramOfStudyChange)}
-        {this.renderTextInput('email', 'Please enter your preferred email address for contact', this.state.email, this.handleEmailChange)}
+        <FormLabel id={"firstName"} label={"First Name"} field={<FormTextInput className={"form-control"} id={"firstName"} value={this.state.firstName} onChangeHander={this.handleFirstNameChange} />} />
+        <FormLabel id={"lastName"} label={"Last Name"} field={<FormTextInput className={"form-control"} id={"lastName"} value={this.state.lastName} onChangeHander={this.handleLastNameChange} />} />
+        <FormLabel id={"faculty"} label={"Faculty"} field={<FormTextInput className={"form-control"} id={"faculty"} value={this.state.faculty} onChangeHander={this.handleFacultyChange} placeholder={"Faculty of Engineering"} />} />
+        <FormLabel id={"programOfStudy"} label={"Program of Study"} field={<FormTextInput className={"form-control"} id={"programOfStudy"} value={this.state.programOfStudy} onChangeHander={this.handleProgramOfStudyChange} placeholder={"Software Engineering"} />} />
+        <FormLabel id={"email"} label={"Please enter your preferred email address for contact"} field={<FormTextInput className={"form-control"} id={"email"} value={this.state.email} onChangeHander={this.handleEmailChange} placeholder={"esmith007@uottawa.ca"} />} />
         {this.renderTextArea('commitments', 'Other commitments during the year (e.g. Co-op, Exchange, Part-time job, Other extracurriculars, Other clubs, etc.)', this.state.commitments, this.handleCommitmentsChange)}
-        {this.renderTextInput('linkedInUrl', 'LinkedIn URL', this.state.linkedInUrl, this.handleLinkedInUrlChange)}
-        {this.renderTextInput('githubUrl', 'Github URL', this.state.githubUrl, this.handleGithubUrlChange)}
+        <FormLabel id={"linkedInUrl"} label={"LinkedIn URL"} field={<FormTextInput className={"form-control"} id={"linkedInUrl"} value={this.state.linkedInUrl} onChangeHander={this.handleLinkedInUrlChange} />} />
+        <FormLabel id={"githubUrl"} label={"Github URL"} field={<FormTextInput className={"form-control"} id={"githubUrl"} value={this.state.githubUrl} onChangeHander={this.handleGithubUrlChange} />} />
         {this.renderTextArea('whyGoodCandidate', 'Why would you be a good candidate?', this.state.whyGoodCandidate, this.handleWhyGoodCandidateChange)}
-        {this.renderTextInput('resumeUrl', 'Resume URL (Dropbox, Google Docs, etc.)', this.state.resumeUrl, this.handleResumeUrlChange)}
+        <FormLabel id={"resumeUrl"} label={"Resume URL (Dropbox, Google Docs, etc.)"} field={<FormTextInput className={"form-control"} id={"resumeUrl"} value={this.state.resumeUrl} onChangeHander={this.handleResumeUrlChange} />} />
         {this.renderTextArea('additionalInfo', 'Anything else?', this.state.additionalInfo, this.handleAdditionalInfoChange)}
         <input type="submit" value="Apply" className="signup" />
       </form>
