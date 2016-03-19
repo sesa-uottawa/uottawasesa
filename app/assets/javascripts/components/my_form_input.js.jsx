@@ -40,10 +40,13 @@ var MyFormInput = React.createClass({
       type: 'POST',
       data: application,
       success: function(data) {
-        debugger;
+        $(ReactDOM.findDOMNode(this)).hide();
+        $('.successful-application').show();
         this.setState({data: data});
       }.bind(this),
       error: function(xhr, status, err) {
+        $(ReactDOM.findDOMNode(this)).hide();
+        $('.retry-application').show();
         console.error(this.props.url, status, err.toString());
       }.bind(this)
     });
@@ -83,6 +86,7 @@ var MyFormInput = React.createClass({
     this.setState({programOfStudy: e.target.value});
   },
   handleEmailChange: function(e) {
+    debugger;
     this.setState({email: e.target.value});
   },
   handleCommitmentsChange: function(e) {
