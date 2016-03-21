@@ -5,7 +5,7 @@ var FormLabel = React.createClass({
       <div>
         <label htmlFor={this.props.id} className="col-sm-4 control-label" name={this.props.label}>{this.props.label}</label>
         <div className="col-sm-6">
-          {this.props.field}
+          {this.props.children}
         </div>
       </div>
     );

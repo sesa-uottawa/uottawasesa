@@ -54,21 +54,42 @@ var MyFormInput = React.createClass({
   render: function() {
     var csrfToken = $('meta[name=csrf-token]').attr('content');
     return (
-      <form role='form' onSubmit={this.handleSubmit} accept-charset='UTF-8'>
-        <input type='hidden' name='_method' value='patch' />
+      <form role='form' onSubmit={this.handleSubmit} acceptCharset='UTF-8'>
         <input type='hidden' name='utf8' value='✓' />
         <input type='hidden' name='authenticity_token' value={csrfToken} />
-        <FormLabel id={"firstName"} label={"First Name"} field={<FormTextInput className={"form-control"} id={"firstName"} value={this.state.firstName} onChangeHander={this.handleFirstNameChange} />} />
-        <FormLabel id={"lastName"} label={"Last Name"} field={<FormTextInput className={"form-control"} id={"lastName"} value={this.state.lastName} onChangeHander={this.handleLastNameChange} />} />
-        <FormLabel id={"faculty"} label={"Faculty"} field={<FormTextInput className={"form-control"} id={"faculty"} value={this.state.faculty} onChangeHander={this.handleFacultyChange} placeholder={"Faculty of Engineering"} />} />
-        <FormLabel id={"programOfStudy"} label={"Program of Study"} field={<FormTextInput className={"form-control"} id={"programOfStudy"} value={this.state.programOfStudy} onChangeHander={this.handleProgramOfStudyChange} placeholder={"Software Engineering"} />} />
-        <FormLabel id={"email"} label={"Please enter your preferred email address for contact"} field={<FormTextInput className={"form-control"} id={"email"} value={this.state.email} onChangeHander={this.handleEmailChange} placeholder={"esmith007@uottawa.ca"} />} />
-        {this.renderTextArea('commitments', 'Other commitments during the year (e.g. Co-op, Exchange, Part-time job, Other extracurriculars, Other clubs, etc.)', this.state.commitments, this.handleCommitmentsChange)}
-        <FormLabel id={"linkedInUrl"} label={"LinkedIn URL"} field={<FormTextInput className={"form-control"} id={"linkedInUrl"} value={this.state.linkedInUrl} onChangeHander={this.handleLinkedInUrlChange} />} />
-        <FormLabel id={"githubUrl"} label={"Github URL"} field={<FormTextInput className={"form-control"} id={"githubUrl"} value={this.state.githubUrl} onChangeHander={this.handleGithubUrlChange} />} />
-        {this.renderTextArea('whyGoodCandidate', 'Why would you be a good candidate?', this.state.whyGoodCandidate, this.handleWhyGoodCandidateChange)}
-        <FormLabel id={"resumeUrl"} label={"Resume URL (Dropbox, Google Docs, etc.)"} field={<FormTextInput className={"form-control"} id={"resumeUrl"} value={this.state.resumeUrl} onChangeHander={this.handleResumeUrlChange} />} />
-        {this.renderTextArea('additionalInfo', 'Anything else?', this.state.additionalInfo, this.handleAdditionalInfoChange)}
+        <FormLabel id={"firstName"} label={"First Name"}>
+          <FormTextInput className={"form-control"} id={"firstName"} value={this.state.firstName} onChangeHander={this.handleFirstNameChange} />
+        </FormLabel>
+        <FormLabel id={"lastName"} label={"Last Name"}>
+          <FormTextInput className={"form-control"} id={"lastName"} value={this.state.lastName} onChangeHander={this.handleLastNameChange} />
+        </FormLabel>
+        <FormLabel id={"faculty"} label={"Faculty"}>
+          <FormTextInput className={"form-control"} id={"faculty"} value={this.state.faculty} onChangeHander={this.handleFacultyChange} placeholder={"Faculty of Engineering"} />
+        </FormLabel>
+        <FormLabel id={"programOfStudy"} label={"Program of Study"}>
+          <FormTextInput className={"form-control"} id={"programOfStudy"} value={this.state.programOfStudy} onChangeHander={this.handleProgramOfStudyChange} placeholder={"Software Engineering"} />
+        </FormLabel>
+        <FormLabel id={"email"} label={"Please enter your preferred email address for contact"}>
+          <FormTextInput className={"form-control"} id={"email"} value={this.state.email} onChangeHander={this.handleEmailChange} placeholder={"esmith007@uottawa.ca"} />
+        </FormLabel>
+        <FormLabel id={"commitments"} row={"3"} label={"Other commitments during the year (e.g. Co-op, Exchange, Part-time job, Other extracurriculars, Other clubs, etc.)"}>
+          <FormTextArea className={"form-control"} id={"commitments"} value={this.state.commitments} onChangeHander={this.handleCommitmentsChange} />
+        </FormLabel>
+        <FormLabel id={"linkedInUrl"} label={"LinkedIn URL"}>
+          <FormTextInput className={"form-control"} id={"linkedInUrl"} value={this.state.linkedInUrl} onChangeHander={this.handleLinkedInUrlChange} />
+        </FormLabel>
+        <FormLabel id={"githubUrl"} label={"Github URL"}>
+          <FormTextInput className={"form-control"} id={"githubUrl"} value={this.state.githubUrl} onChangeHander={this.handleGithubUrlChange} />
+        </FormLabel>
+        <FormLabel id={"whyGoodCandidate"} row={"3"} label={"Why would you be a good candidate?"}>
+          <FormTextArea className={"form-control"} id={"whyGoodCandidate"} value={this.state.whyGoodCandidate} onChangeHander={this.handleWhyGoodCandidateChange} />
+        </FormLabel>
+        <FormLabel id={"resumeUrl"} label={"Resume URL (Dropbox, Google Docs, etc.)"}>
+          <FormTextInput className={"form-control"} id={"resumeUrl"} value={this.state.resumeUrl} onChangeHander={this.handleResumeUrlChange} />
+        </FormLabel>
+        <FormLabel id={"additionalInfo"} row={"3"} label={"Anything else?"}>
+          <FormTextArea className={"form-control"} id={"additionalInfo"} value={this.state.additionalInfo} onChangeHander={this.handleAdditionalInfoChange} />
+        </FormLabel>
         <input type="submit" value="Apply" className="signup" />
       </form>
     );
@@ -105,37 +126,5 @@ var MyFormInput = React.createClass({
   },
   handleAdditionalInfoChange: function(e) {
     this.setState({additionalInfo: e.target.value});
-  },
-  renderTextInput: function(id, label, state, handler) {
-    return this.renderField(id, label,
-      <input
-        type="text"
-        className="form-control"
-        id={id}
-        ref={id}
-        value={state}
-        onChange={handler}
-      />
-    )
-  },
-  renderTextArea: function(id, label, state, handler){
-    return this.renderField(id, label,
-      <textarea
-        rows="3"
-        className="form-control"
-        id={id}
-        ref={id}
-        value={state}
-        onChange={handler}
-      />
-    )
-  },
-  renderField: function(id, label, field) {
-    return <div>
-      <label htmlFor={id} className="col-sm-4 control-label">{label}</label>
-      <div className="col-sm-6">
-        {field}
-      </div>
-    </div>
   }
 });
