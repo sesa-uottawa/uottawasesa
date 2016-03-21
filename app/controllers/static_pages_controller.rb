@@ -38,10 +38,16 @@ class StaticPagesController < ApplicationController
         type: 'recurring'
         },
       {
+        banner: 'events_2016/march_klipfolio.png',
+        event: 'Meet & Greet with Klipfolio',
+        facebook_url: 'https://www.facebook.com/events/789526077819207/',
+        type: 'upcoming'
+      },
+      {
         banner: 'events_2016/march_ibm_watson.jpg',
         event: 'IBM Watson Analytics',
         facebook_url: 'https://www.facebook.com/events/1244207188953711/',
-        type: 'upcoming'
+        type: 'past'
       },
       {
         banner: 'events_2016/feb_resume_review.jpg',
