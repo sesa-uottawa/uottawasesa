@@ -52,11 +52,8 @@ var MyFormInput = React.createClass({
     });
   },
   render: function() {
-    var csrfToken = $('meta[name=csrf-token]').attr('content');
     return (
       <form role='form' onSubmit={this.handleSubmit} acceptCharset='UTF-8'>
-        <input type='hidden' name='utf8' value='✓' />
-        <input type='hidden' name='authenticity_token' value={csrfToken} />
         <FormLabel id={"firstName"} label={"First Name"}>
           <FormTextInput className={"form-control"} id={"firstName"} value={this.state.firstName} onChangeHander={this.handleFirstNameChange} />
         </FormLabel>
@@ -70,7 +67,7 @@ var MyFormInput = React.createClass({
           <FormTextInput className={"form-control"} id={"programOfStudy"} value={this.state.programOfStudy} onChangeHander={this.handleProgramOfStudyChange} placeholder={"Software Engineering"} />
         </FormLabel>
         <FormLabel id={"email"} label={"Please enter your preferred email address for contact"}>
-          <FormTextInput className={"form-control"} id={"email"} value={this.state.email} onChangeHander={this.handleEmailChange} placeholder={"esmith007@uottawa.ca"} />
+          <FormTextInput type={"email"} className={"form-control"} id={"email"} value={this.state.email} onChangeHander={this.handleEmailChange} placeholder={"esmith007@uottawa.ca"} />
         </FormLabel>
         <FormLabel id={"commitments"} row={"3"} label={"Other commitments during the year (e.g. Co-op, Exchange, Part-time job, Other extracurriculars, Other clubs, etc.)"}>
           <FormTextArea className={"form-control"} id={"commitments"} value={this.state.commitments} onChangeHander={this.handleCommitmentsChange} />

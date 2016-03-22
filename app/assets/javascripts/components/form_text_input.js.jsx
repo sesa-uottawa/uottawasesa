@@ -1,10 +1,14 @@
 var FormTextInput = React.createClass({
-
-  render: function() {
+  getDefaultProps() {
+      return {
+          type: 'text'  
+      };
+  },
+  render() {
     return (
       <div>
         <input
-          type="text"
+          type={this.props.type}
           className={this.props.className}
           id={this.props.id}
           ref={this.props.id}
