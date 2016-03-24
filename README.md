@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/sesa-uottawa/uottawasesa.png?label=ready&title=Ready)](https://waffle.io/sesa-uottawa/uottawasesa)
 # Software Engineering Student Association (SESA) | L'Association des Étudiants en Génie Logiciel (AÉGL)
 
 This is our home page:
