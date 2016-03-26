@@ -110,7 +110,7 @@ class StaticPagesController < ApplicationController
         banner: 'events_2016/march_klipfolio.png',
         event: 'Meet & Greet with Klipfolio',
         facebook_url: 'https://www.facebook.com/events/789526077819207/',
-        type: 'upcoming'
+        type: 'past'
       },
       {
         banner: 'events_2016/march_ibm_watson.jpg',
