@@ -20,6 +20,7 @@ gem 'turbolinks', '>=1.1.1'
 gem 'jbuilder', '>=1.0.2'
 gem 'actionview-encoded_mail_to'
 gem 'devise', git: 'git@github.com:plataformatec/devise.git'
+gem 'react-rails', '~> 1.6', '>= 1.6.2'
 
 group :development do
 	gem 'pry'

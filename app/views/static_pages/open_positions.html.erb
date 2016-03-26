@@ -1,134 +1,70 @@
 <% provide(:title, "SESA | Open Positions")%>
-<div class="centered-container">
-  <div class="open-positions-left-spacer"></div>
-  <div class="open-positions-container">
-    <div class="open-positions-heading">
-      <h1>Open Positions</h1>
+    <div class="centered-container">
+        <div class="open-positions-container">
+            <div class="open-positions-heading">
+                <h1>Open Positions</h1>
+            </div>
+            <div class="open-positions-disclaimer">
+                <p>
+                    Within SESA, all positions are unpaid volunteer roles. However, we are always on the lookout for great talent.
+                </p>
+                <p>
+                    We are a bunch of like-minded kids that are passionate about technology. We believe that each one of us can do their part in making the world a better place through software. We like to invest our time and energy in strengthening our uOttawa software community. We believe in applying software engineering principles to our daily life. We believe in iterative delivery rather than being afraid of failure.
+                </p>
+                <p>
+                    We use various cutting edge tools throughout our daily operations. We are always online. We support each other online. We plan online. We communicate online. We follow the practices and use the tools that you would at a real "tech." workplace. That requires a commitment from each and every member. <b>We expect you to use these tools.</b>
+                </p>
+                <p>
+                    With your application, you understand of your minimum 5 hour weekly commitment to SESA. Honestly, we are here to listen and represent software interested students and make their experience at uOttawa a great one. We got plans and we are making them happen.
+                </p>
+                <p>
+                    We look forward to your application.
+                </p>
+                <p>
+                    Have a superb day.
+                </p>
+            </div>
+            <div class="open-positions-listings">
+                <div class="open-position">
+                    <div class="position-title">
+                        <h2>> Ruby on Rails Web Ninja</h2>
+                    </div>
+                    <div class="position-description-general">
+                        You will be responsible for maintaining our most important component of SESA: our first impression. We will entrust you with our website. It is not just a website, it is much more than that. It is a web application. It gives you an opportunity to experiment with new technologies. Your changes to this website will be visible by many. Not only do students from uOttawa Engineering view this website, but also other faculties, professors, and other clubs. Moreover, outside corporations and your future employeers will likely reference this website to checkup on you. Needless to say, this is a very critical role.
+                    </div>
+                    <div class="position-description-specific">
+                        <h3>Ideal Candidate:</h3>
+                        <ul>
+                            <li>Ruby on Rails knowledge</li>
+                            <li>CSS and HTML</li>
+                            <li>Git Version Control</li>
+                            <li>Heroku PaaS</li>
+                            <li>not afraid of cli</li>
+                            <li>not afraid to ask for help</li>
+                            <li>gets stuff done</li>
+                            <li>JS (optional but welcome)</li>
+                        </ul>
+                    </div>
+                    <div class="position-form-container">
+                        <div class="successful-application" style="background: #03a678;padding-left: 10px;color: #000000;font-weight: 400;font-size: 24px; display: none">
+                            <div>
+                              <p>Yay! You have successfully applied. </p>
+                              <p>If you are selected, someone will contact you to schedule an interview within two weeks.</p>
+                              <p>Thank you for your interest =)</p>
+                            </div>
+                        </div>
+                        <div class="retry-application" style="background: tomato;padding-left: 10px;color: #000000;font-weight: 400;font-size: 24px; display: none">
+                          <div>
+                              <p>Woops something went wrong somewhere about something.</p>
+                              <p>Please contact us on <a href="https://goo.gl/dxDTdx">Facebook</a> about it.</p>
+                               <p>Thank you for your interest =)</p>
+                            </div>
+                        </div>
+                        <div class="position-form">
+                            <%= react_component ('MyFormInput') %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="open-positions-disclaimer">
-      <p>
-        Within SESA, all positions are unpaid volunteer roles. However, we are always on the lookout for great talent.
-      </p>
-      <p>
-        We are a bunch of like-minded kids that are passionate about technology. We believe that each one of us can do their part in making the world a better place through software. We like to invest our time and energy in strengthening our uOttawa software community. We believe in applying software engineering principles to our daily life. We believe in iterative delivery rather than being afraid of failure.
-      </p>
-      <p>
-        We use various cutting edge tools throughout our daily operations. We are always online. We support each other online. We plan online. We communicate online. We follow the practices and use the tools that you would at a real "tech." workplace. That requires a commitment from each and every member. <b>We expect you to use these tools.</b>
-      </p>
-      <p>
-        With your application, you understand of your minimum 5 hour weekly commitment to SESA. Honestly, we are here to listen and represent software interested students and make their experience at uOttawa a great one. We got plans and we are making them happen.
-      </p>
-      <p>
-        We look forward to your application.
-      </p>
-      <p>
-        Have a superb day.
-      </p>
-    </div>
-    <div class="open-positions-listings">
-      <div class="open-position">
-        <div class="position-title">
-          <h2>> Ruby on Rails Web Ninja</h2>
-        </div>
-        <div class="position-description-general">
-          You will be responsible for maintaining our most important component of SESA: our first impression. We will entrust you with our website. It is not just a website, it is much more than that. It is a web application. It gives you an opportunity to experiment with new technologies. Your changes to this website will be visible by many. Not only do students from uOttawa Engineering view this website, but also other faculties, professors, and other clubs. Moreover, outside corporations and your future employeers will likely reference this website to checkup on you. Needless to say, this is a very critical role.
-        </div>
-        <div class="position-description-specific">
-          <h3>Ideal Candidate:</h3>
-          <ul>
-            <li>Ruby on Rails knowledge</li>
-            <li>CSS and HTML</li>
-            <li>Git Version Control</li>
-            <li>Heroku PaaS</li>
-            <li>not afraid of cli</li>
-            <li>not afraid to ask for help</li>
-            <li>gets stuff done</li>
-            <li>JS (optional but welcome)</li>
-          </ul>
-        </div>
-        <div class="position-form-container">
-          <div class="position-form">
-            <form>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Your Full Name
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Faculty
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Program of Study
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Please enter your preferred email address for contact
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Other commitments during the year (e.g. Co-op, Exchange, Part-time job, Other extracurriculars, Other clubs, etc.)
-                    <textarea rows="3"></textarea>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>LinkedIn URL
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Github URL
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Why would you be a good candidate?
-                    <textarea rows="3"></textarea>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Resume URL (Dropbox, Google Docs, etc.)
-                    <input type="text" />
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Anything else?
-                    <textarea rows="1"></textarea>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <input type="submit" class="button expand" data-position="RoR" />
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="open-positions-right-spacer"></div>
-</div>

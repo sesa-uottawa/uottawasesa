@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     get 'code_of_conduct'
   end
 
+  # resource :applications, only: [:create]
+
   get '/super/sekret/not/public/open-positions', to: 'static_pages#open_positions'
 
   post 'join', to: "static_pages#create"

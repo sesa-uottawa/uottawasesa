@@ -11,10 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160109001141) do
+ActiveRecord::Schema.define(version: 20160318013727) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "applications", force: :cascade do |t|
+    t.string   "firstName"
+    t.string   "lastName"
+    t.string   "faculty"
+    t.string   "programOfStudy"
+    t.string   "email"
+    t.text     "commitments"
+    t.string   "linkedInUrl"
+    t.string   "githubUrl"
+    t.text     "whyGoodCandidate"
+    t.string   "resumeUrl"
+    t.text     "additionalInfo"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "club_members", force: :cascade do |t|
     t.string  "first_name", limit: 255
@@ -26,6 +42,20 @@ ActiveRecord::Schema.define(version: 20160109001141) do
     t.text    "goal"
     t.boolean "newsletter"
   end
+
+  create_table "events", force: :cascade do |t|
+    t.string   "name",          null: false
+    t.string   "description"
+    t.string   "facebook_link"
+    t.binary   "banner"
+    t.string   "filename"
+    t.string   "mime_type"
+    t.datetime "event_date"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "events", ["name"], name: "index_events_on_name", using: :btree
 
   create_table "exam_archives", force: :cascade do |t|
     t.string   "course_name",       limit: 255
