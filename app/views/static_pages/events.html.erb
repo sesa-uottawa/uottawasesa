@@ -6,33 +6,29 @@
   <h1>Events</h1>
 </div>
 
-<div id="events-container-2">
-  <div class="row" style="max-width: 85rem;">
+<div class="events-container-aligner">
+  <div style="max-width: 85rem;">
     <% @events.each do |event| %>
       <% if event[:type] == 'recurring' %>
         <% unless @recurring_status_posted %>
           <% @recurring_status_posted = true %>
-          <h3>RECURRING EVENTS</h3>
+          <h3><i class="fa fa-refresh fa-spin"></i> <strong>RECURRING</strong></h3>
         <% end %>
       <% end %>
       <% if event[:type] == 'upcoming' %>
         <% unless @upcoming_status_posted %>
           <% @upcoming_status_posted = true %>
-          <h3>UPCOMING EVENTS</h3>
+          <h3><i class="fa fa-fire"></i> <strong>UPCOMING</strong></h3>
         <% end %>
       <% end %>
-      <% if event[:type] == 'past' %>
+      <% if event[:type] == 'completed' %>
         <% unless @past_status_posted %>
           <% @past_status_posted = true %>
-          <h3>PAST EVENTS</h3>
+          <h3><i class="fa fa-check-square"></i> <strong>COMPLETED</strong></h3>
         <% end %>
       <% end %>
-      <div class="row" style="max-width: 85rem;">
-        <div id="events-container-2" >
-          <div class="small-12 medium-12 large-7 large-centered medium-centered columns">
-            <%= link_to(image_tag("#{event[:banner]}", class: 'effect-apollo events-images', alt: "#{event[:event]}"), "#{event[:facebook_url]}") %>
-          </div>
-        </div>
+      <div style="max-width: 85rem;">
+        <%= link_to(image_tag("#{event[:banner]}", class: 'effect-apollo events-images', alt: "#{event[:event]}"), "#{event[:facebook_url]}") %>
       </div>
     <% end %>
   </div>
