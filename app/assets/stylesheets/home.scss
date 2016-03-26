@@ -121,7 +121,7 @@ hr {
     overflow-wrap: break-word;
     transition: all 250ms linear;
     & span {
-        font-size: 1.5em;
+        font-size: 1em;
         color: #990012;
     }
     & a {
@@ -131,6 +131,12 @@ hr {
     & a:hover {
         border-bottom: 1px solid #990012
     }
+}
+
+#home-container-4 .active {
+  -webkit-box-shadow: -1px -1px 31px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px -1px 31px -8px rgba(0,0,0,0.75);
+  box-shadow: -1px -1px 31px -8px rgba(0,0,0,0.75);
 }
 
 #home-container-5 {

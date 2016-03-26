@@ -19,7 +19,7 @@
         <%= link_to 'Join', join_path+".form" %>
     </div>
     <div id="home-container-4">
-        <%= render "current_members" %>
+        <%= render "current_members", collection: @current_members %>
             <br>
             <br>
         <%= render "bod_members" %>

@@ -2,56 +2,14 @@
 <br>
 <br>
 <div class="row">
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/alex.jpg', size: '200x200', alt: 'Alex Kluew' %>
-            <br>
-            <br>
-            <a href="http://getaclue.me/" title="Alex Kluew's personal website; external link"><span>Alex<br>Kluew</span></a>
-            <br>
-            <hr>President
-    </div>
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/arsani.png', size: '200x200', alt: 'Arsani Guirguis' %>
-            <br>
-            <br>
-            <span>Arsani<br>Guirguis</span>
-            <br>
-            <hr>Vice President
-    </div>
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/kyle.png', size: '200x200', alt: 'Kyle Kung' %>
-            <br>
-            <br>
-            <span>Kyle<br>Kung</span></a>
-            <br>
-            <hr>VP Academic
-    </div>
+    <% @current_members[0..2].each do |member| %>
+        <%= react_component('MemberBio', member) %>
+    <% end %>
 </div>
 <div class="row">
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/lucia.png', size: '200x200', alt: 'Lucia Okeh' %>
-            <br>
-            <br>
-            <span>Lucia<br>Okeh</span>
-            <br>
-            <hr>VP Social
-    </div>
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/anthony.png', size: '200x200', alt: 'Anthony A. Nader' %>
-            <br>
-            <br>
-            <span>Anthony A.<br>Nader</span>
-            <br>
-            <hr>VP Marketing
-    </div>
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/jonathon.jpg', size: '200x200', alt: 'Jonathon Guillotte-Blouin' %>
-            <br>
-            <br>
-            <span>Jonathan<br>Guillotte-Blouin</span>
-            <br>
-            <hr>VP Communication
-    </div>
+    <% @current_members[3..5].each do |member| %>
+        <%= react_component('MemberBio', member) %>
+    <% end %>
 </div>
 <br>
 <br>
@@ -59,95 +17,32 @@
 <br>
 <br>
 <div class="row">
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'default-male-photo.png', size: '200x200', alt: 'Join SESA' %>
-            <br>
-            <br>
-            <span id="could-be-you">Could be<br>YOU</span>
-            <br>
-            <hr><a href="<%= join_path + ".form " %>" title="Apply to SESA">APPLY NOW</a>
-    </div>
+    <%= react_component('MemberBio', {firstName: 'Join', lastName: 'SESA', role: 'Could be you', imgUrl: asset_url('default-male-photo.png'), hasWebsite: true, websiteUrl: join_path + ".form "}) %>
+    <%= react_component('MemberBio', @current_members[6]) %>
+    <%= react_component('MemberBio', {firstName: 'Join', lastName: 'SESA', role: 'Could be you', imgUrl: asset_url('default-female-photo.jpg'), hasWebsite: true, websiteUrl: join_path + ".form "}) %>
+</div>
+<div class="row">
+    <% @current_members[7..9].each do |member| %>
+        <%= react_component('MemberBio', member) %>
+    <% end %>
+</div>
+<div class="row">
+    <% @current_members[10..12].each do |member| %>
+        <%= react_component('MemberBio', member) %>
+    <% end %>
+</div>
     <!-- TO MOVE TO PAST MEMBERS -->
     <!-- <div class="small-12 medium-4 columns">
       <%= image_tag 'current_members/craig.jpg', size: '200x200', alt: 'Craig Bryan' %><br><br>
       <a href="http://www.craigbryan.me/"><span>Craig<br>Bryan</span></a><br><hr>Director of IT
     </div> -->
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/nel.png', size: '200x200', alt: 'Nel Opolski' %>
-            <br>
-            <br>
-            <span>Nel<br>Opolski</span>
-            <br>
-            <hr>Director of IT
-    </div>
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'default-female-photo.jpg', size: '200x200', alt: 'Join SESA' %>
-            <br>
-            <br>
-            <span>Could be<br>YOU</span>
-            <br>
-            <hr><a href="<%= join_path + ".form " %>" title="Apply to SESA">APPLY NOW</a>
-    </div>
     <!-- TO MOVE TO PAST MEMBERS -->
     <!-- <div class="small-12 medium-4 columns">
       <%= image_tag 'current_members/elad.jpg', size: '200x200', alt: 'Elad Tzemach' %><br><br>
       <span>Elad<br>Tzemach</span><br><hr>Director of Events
     </div> -->
-</div>
-<div class="row">
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'default-female-photo.jpg', size: '200x200', alt: 'Anushka Paliwal' %>
-            <br>
-            <br>
-            <span>Anushka<br>Paliwal</span>
-            <br>
-            <hr>Director of Internal Affairs
-    </div>
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/tayo.png', size: '200x200', alt: 'Tayo Odueke' %>
-            <br>
-            <br>
-            <span>Tayo<br>Odueke</span>
-            <br>
-            <hr>Editor-in-Chief
-    </div>
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/kizz.png', size: '200x200', alt: 'Kizz Patrick' %>
-            <br>
-            <br>
-            <span>Kizz<br>Patrick</span>
-            <br>
-            <hr>Director of Creative Content
-    </div>
-</div>
-<div class="row">
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/leila.jpg', size: '200x200', alt: 'Leila Compoare' %>
-            <br>
-            <br>
-            <span>Leila<br>Compaore</span>
-            <br>
-            <hr>Director of Finance
-    </div>
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/nick_petryna.png', size: '200x200', alt: 'Nick Petryna' %>
-            <br>
-            <br>
-            <span>Nick<br>Petryna</span>
-            <br>
-            <hr>Academic Director
-    </div>
-    <div class="small-12 medium-4 columns">
-        <%= image_tag 'current_members/esther.png', size: '200x200', alt: 'Esther Raji' %>
-            <br>
-            <br>
-            <span>Esther<br>Raji</span>
-            <br>
-            <hr>Creative Director
-    </div>
     <!-- TO MOVE TO PAST MEMBERS -->
     <!-- <div class="small-12 medium-3 columns">
       <%= image_tag 'default-male-photo.png', size: '200x200', alt: 'Philippe Legault' %><br><br>
       <span>Philippe<br>Legault</span><br><hr>Director of Design
     </div> -->
-</div>

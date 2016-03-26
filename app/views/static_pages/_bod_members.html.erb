@@ -2,70 +2,14 @@
 <br>
 <br>
 <div class="row">
-    <div class="small-12 medium-3 columns">
-        <%= image_tag 'current_members/hugh.jpg', size: '200x200', alt: 'Hugh Nguyen' %>
-            <br>
-            <br>
-            <span>Hugh<br>Nguyen</span>
-            <br>
-            <hr> Advisor
-    </div>
-    <div class="small-12 medium-3 columns">
-        <%= image_tag 'current_members/ryan.jpg', size: '200x200', alt: 'Ryan O\'Connor' %>
-            <br>
-            <br>
-            <a href="http://oconnorryan.me/" title="Ryan O'Connor's personal website; external link"><span>Ryan<br>O'Connor</span></a>
-            <br>
-            <hr>Advisor
-    </div>
-    <div class="small-12 medium-3 columns">
-        <%= image_tag 'current_members/menelik.jpg', size: '200x200', alt: 'Menelik  Tucker' %>
-            <br>
-            <br>
-            <a href="http://meneliktucker.me/" title="Menelik Tucker's personal website; external link"><span>Menelik<br>Tucker</span></a>
-            <br>
-            <hr>Advisor
-    </div>
-    <div class="small-12 medium-3 columns">
-        <%= image_tag 'current_members/kat.jpg', size: '200x200', alt: 'Kat Drobnjakovic' %>
-            <br>
-            <br>
-            <a href="http://katarina.rocks/" title="Kat Drobnjakovic's personal website; external link"><span>Kat<br>Drobnjakovic</span></a>
-            <br>
-            <hr>Advisor
-    </div>
+    <%= react_component('MemberBio', {firstName: 'Hugh', lastName: 'Nguyen', role: 'Advisor', imgUrl: asset_url('current_members/hugh.jpg'), yearsActive: '2014-present', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Ryan', lastName: 'O\'Connor', role: 'Advisor', imgUrl: asset_url('current_members/ryan.jpg'), hasWebsite: true, websiteUrl: 'http://www.oconnorryan.me/', yearsActive: '2014-present', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Menelik', lastName: 'Tucker', role: 'Advisor', imgUrl: asset_url('current_members/menelik.jpg'), hasWebsite: true, websiteUrl: 'http://meneliktucker.me/', yearsActive: '2014-present', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Kat', lastName: 'Drobnjakovic', role: 'Advisor', imgUrl: asset_url('current_members/kat.jpg'), hasWebsite: true, websiteUrl: 'http://katarina.rocks/', yearsActive: '2014-2015', bFourInARow: true}) %>
 </div>
 <div class="row">
-    <div class="small-12 medium-3 columns">
-        <%= image_tag 'current_members/nick_dubus.png', size: '200x200', alt: 'Nick Dubus' %>
-            <br>
-            <br>
-            <span>Nick<br>Dubus</span>
-            <br>
-            <hr>Advisor
-    </div>
-    <div class="small-12 medium-3 columns">
-        <%= image_tag 'current_members/zaid.jpg', size: '200x200', alt: 'Zaid Qureshi' %>
-            <br>
-            <br>
-            <span>Zaid<br>Qureshi</span>
-            <br>
-            <hr>Advisor
-    </div>
-    <div class="small-12 medium-3 columns">
-        <%= image_tag 'current_members/arash.jpg', size: '200x200', alt: 'Arash Marzi' %>
-            <br>
-            <br>
-            <span>Arash<br>Marzi</span>
-            <br>
-            <hr>Founder
-    </div>
-    <div class="small-12 medium-3 columns">
-        <%= image_tag 'current_members/tom.jpg', size: '200x200', alt: 'Thomas Duong' %>
-            <br>
-            <br>
-            <span>Tom<br>Duong</span>
-            <br>
-            <hr> Advisor
-    </div>
+    <%= react_component('MemberBio', {firstName: 'Nick', lastName: 'Dubus', role: 'Advisor', imgUrl: asset_url('current_members/nick_dubus.png'), yearsActive: '2015-present', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Zaid', lastName: 'Qureshi', role: 'Advisor', imgUrl: asset_url('current_members/zaid.jpg'), yearsActive: '2014-2015', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Arash', lastName: 'Marzi', role: 'Advisor', imgUrl: asset_url('current_members/arash.jpg'), yearsActive: '2014', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Thomas', lastName: 'Duong', role: 'Advisor', imgUrl: asset_url('current_members/tom.jpg'), yearsActive: '2014-2015', bFourInARow: true}) %>
 </div>
