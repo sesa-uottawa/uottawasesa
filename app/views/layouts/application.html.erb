@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
     <%= favicon_link_tag 'sesa.ico' %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= yield(:title) %></title>
@@ -8,10 +9,9 @@
     of people who see themselves connected in an important way. SESA strives to enrich student 
     life while building a networking platform in order to aid students in landing real world experiences.">
     <meta name="keywords" content="SESA,uOttawa,Software Student Engineering Association,Club,Society,Events,First Year Advice,Join, University of Ottawa">
-    <%= stylesheet_link_tag "application", media: "all",
-                                           "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 
     <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
