@@ -7,7 +7,7 @@ gem 'wdm', '>=0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 
 gem 'rails', '5.0.0.beta3'
 gem 'pg'
-gem 'foundation-rails', '5.5.1.2'
+gem 'foundation-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'puma'
 gem 'font-awesome-rails'
