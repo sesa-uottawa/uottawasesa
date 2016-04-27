@@ -104,7 +104,7 @@ class StaticPagesController < ApplicationController
         banner: 'events_2016/feb_march_april_RoR_TutoRails.jpg',
         event: 'Winter 2016 Ruby on Rails TutoRails',
         facebook_url: 'https://www.facebook.com/events/528667590639068/',
-        type: 'recurring'
+        type: 'completed'
         },
       {
         banner: 'events_2016/april_legacy.jpg',
