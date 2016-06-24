@@ -4,7 +4,7 @@ class CreateExamArchives < ActiveRecord::Migration
     	t.string :course_name
     	t.integer :exam_year
     	t.string :season
-    	t.attachment :exam
+    	#t.attachment :exam
     end
   end
 end
