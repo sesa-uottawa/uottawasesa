@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get 'events'
     get 'members'
     get 'code_of_conduct'
+    get 'contact'
   end
 
   # resource :applications, only: [:create]
