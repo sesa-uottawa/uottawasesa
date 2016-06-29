@@ -2,12 +2,38 @@
 
 <div id="contact-container-1">
   <h1>Get Connected</h1>
-</div>
 
-<div class="contact-container-2">
-	  <div style="max-width: 85rem;">
-	  Join our <%= link_to 'facebook','https://www.facebook.com/groups/uOttawaSESA', target: '_blank'%>
-	Send us an <%= mail_to "uottawa.sesa@gmail.com", "email", encode: 'hex' %>!
-	Get in touch with the Associate Director for Software Engineering: Liam Peyton <%= mail_to "lpeyton@uottawa.ca", "lpeyton@uottawa.ca", encode: 'hex' %>
+<div class="row" style="max-width: 40rem; padding-bottom: 50px;">
+<div class="small-12 medium-4 columns">
+		<%= mail_to "uottawa.sesa@gmail.com",encode: 'hex' do%>
+			<span class="center-text">Email SESA</span>
+			<%end%>
+		</div>
+		<div class="small-12 medium-4 columns">
+			<%= mail_to "lpeyton@uottawa.ca", encode: 'hex' do%>
+			<span class="center-text">Associate Director<br> Liam Peyton</span>
+			<%end%>
+		</div>
+		<div class="small-12 medium-4 columns">
+			<%= link_to 'https://www.facebook.com/groups/uOttawaSESA', target: '_blank' do%>
+			<span class="center-text">Academic Advisor</span>
+			<%end%>
+		</div>
+		<div class="small-12 medium-4 columns">
+			<%= link_to'https://www.facebook.com/groups/uOttawaSESA', target: '_blank' do%>
+			<span class="center-text">Facebook</span>
+			<%end%>
+		</div>
+		<div class="small-12 medium-4 columns">
+			<%= link_to 'https://www.instagram.com/', target: '_blank' do%>
+			<span class="center-text">Instagram</span>
+			<%end%>
+		</div>
+		<div class="small-12 medium-4 columns">
+		<%= link_to 'https://www.facebook.com/groups/uOttawaSESA', target: '_blank' do%>
+		<span class="center-text">Twitter</span>
+		<%end%>
+		</div>
+		
 	</div>
-</div>
+</div>	
