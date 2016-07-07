@@ -101,6 +101,12 @@ class StaticPagesController < ApplicationController
 
     @events = [
       {
+        banner: 'events_2016/june_klipfolio.jpg',
+        event: 'Klipfolio Tech Talk',
+        facebook_url: 'https://www.facebook.com/events/1715789235339072/',
+        type: 'upcoming'
+        },
+      {
         banner: 'events_2016/feb_march_april_RoR_TutoRails.jpg',
         event: 'Winter 2016 Ruby on Rails TutoRails',
         facebook_url: 'https://www.facebook.com/events/528667590639068/',
