@@ -10,11 +10,23 @@
         <span>Our Mission</span>
       <% end %>
     </div>
+
     <div class="medium-12 large-2 columns">
-      <%= link_to firstyearadvice_path do %>
-        <span>First Year Tips</span>
+    <div class="drop">
+    <%= link_to root_path+'#' do %>
+        <span>Resources</span>
       <% end %>
+      </div>
+      <div class="medium-12 large-2 columns down">
+        <%= link_to firstyearadvice_path do %>
+          <span>First Year Tips</span>
+        <% end %>
+        <%= link_to course_advice_path do %>
+          <span>Course Advice</span>
+        <% end %>
+      </div>
     </div>
+
     <div class="medium-12 large-2 columns">
       <%= link_to events_path do %>
         <span>Events</span>
@@ -29,7 +41,7 @@
          <div class="medium-12 large-2 columns">
           <%= link_to destroy_user_session_path, data: {method: :delete} do %>
           <span>Sign Out</span>
-          <%end %>
+          <% end %>
         </div>
     <% end %>
     <% if !user_signed_in? %>

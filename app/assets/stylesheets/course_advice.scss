@@ -1,0 +1,38 @@
+#course-container-1{
+	background-image: image-url('books_v1.jpg');
+	background-size: cover;
+	position: relative;	
+	text-transform: uppercase;
+	min-height: 480px;
+	height: 85vh;
+}
+
+#course-container-1 h1 {
+	width: 100%;
+	font-size: 	5rem;
+	font-weight: 200;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#course-container-2 {
+	text-align: center;
+	margin: 50px auto 0;
+}
+#course-container-2 h1{
+	color:#990012;
+}
+
+.list {
+	text-align:left;
+
+}
