@@ -31,6 +31,18 @@ $(document).on('page:change', function(){
     });
   });
 
+  //Course Advice page
+  $('.help-button').click( function(){
+    $('.general-advice').hide();
+    $('#help').fadeTo(1000, 1);
+  });
+  $('.new-course-button').click( function(){
+    $('.general-advice').hide();
+    $('#new-course').fadeTo(1000, 1);
+  });
+
+
+
   $('.hamburger2').click(function(){
     $('.general-advice').hide();
   });
