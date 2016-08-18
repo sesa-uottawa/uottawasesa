@@ -14,9 +14,8 @@
 //= require jquery_ujs
 //= require foundation
 //= require jquery-ui/effect-slide
-$(function(){ $(document).foundation(); });
-//= require turbolinks
 //= require react
 //= require react_ujs
 //= require components
 //= require_tree
+$(function(){ $(document).foundation(); });

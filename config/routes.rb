@@ -9,13 +9,15 @@ Rails.application.routes.draw do
 
   namespace :static_pages, path: '/', as: nil do
     get 'join'
-    get 'firstyearadvice'
     get 'events'
     get 'members'
     get 'code_of_conduct'
     get 'contact'
-    get 'course_advice'
+    get 'firstyearadvice'
   end
+
+  get 'advice/firstyear', to: 'static_pages#firstyearadvice'
+  get 'advice/courses', to: 'static_pages#course_advice'
 
   # resource :applications, only: [:create]
 
