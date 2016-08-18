@@ -33,38 +33,20 @@ ActiveRecord::Schema.define(version: 20160318013727) do
   end
 
   create_table "club_members", force: :cascade do |t|
-    t.string  "first_name", limit: 255
-    t.string  "last_name",  limit: 255
-    t.string  "email",      limit: 255
-    t.string  "major",      limit: 255
+    t.string  "first_name"
+    t.string  "last_name"
+    t.string  "email"
+    t.string  "major"
     t.text    "commitment"
     t.text    "why_join"
     t.text    "goal"
     t.boolean "newsletter"
   end
 
-  create_table "events", force: :cascade do |t|
-    t.string   "name",          null: false
-    t.string   "description"
-    t.string   "facebook_link"
-    t.binary   "banner"
-    t.string   "filename"
-    t.string   "mime_type"
-    t.datetime "event_date"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
-  add_index "events", ["name"], name: "index_events_on_name", using: :btree
-
   create_table "exam_archives", force: :cascade do |t|
-    t.string   "course_name",       limit: 255
-    t.integer  "exam_year"
-    t.string   "season",            limit: 255
-    t.string   "exam_file_name",    limit: 255
-    t.string   "exam_content_type", limit: 255
-    t.integer  "exam_file_size"
-    t.datetime "exam_updated_at"
+    t.string  "course_name"
+    t.integer "exam_year"
+    t.string  "season"
   end
 
   create_table "redirect_counts", force: :cascade do |t|

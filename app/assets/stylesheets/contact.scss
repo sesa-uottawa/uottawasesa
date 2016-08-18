@@ -1,0 +1,57 @@
+#contact-container-1{
+	background-image: image-url('dream.jpg');
+	background-size: cover;
+	position: relative;
+	text-transform: uppercase;
+  min-height: 580px;
+  height: 85vh;
+
+}
+#contact-container-1 h1{
+width: 100%;
+	font-size: 	3rem;
+	font-weight: 200;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding:30px;
+	@media screen and (max-width: 395px) {
+		font-size: 3.9rem;
+	}
+}
+
+#contact-container-1 .row .small-12.medium-4.columns a{
+	color:rgba(0,5,9,.5);
+	text-decoration: none;
+	width: 200px;
+	height: 200px;
+	margin-top: 15px;
+	line-height: 20px;
+	text-align: center;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 10px auto;
+	display: block;
+	background-color: rgba(200,200,200,0.8);
+	overflow-wrap: break-word;
+	-webkit-transition: 200ms linear; 
+    -moz-transition: 200ms linear;
+    -o-transition: 200ms linear;
+    transition: 200ms linear;
+	&:hover{
+		color: #7b92d9;
+		-webkit-transform: scale(1.05);
+		-moz-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		transform: scale(1.05);
+		background-color: rgba(250,250,250,0.95);;
+		border: 1px solid #7b92d9;
+
+	}
+}
+
+
+
+

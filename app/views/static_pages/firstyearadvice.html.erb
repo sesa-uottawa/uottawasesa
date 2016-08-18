@@ -22,7 +22,7 @@
 		</div>
 		<div class="medium-12 large-4 columns">
 			<span>Work Experience</span><br><br>
-				For the first time ever at uOttawa, the Software Engineering program will now include a mandatory co-op experience to develop practical and solution-driven thinking. That means that upon graduating, you will have a good amount of real life experience under your belt that will further increase your chances of landing a job. Some students even get offered full-time positions from previous employers. We at SESA understand the importance of CO-OP and will therefore do our best to prepare you for the interviewing process:
+				The Software Engineering program includes a mandatory co-op experience to develop practical and solution-driven thinking. That means that upon graduating, you will have a good amount of real life experience under your belt that will further increase your chances of landing a job. Some students even get offered full-time positions from previous employers. We at SESA understand the importance of CO-OP and will therefore do our best to prepare you for the interviewing process:
 				<%= link_to 'Read More...', firstyearadvice_path+'#work-experience', class: 'work-experience-button' %>
 		</div>
 		<span id="budgeting" class="general-advice">
@@ -77,9 +77,15 @@
 			<p>
 			<strong>Learn different language</strong><br><br>
 			From our experience, the current courses offered at the University do not really dwell too deeply into front-end web development but doesn't mean that you can't learn it yourself. After having a fundamental understanding of Java and C++, other languages can be picked up rather quickly. Learning resources that we recommend would include www.codecademy.com and www.udemy.com. Even learning something as simple as HTML/CSS will make you stand out. Programming is an ever-evolving industry and new languages are always being introduced so always make sure to stay up to date with today's technologies.
+			</p>
 			<p>
 			<strong>Brush up on your technical skills (VERY IMPORTANT)</strong><br><br>
 			This is probably the biggest mistake you can make going into interviews. This is a technical job therefore expect technical questions. Personality and charm will only get you so far but if you don't know how to code, then you won't get the job. Your COOP advisor will tell you not to worry about technical questions, but from our experience we advise you to not listen. They do not specialize in the tech-industry therefore they have no idea what will be asked. A quick googling of java interview questions or whatever other language required for the job will bring up a nice a list of things to expect.
+			</p>
+			<p>
+			<strong>Finding a Job (COOP or Graduating)</strong><br><br>
+			Network with SESA and leverage your personal network(friends, family, colleagues, clubs, meetups, organizations, professors). Find jobs online and through COOP Navigator Index(companies not registered with the COOP Office). Visit the Career Center run by COOP but open to all students. Work Study Navigator (uozone... jobs on campus) and VOLUNTEER!! For more tips take a look at this 
+			<%= link_to 'presentation', 'http://www.site.uottawa.ca/~lpeyton/SEG_JobTips.pptx', target: '_blank' %>.
 			</p>
 		</span>
 		<hr>
@@ -117,6 +123,17 @@
 		<div class="small-12 medium-4 columns">
 			<a id="chemistry-button" class="course-advice-button" href="/firstyearadvice#chemistry"><span class="center-text">Chemistry</span></a>
 		</div>
+	</div>
+
+	<div class="row" style="max-width: 40rem; padding-bottom: 50px;">
+	<span>
+		<b>Plagarism and Academic Fraud:</b> <%= link_to 'Plagiarism','plagiarism.pdf', target: '_blank'%> or any other type of academic fraud will not be tolerated at uOttawa. The penalties are explained <%= link_to 'here', 'http://www.site.uotttawa.ca/about/academic-regulation-14-other-important-information', target: '_blank'%>. Visit the  <%= link_to 'academic writing centre', 'http://sass.uottawa.ca/en/writing', target: '_blank'%> for free tutorials and writing support. <br>
+		</span>
+
+		<span>
+		<br>
+		<b>Not in first year?</b> <%= link_to 'Click here', course_advice_path %> for more general info and advice for SEG courses at the University of Ottawa.
+		</span>
 	</div>
 
 	<div class="row" style="max-width: 80rem; position: relative;">
@@ -168,8 +185,8 @@
 		     <strong>Introduction to Computing II</strong><br><br>
 		     <p>
 				Introduction to Computing II(ITI 1121) starts off where Introduction to Computing I (ITI 
-				1120) ended. Like ITI 1120, ITI 1121 uses Java as the main programming language. 
-				Introduction to Computing II starts off with a review of object-oriented programming (OOP) 
+				1120) ended. Unlike ITI 1120, ITI 1121 uses Java as the main programming language instead of Python. No need to panic,
+				Introduction to Computing II starts off with a quick introduction of Java followed by a review of object-oriented programming (OOP) 
 				then continues on to Abstraction principles, and finally finished off with an 
 				introduction to data structures such as lists, stacks, queues, binary search trees, 
 				and processing of data structures. ITI 1121 builds off of the principles that your 
@@ -182,6 +199,18 @@
 				have a hard time to complete it on time. Again if you need help with an assignment 
 				or understanding a concept from class, don't hesitate to ask a TA, your professor, 
 				a friend of even us here at SESA. 
+				<br><br>
+				Here are some useful links to help you make the transition from Python to Java:
+				<br>
+				<%= link_to 'Java vs Python', 'http://javarevisited.blogspot.ca/2013/11/java-vs-python-which-programming-laungage-to-learn-first.html', target: '_blank' %>
+				<br>
+				<%= link_to 'A comparison of the syntax of Python and Java', 'http://math-cs.gordon.edu/courses/cps122/handouts-2014/From%20Python%20to%20Java%20Lecture/A%20Comparison%20of%20the%20Syntax%20of%20Python%20and%20Java.pdf', target: '_blank' %>
+				
+ 				<br>
+ 				<%= link_to 'From Python to Java', 'http://home.wlu.edu/~lambertk/pythontojava/', target: '_blank' %>
+ 				<br>
+ 				<%= link_to '******', 'http://www.informit.com/articles/article.aspx?p=2436668', target: '_blank' %>
+				
 			 </p>
 		</span>
 		<span id="engineering-mechanics" class="course-advice">
@@ -270,6 +299,40 @@
 				fall too far behind. 
 			 </p>
 		</span>
-		
+		<hr>
+	</div>
+
+</div>
+
+<div id="fya-container-4">
+	<div class="row" style="max-width: 80rem;padding-bottom: 50px;">
+		<span class="title">Probation Advice</span>
+		<div class="medium-12 large-4 columns">
+		<span class="priority">First Priority</span><br>
+				Take only as many courses as you can do well on. Know when the drop deadline is and consider dropping courses unless you are sure you are going to get a reasonable grade.
+				Minimum C+ for pre-req courses and electives (Math, Scinece etc.) and minimum B+ for core courses (ITI, CSI, SEG, CEG).	
+		</div>
+		<div class="medium-12 large-4 columns">
+			<span class="priority">Second Priority</span><br>
+				Retake courses in which you received a D,D+,E and F. Don't bother with taking a supplemental exam unless you can get a C or higher.
+				
+		</div>
+		<div class="medium-12 large-4 columns">
+			<span class="priority">Third Priority</span><br>
+				ITI1121 is a hard course. Make sure you do well in it. It is also offered in the summer, you do not need to take it during the winter semester.
+				
+		</div>
+
+</div>
+<span class ="extra">For more info check out Liam Peyton's <%= link_to 'Presentation for 1st year students on probation', 'http://www.site.uotttawa.ca/~lpeyon/seg4000/WelcomeToProbation.pptx', target: '_blank' %>.<br><br><br></span>
+	<hr>
+</div>
+
+
+<div id="fya-container-5">
+	<div class="row" style="max-width: 80rem;padding-bottom: 50px;">
+		<span class="title">Campus Safety</span>
+		<span >Plase read  <%= link_to 'this article', 'https://medium.com/editprs-picks/69fe9bf8959f', target: '_blank' %> for guidlines on how to work and communicate respectfully with others.<br><br>In case of emergency on campus call 4511 for Protecton Services... they will call 911 directly if it is needed (911 does not work on campus)<br><br>Be safe at night on campus, there is a free student-run service offered on campus called <%= link_to 'Foot Patrol', 'http://sfuo.ca/footpatrol/', target: '_blank' %>. Two student volunteers will walk with you so that you don't have to walk to or from class on your own.</span>
 	</div>
 </div>
+
