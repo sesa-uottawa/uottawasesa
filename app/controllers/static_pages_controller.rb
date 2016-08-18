@@ -104,7 +104,7 @@ class StaticPagesController < ApplicationController
         banner: 'events_2016/june_klipfolio.jpg',
         event: 'Klipfolio Tech Talk',
         facebook_url: 'https://www.facebook.com/events/1715789235339072/',
-        type: 'upcoming'
+        type: 'completed'
         },
       {
         banner: 'events_2016/feb_march_april_RoR_TutoRails.jpg',
