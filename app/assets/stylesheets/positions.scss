@@ -1,0 +1,16 @@
+.uottawa-overlay {
+  position: relative;
+  height: 75vh;
+  /*width: 100vw;*/
+  width: 100%;
+  margin-top: 0;
+  background: url(asset-path('positions.jpeg'));
+  background-size: cover;
+  /*border-bottom: 10px solid #3CCF80;*/
+}
+
+.uottawa-flexbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

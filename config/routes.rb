@@ -18,6 +18,7 @@ Rails.application.routes.draw do
 
   get 'advice/firstyear', to: 'static_pages#firstyearadvice'
   get 'advice/courses', to: 'static_pages#course_advice'
+  get 'positions', to: 'static_pages#positions'
 
   # resource :applications, only: [:create]
 
