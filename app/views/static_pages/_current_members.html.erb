@@ -17,9 +17,9 @@
 <br>
 <br>
 <div class="row">
-    <%= react_component('MemberBio', {firstName: 'Join', lastName: 'SESA', role: 'Could be you', imgUrl: asset_url('default-male-photo.png'), hasWebsite: true, websiteUrl: join_path + ".form "}) %>
+    <%= react_component('MemberBio', {firstName: 'Join', lastName: 'SESA', role: 'Could be you', imgUrl: asset_url('default-male-photo.png'), hasWebsite: true, websiteUrl: join_path }) %>
     <%= react_component('MemberBio', @current_members[6]) %>
-    <%= react_component('MemberBio', {firstName: 'Join', lastName: 'SESA', role: 'Could be you', imgUrl: asset_url('default-female-photo.jpg'), hasWebsite: true, websiteUrl: join_path + ".form "}) %>
+    <%= react_component('MemberBio', {firstName: 'Join', lastName: 'SESA', role: 'Could be you', imgUrl: asset_url('default-female-photo.jpg'), hasWebsite: true, websiteUrl: join_path }) %>
 </div>
 <div class="row">
     <% @current_members[7..9].each do |member| %>
@@ -31,18 +31,3 @@
         <%= react_component('MemberBio', member) %>
     <% end %>
 </div>
-    <!-- TO MOVE TO PAST MEMBERS -->
-    <!-- <div class="small-12 medium-4 columns">
-      <%= image_tag 'current_members/craig.jpg', size: '200x200', alt: 'Craig Bryan' %><br><br>
-      <a href="http://www.craigbryan.me/"><span>Craig<br>Bryan</span></a><br><hr>Director of IT
-    </div> -->
-    <!-- TO MOVE TO PAST MEMBERS -->
-    <!-- <div class="small-12 medium-4 columns">
-      <%= image_tag 'current_members/elad.jpg', size: '200x200', alt: 'Elad Tzemach' %><br><br>
-      <span>Elad<br>Tzemach</span><br><hr>Director of Events
-    </div> -->
-    <!-- TO MOVE TO PAST MEMBERS -->
-    <!-- <div class="small-12 medium-3 columns">
-      <%= image_tag 'default-male-photo.png', size: '200x200', alt: 'Philippe Legault' %><br><br>
-      <span>Philippe<br>Legault</span><br><hr>Director of Design
-    </div> -->
