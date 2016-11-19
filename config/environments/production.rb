@@ -71,19 +71,30 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "uottawasesa_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
-  config.action_mailer.default_url_options = { :host => 'uottawa-sesa.herokuapp.com' }
+  # config.action_mailer.default_url_options = { :host => 'uottawa-sesa.herokuapp.com' }
 
   config.action_mailer.delivery_method = :smtp
 
-  #GMAIL SETUP
   config.action_mailer.smtp_settings = {
-    :address => "smtp.gmail.com",
-    :port => 587,
-    :user_name => ENV['SMTP_USER'],
-    :password => ENV['SMTP_PASSWORD'],
+    :port           => ENV['MAILGUN_SMTP_PORT'],
+    :address        => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+    :domain         => 'uottawa-sesa.herokuapp.com',
     :authentication => :plain,
-    :enable_starttls_auto => true
   }
+
+  # config.action_mailer.delivery_method = :smtp
+  #
+  # #GMAIL SETUP
+  # config.action_mailer.smtp_settings = {
+  #   :address => "smtp.gmail.com",
+  #   :port => 587,
+  #   :user_name => ENV['SMTP_USER'],
+  #   :password => ENV['SMTP_PASSWORD'],
+  #   :authentication => :plain,
+  #   :enable_starttls_auto => true
+  # }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
