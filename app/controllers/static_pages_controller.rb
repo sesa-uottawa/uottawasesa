@@ -101,10 +101,28 @@ class StaticPagesController < ApplicationController
 
     @events = [
       {
+        banner: 'events_2016/nov_klipfolio.png',
+        event: 'SESA Goes to Klipfolio',
+        facebook_url: 'https://www.facebook.com/events/1863616040534303/',
+        type: 'upcoming'
+      },
+      {
+        banner: 'events_2016/nov_startup_weeknd.jpg',
+        event: 'Startup Weekend Fall 2016',
+        facebook_url: 'https://www.facebook.com/events/1358385600849660/',
+        type: 'completed'
+      },
+      {
+        banner: 'events_2016/oct_front_end_workshop.jpg',
+        event: 'Front End Workshop',
+        facebook_url: 'https://www.facebook.com/events/1123806157698514/',
+        type: 'completed'
+      },
+      {
         banner: 'events_2016/september_meet-n-greet.png',
         event: 'Meet and Greet',
         facebook_url: 'https://www.facebook.com/events/1774875126059212/',
-        type: 'upcoming'
+        type: 'completed'
         },
       {
         banner: 'events_2016/june_klipfolio.jpg',
