@@ -4,7 +4,8 @@
             <hr>
             <div class="subtitle">Software Engineering Student Association</div>
             <br />
-            <a href="https://goo.gl/forms/oRtnSRx5pJp7EZYv2" target="_blank" class="button success large" style="border: 1px solid white">Work at SESA</a>
+            <!-- <a href="https://goo.gl/forms/oRtnSRx5pJp7EZYv2" target="_blank" class="button success large" style="border: 1px solid white">Work at SESA</a> -->
+            <%= link_to 'Get Involved', join_path, class: "button success large", style: "border: 1px solid white; border-radius: 20px" %>
     </div>
     <div id="home-container-2">
         Make the opportunities
@@ -18,13 +19,10 @@
         <hr>
         <p>Our mission is to provide a support group for software engineers and to define a group of people who see themselves connected in an important way. SESA strives to enrich student life while building a networking platform in order to aid students in landing real world experiences.</p>
         <br>
-        <%= link_to 'Join', join_path+".form" %>
+        <%= link_to 'Get Involved', join_path %>
     </div>
     <div id="home-container-4">
         <%= render "current_members", collection: @current_members %>
-            <br>
-            <br>
-        <%= render "bod_members" %>
     </div>
     <div id="home-container-5">
         <div class="row">

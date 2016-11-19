@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     get 'code_of_conduct'
     get 'contact'
     get 'firstyearadvice'
+    get 'alumni'
   end
 
   get 'advice/firstyear', to: 'static_pages#firstyearadvice'
@@ -21,19 +22,19 @@ Rails.application.routes.draw do
 
   # resource :applications, only: [:create]
 
-  get '/super/sekret/not/public/open-positions', to: 'static_pages#open_positions'
+  # get '/super/sekret/not/public/open-positions', to: 'static_pages#open_positions'
 
   post 'join', to: "static_pages#create"
 
-  get '/:startupweekend',
-    to: "redirects#startup_link_2015",
-    startupweekend: /2015(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
+  # get '/:startupweekend',
+  #   to: "redirects#startup_link_2015",
+  #   startupweekend: /2015(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
 
-  get '/:startupweekend',
-    to: "redirects#startup_link_2016",
-    startupweekend: /2016(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
+  # get '/:startupweekend',
+    # to: "redirects#startup_link_2016",
+    # startupweekend: /2016(S|s)(T|t)(A|a)(R|r)(T|t)(U|u)(P|p)/
 
-  get '/2015startup/count' => "redirects#startup_count"
+  # get '/2015startup/count' => "redirects#startup_count"
 
   if Rails.env.production?
     get '*path' => redirect('/')

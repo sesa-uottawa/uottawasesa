@@ -283,6 +283,10 @@ class StaticPagesController < ApplicationController
       }]
   end
 
+  def alumni
+    render 'alumni'
+  end
+
   def members
     if user_signed_in?
       @club_members = ClubMember.all

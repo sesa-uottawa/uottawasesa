@@ -1,0 +1,26 @@
+<% provide(:title, "SESA | Alumni")%>
+
+<div class="row">
+  <div class="small-6 large-centered columns">
+    <div class="text-center">
+      <h1>SESA Alumni</h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <%= react_component('MemberBio', {firstName: 'Hugh', lastName: 'Nguyen', role: '', imgUrl: asset_url('current_members/hugh.jpg'), hasWebsite: true, websiteUrl: 'https://ca.linkedin.com/in/hughnguy', yearsActive: '2014-2016', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Ryan', lastName: 'O\'Connor', role: '', imgUrl: asset_url('current_members/ryan.jpg'), hasWebsite: true, websiteUrl: 'http://www.oconnorryan.me/', yearsActive: '2014-2015', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Menelik', lastName: 'Tucker', role: '', imgUrl: asset_url('current_members/menelik.jpg'), hasWebsite: true, websiteUrl: 'http://meneliktucker.me/', yearsActive: '2014-2015', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Kat', lastName: 'Drobnjakovic', role: '', imgUrl: asset_url('current_members/kat.jpg'), hasWebsite: true, websiteUrl: 'http://katarina.rocks/', yearsActive: '2014-2015', bFourInARow: true}) %>
+</div>
+<div class="row">
+    <%= react_component('MemberBio', {firstName: 'Nick', lastName: 'Dubus', role: '', imgUrl: asset_url('current_members/nick_dubus.png'), hasWebsite: true, websiteUrl: 'https://ca.linkedin.com/in/ndubus', yearsActive: '2015-2016', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Zaid', lastName: 'Qureshi', role: '', imgUrl: asset_url('current_members/zaid.jpg'), hasWebsite: true, websiteUrl: 'https://ca.linkedin.com/in/zaidqureshi', yearsActive: '2014-2015', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Arash', lastName: 'Marzi', role: '', imgUrl: asset_url('current_members/arash.jpg'), hasWebsite: true, websiteUrl: 'https://ca.linkedin.com/in/arashmarzi', yearsActive: '2014', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Thomas', lastName: 'Duong', role: '', imgUrl: asset_url('current_members/tom.jpg'), yearsActive: '2014-2015', bFourInARow: true}) %>
+</div>
+<div class="row">
+    <%= react_component('MemberBio', {firstName: 'Craig', lastName: 'Bryan', role: '', imgUrl: asset_url('current_members/craig.jpg'), hasWebsite: true, websiteUrl: 'https://twitter.com/thegufers', yearsActive: '2015', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Elad', lastName: 'Tzemach', role: '', hasWebsite: true, websiteUrl: 'https://ca.linkedin.com/in/elad-tzemach-020a16a4', imgUrl: asset_url('current_members/elad.jpg'), yearsActive: '2014', bFourInARow: true}) %>
+    <%= react_component('MemberBio', {firstName: 'Philippe', lastName: 'Legault', role: '', imgUrl: asset_url('default-male-photo.png'), hasWebsite: true, websiteUrl: 'http://legault.cc/', yearsActive: '2015-2016', bFourInARow: true}) %>
+</div>
