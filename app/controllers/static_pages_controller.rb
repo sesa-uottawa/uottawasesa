@@ -83,9 +83,16 @@ class StaticPagesController < ApplicationController
   @club_member.valid?
 
     if @club_member.save
-        flash[:successful_join] = "You've successfully joined!"
-        UserMailer.new_member_confirmation(@club_member.email,
-          @club_member.first_name, @club_member.last_name).deliver
+      
+        begin
+          UserMailer.new_member_confirmation(@club_member.email,
+            @club_member.first_name, @club_member.last_name).deliver
+          flash[:successful_join] = "You've successfully joined!"
+        rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError => e
+          @club_member.destroy
+          flash[:alert] = "Sorry there was an error sending the form. Please send an email to uottawa.sesa@gmail.com"
+        end
+
         redirect_to join_path
     else
       render 'join'
