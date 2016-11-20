@@ -28,16 +28,17 @@
     <%= render 'layouts/shim' %>
   </head>
   <body>
-    <% if flash[:notice] %>
-      <p class="notice"><%= notice %></p>
-    <% end %>
-    <% if flash[:alert] %>
-      <p class="alert"><%= alert %></p>
-    <% end %>
-
     <%= render 'layouts/header' %>
 
     <div class="main-container">
+      
+      <% if flash[:notice] %>
+        <p class="notice"><%= notice %></p>
+      <% end %>
+      <% if flash[:alert] %>
+        <p class="alert"><%= alert %></p>
+      <% end %>
+
       <%= yield %>
     </div>
 
