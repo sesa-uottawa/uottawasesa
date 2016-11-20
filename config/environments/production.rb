@@ -72,6 +72,7 @@ Rails.application.configure do
   # config.action_mailer.perform_caching = false
 
   config.action_mailer.default_url_options = { :host => 'uottawa-sesa.herokuapp.com' }
+  
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
@@ -80,7 +81,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 587,
-    domain:               'uottawa-sesa.herokuapp.com',
+    domain:               'gmail.com',
     user_name:            ENV["SMTP_USER"],
     password:             ENV["SMTP_PASSWORD"],
     authentication:       'plain',
