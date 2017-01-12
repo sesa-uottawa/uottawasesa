@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require jquery-ui/effect-slide
+//= require jquery-ui
 //= require react
 //= require react_ujs
 //= require components

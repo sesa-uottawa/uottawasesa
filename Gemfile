@@ -5,21 +5,21 @@ require 'rbconfig'
 
 gem 'wdm', '>=0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 
-gem 'rails', '5.0.0.beta3'
+gem 'rails', '5.0.1'
 gem 'pg'
 gem 'foundation-rails'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
 gem 'puma'
 gem 'font-awesome-rails'
-gem 'sprockets', '>=2.11.0'
+gem 'sprockets'
 gem 'aws-sdk'
-gem 'uglifier', '>=2.1.1'
+gem 'uglifier'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'jbuilder', '>=1.0.2'
+gem 'jbuilder'
 gem 'actionview-encoded_mail_to'
 gem 'devise', github: 'plataformatec/devise'
-gem 'react-rails', '~> 1.6', '>= 1.6.2'
+gem 'react-rails', '~> 1.10'
 
 group :development do
 	gem 'pry'
