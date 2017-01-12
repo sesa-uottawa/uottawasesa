@@ -217,5 +217,8 @@ DEPENDENCIES
   sprockets (>= 2.11.0)
   uglifier (>= 2.1.1)
 
+RUBY VERSION
+   ruby 2.3.1p112
+
 BUNDLED WITH
-   1.12.5
+   1.13.7
