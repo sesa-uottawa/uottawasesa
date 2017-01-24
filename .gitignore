@@ -20,5 +20,8 @@
 # Mac stuff
 ._*.*
 
+
+config/database.yml
 public/assets/
 shared/*
+vendor/bundle/
