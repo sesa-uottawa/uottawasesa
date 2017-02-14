@@ -21,7 +21,8 @@
 ._*.*
 
 
-config/database.yml
 public/assets/
 shared/*
 vendor/bundle/
+puma.sh
+__og.unicorn.sh
