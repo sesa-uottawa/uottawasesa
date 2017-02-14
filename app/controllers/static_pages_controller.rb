@@ -100,6 +100,24 @@ class StaticPagesController < ApplicationController
 
     @events = [
       {
+        banner: 'events_2017/feb-april_ruby_on_rails.jpg',
+        event: 'SESA Ruby on Rails Winter 2017 Tutorials',
+        facebook_url: 'https://www.facebook.com/events/389965414686385/',
+        type: 'recurring'
+      },
+      {
+        banner: 'events_2017/March_Startup-Weekend-W-2017.png',
+        event: 'Startup Weekend Ottawa',
+        facebook_url: 'https://www.facebook.com/events/1270558846372280/',
+        type: 'upcoming'
+      },
+      {
+        banner: 'events_2017/feb_resume_review.jpg',
+        event: 'SESA Resume Review',
+        facebook_url: 'https://www.facebook.com/events/299360073800010/',
+        type: 'completed'
+      },
+      {
         banner: 'events_2016/nov_klipfolio.png',
         event: 'SESA Goes to Klipfolio',
         facebook_url: 'https://www.facebook.com/events/1863616040534303/',
