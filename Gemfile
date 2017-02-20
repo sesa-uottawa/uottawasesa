@@ -25,7 +25,3 @@ group :development do
 	gem 'pry'
   gem 'listen', '~> 3.0', '>= 3.0.6'
 end
-
-group :production do
-  gem 'rails_12factor', '>=0.0.2'
-end

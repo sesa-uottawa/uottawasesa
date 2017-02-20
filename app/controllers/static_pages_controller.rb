@@ -3,14 +3,18 @@ class StaticPagesController < ApplicationController
   def home
     @club_member = ClubMember.new
     @current_members = [
-      {firstName: 'Alex',
-        lastName: 'Kluew',
+      {firstName: 'Nel',
+        lastName: 'Opolski',
         role: 'President',
-        imgUrl: "#{view_context.asset_path('current_members/alex.jpg')}",
-        hasWebsite: true,
-        websiteUrl: 'http://getaclue.me/',
-        yearsActive: '2014-present'},
-      {firstName: 'Kyle',
+        imgUrl: "#{view_context.asset_path('current_members/nel.png')}",
+        yearsActive: '2015-present'},
+      { firstName: 'Tolu',
+        lastName: 'Olubode',
+        role: 'Vice President',
+        imgUrl: "#{view_context.asset_path('current_members/tolu.jpg')}",
+        yearsActive: '2017-present'
+      },{
+        firstName: 'Kyle',
         lastName: 'Kung',
         role: 'VP Academic',
         imgUrl: "#{view_context.asset_path('current_members/kyle.png')}",
@@ -20,11 +24,6 @@ class StaticPagesController < ApplicationController
         role: 'VP Marketing',
         imgUrl: "#{view_context.asset_path('current_members/anthony.png')}",
         yearsActive: '2016-present'},
-      {firstName: 'Nel',
-        lastName: 'Opolski',
-        role: 'Director',
-        imgUrl: "#{view_context.asset_path('current_members/nel.png')}",
-        yearsActive: '2015-present'},
       {firstName: 'Lucia',
         lastName: 'Okeh',
         role: 'VP Social',
