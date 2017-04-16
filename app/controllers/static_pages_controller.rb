@@ -102,13 +102,13 @@ class StaticPagesController < ApplicationController
         banner: 'events_2017/feb-april_ruby_on_rails.jpg',
         event: 'SESA Ruby on Rails Winter 2017 Tutorials',
         facebook_url: 'https://www.facebook.com/events/389965414686385/',
-        type: 'recurring'
+        type: 'completed'
       },
       {
         banner: 'events_2017/March_Startup-Weekend-W-2017.png',
         event: 'Startup Weekend Ottawa',
         facebook_url: 'https://www.facebook.com/events/1270558846372280/',
-        type: 'upcoming'
+        type: 'completed'
       },
       {
         banner: 'events_2017/feb_resume_review.jpg',
