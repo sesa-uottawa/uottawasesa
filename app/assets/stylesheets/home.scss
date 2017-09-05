@@ -139,6 +139,25 @@ hr {
   box-shadow: -1px -1px 31px -8px rgba(0,0,0,0.75);
 }
 
+#home-container-6 {
+    text-align: center;
+            padding: 10vh 10px;
+    .title {
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        color: #990012;
+        font-size: 1.75rem;
+
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+    p {
+
+    color: #555;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: none;
+    }
+}
 #home-container-5 {
     position: relative;
     overflow: hidden;
