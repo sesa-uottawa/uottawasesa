@@ -1,0 +1,21 @@
+<span class="job-board"></span>
+
+<div id="job-board-container-1">
+  <h1>Job Board</h1>
+</div>
+ 
+<table>
+  <tr>
+    <th>Job Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @job.each do |j| %>
+    <tr>
+      <td><%= j.position %></td>
+      <td><%= j.description %></td>
+      <td><%= link_to 'Show', job_path(j) %></td>
+    </tr>
+  <% end %>
+</table>
+

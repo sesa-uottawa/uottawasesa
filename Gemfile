@@ -20,6 +20,7 @@ gem 'jbuilder'
 gem 'actionview-encoded_mail_to'
 gem 'devise', github: 'plataformatec/devise'
 gem 'react-rails', '~> 1.10'
+gem 'simple_form'
 
 group :development do
 	gem 'pry'

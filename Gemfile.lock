@@ -164,6 +164,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    simple_form (3.5.0)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
     slop (3.6.0)
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
@@ -208,6 +211,7 @@ DEPENDENCIES
   rails (= 5.0.1)
   react-rails (~> 1.10)
   sass-rails
+  simple_form
   sprockets
   uglifier
 
@@ -215,4 +219,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.14.1
+   1.15.4

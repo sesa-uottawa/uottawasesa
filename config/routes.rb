@@ -39,4 +39,6 @@ Rails.application.routes.draw do
   if Rails.env.production?
     get '*path' => redirect('/')
   end
+
+    resources :jobs
 end

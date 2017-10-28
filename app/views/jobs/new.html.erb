@@ -1,0 +1,8 @@
+<% provide(:title, "SESA | New Job")%>
+
+<%= simple_form_for @job do |f| %>
+  <%= f.input :position, label: "Position" %>
+  <%= f.input :company, label: "Company" %>
+  <%= f.input :url, label: "Link to job" %>
+  <%= f.button :submit %>
+<% end %>

@@ -336,3 +336,4 @@ class StaticPagesController < ApplicationController
         :major, :commitment, :why_join, :goal, :newsletter)
     end
 end
+
