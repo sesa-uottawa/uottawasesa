@@ -3,19 +3,28 @@
 <div id="job-board-container-1">
   <h1>Job Board</h1>
 </div>
- 
-<table>
-  <tr>
-    <th>Job Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @job.each do |j| %>
+ <div id="job-board-container-2">
+<!-- search bar -->
+<%if current_user.try(:admin?)%>
+  <%= link_to "New Job", new_job_path %>
+<%end%>
+ </div>
+<div id="job-board-container-3">
+  <table>
     <tr>
-      <td><%= j.position %></td>
-      <td><%= j.description %></td>
-      <td><%= link_to 'Show', job_path(j) %></td>
+      <th>Position</th>
+      <th>Company</th>
+      <th>Location</th>
+      <th>Type</th>
     </tr>
-  <% end %>
-</table>
-
+   
+    <% @job.each do |j| %>
+      <tr>
+        <td><%= link_to j.position, job_path(j)%></td>
+        <td><%= j.company %></td>
+        <td><%= j.location %></td>
+        <td><%= j.type %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
