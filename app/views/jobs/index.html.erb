@@ -6,7 +6,7 @@
  <div id="job-board-container-2">
 <!-- search bar -->
 <%if current_user.try(:admin?)%>
-  <%= link_to "New Job", new_job_path %>
+  <%= button_to "New Job", new_job_path, :method => :get, :html => { :class => "btn btn-info"} %>
 <%end%>
  </div>
 <div id="job-board-container-3">
@@ -23,7 +23,7 @@
         <td><%= link_to j.position, job_path(j)%></td>
         <td><%= j.company %></td>
         <td><%= j.location %></td>
-        <td><%= j.type %></td>
+        <td><%= j.job_type %></td>
       </tr>
     <% end %>
   </table>

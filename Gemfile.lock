@@ -65,6 +65,8 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     bcrypt (3.1.11)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     coderay (1.1.1)
     coffee-script-source (1.12.2)
@@ -198,6 +200,7 @@ PLATFORMS
 DEPENDENCIES
   actionview-encoded_mail_to
   aws-sdk
+  bootstrap-sass
   devise!
   font-awesome-rails
   foundation-rails
