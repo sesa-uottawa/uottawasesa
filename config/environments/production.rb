@@ -53,13 +53,13 @@ Rails.application.configure do
   config.log_level = :debug
 
   # Prepend all log lines with the following tags.
-  config.log_tags = [ :request_id ]
+  config.log_tags = [:request_id]
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-  if ENV["RAILS_LOG_TO_STDOUT"].present?
+  if ENV['RAILS_LOG_TO_STDOUT'].present?
     config.logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
   end
 
@@ -71,19 +71,19 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "uottawasesa_#{Rails.env}"
   # config.action_mailer.perform_caching = false
 
-  #SMTP GMail Settings
-  config.action_mailer.default_url_options = { :host => 'uottawa-sesa.herokuapp.com'}
+  # SMTP GMail Settings
+  config.action_mailer.default_url_options = { host: 'uottawa-sesa.herokuapp.com' }
 
   config.action_mailer.delivery_method = :smtp
 
-  #GMAIL SETUP
+  # GMAIL SETUP
   config.action_mailer.smtp_settings = {
-    :address => "smtp.gmail.com",
-    :port => 587,
-    :user_name => ENV['SMTP_USER'],
-    :password => ENV['SMTP_PASSWORD'],
-    :authentication => 'plain',
-    :enable_starttls_auto => true
+    address: 'smtp.gmail.com',
+    port: 587,
+    user_name: ENV['SMTP_USER'],
+    password: ENV['SMTP_PASSWORD'],
+    authentication: 'plain',
+    enable_starttls_auto: true
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
