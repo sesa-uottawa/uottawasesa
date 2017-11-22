@@ -55,6 +55,13 @@ class StaticPagesController < ApplicationController
         lastName: 'Slatinac',
         role: 'Webmaster',
         imgUrl: "#{view_context.asset_path('default-male-photo.png')}",
+        yearsActive: '2017-present'},
+      {firstName: 'Zuraiz',
+        lastName: 'Zafar',
+        role: 'Web Director',
+        hasWebsite: true,
+        websiteUrl: 'https://digized.github.io',
+        imgUrl: "#{view_context.asset_path('default-male-photo.png')}",
         yearsActive: '2017-present'}
       # {firstName: 'Tayo',
       #   lastName: 'Odueke',
