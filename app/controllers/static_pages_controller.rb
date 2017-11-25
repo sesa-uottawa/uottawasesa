@@ -55,6 +55,17 @@ class StaticPagesController < ApplicationController
         lastName: 'Slatinac',
         role: 'Webmaster',
         imgUrl: "#{view_context.asset_path('default-male-photo.png')}",
+        yearsActive: '2017-present'},
+
+
+
+
+
+
+      {firstName: 'Ian',
+        lastName: 'Desson',
+        role: 'Web Director',
+        imgUrl: "#{view_context.asset_path('default-male-photo.png')}",
         yearsActive: '2017-present'}
       # {firstName: 'Tayo',
       #   lastName: 'Odueke',
