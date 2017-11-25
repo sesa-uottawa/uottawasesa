@@ -17,14 +17,8 @@
 <br>
 <br>
 <div class="row">
-    <% @current_members[6..8].each do |member| %>
+    <% @current_members[6..11].each do |member| %>
         <%= react_component('MemberBio', member) %>
     <% end %>
 </div>
-<div class="row">
-    <%= react_component('MemberBio', @current_members[9]) %>
-    <%= react_component('MemberBio', @current_members[10]) %>
-    <%= react_component('MemberBio', {firstName: 'Join', lastName: 'SESA', role: 'Could be you', imgUrl: asset_url('default-female-photo.jpg'), hasWebsite: true, websiteUrl: join_path }) %>
-</div>
-
 
