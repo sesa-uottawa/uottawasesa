@@ -1,0 +1,10 @@
+<% provide(:title, "SESA | Create Event")%>
+
+<%= form_for(@event, html:{style:'width:20%'}) do |f| %>
+  <%= f.text_field :banner, label: "Banner" %>
+  <%= f.text_field :event, label: "Event" %>
+  <%= f.text_field :facebook_url, label: "Facebook url" %>
+  <%= f.text_field :type, label:"type" %>
+  <%= f.submit%>
+  <%end%>
+<%= link_to 'Back', events_path %>
