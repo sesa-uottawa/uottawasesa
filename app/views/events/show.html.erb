@@ -1,4 +1,6 @@
 <p id="notice"><%= notice %></p>
-
+<%= link_to(image_tag("#{@event[:banner]}", class: 'effect-apollo events-images', alt: "#{@event[:event]}"), "#{@event[:facebook_url]}") %>
+<br/>
+Status: <%=@event[:status]%> 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  before_filter :is_admin, only: [:show, :edit, :update, :create, :destroy, :new]
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
   # GET /events
@@ -14,11 +15,8 @@ class EventsController < ApplicationController
 
   # GET /events/new
   def new
-    # if current_user.try(:admin?)
       @event = Event.new
-    # else
-      # redirect_to "/events"
-    # end
+
   end
 
   # GET /events/1/edit
@@ -28,7 +26,6 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
-    # if current_user.try(:admin?)
       @event = Event.new(event_params)
 
       respond_to do |format|
@@ -39,7 +36,6 @@ class EventsController < ApplicationController
           format.html { render :new }
           format.json { render json: @event.errors, status: :unprocessable_entity }
         end
-      # end
     end
   end
 
@@ -75,6 +71,12 @@ class EventsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def event_params
-    params.require(:event).permit(:event, :banner, :facebook_url)
+    params.require(:event).permit(:event, :banner, :facebook_url, :status)
+  end
+
+  def is_admin
+    unless current_user && current_user.admin?
+      redirect_to events_path, notice: "Sorry not admin"
+    end
   end
 end
