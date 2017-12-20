@@ -6,8 +6,7 @@ default: &default
   pool: 5
   host: localhost
   username: rails
-  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
-
+  password: password
 development:
   <<: *default
   database: uottawasesa_development
