@@ -99,7 +99,7 @@ class StaticPagesController < ApplicationController
 
         begin
           UserMailer.new_member_confirmation(@club_member.email,
-            @club_member.first_name, @club_member.last_name).deliver
+            @club_member.first_name, @club_member.last_name, @club_member.newsletter).deliver
           flash[:successful_join] = "You've successfully joined!"
         rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError => e
           @club_member.destroy
@@ -111,7 +111,7 @@ class StaticPagesController < ApplicationController
       render 'join'
     end
   end
-
+  
   def firstyearadvice; end
 
   def events

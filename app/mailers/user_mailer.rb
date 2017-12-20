@@ -1,8 +1,8 @@
 class UserMailer < ActionMailer::Base
   default from: "uottawa.sesa@gmail.com"
 
-  def new_member_confirmation(email, first_name, last_name)
-  	@email, @first_name, @last_name = email, first_name, last_name
+  def new_member_confirmation(email, first_name, last_name, newsletter)
+    @email, @first_name, @last_name, @newsletter = email, first_name, last_name, newsletter
 
   	mail(:to => email, :subject => "Thank you for joining SESA!")
   end

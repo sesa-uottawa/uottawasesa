@@ -1,8 +1,15 @@
 <p style="	font: 400 1.5em 'Open Sans', sans-serif;color: #333;letter-spacing: 1px;">
-	Thanks for joining SESA <%= @first_name %>!
+	<% if @newsletter == "1" %>
+		Thanks for joining SESA's Newsletter <%= @first_name %>!
+	<% else %>
+		Thanks for joining SESA <%= @first_name %>!
+	<% end %>
 </p>
 
 <p style="	font: 300 1.1em 'Open Sans', sans-serif;color: #555;">
+	<% if @newsletter == "1"%>
+		Thank you for joining our newsletter!<br>
+	<% end %>
 	 We look forward to meeting you at our next event.
 	 <br><br>
 	 If you have any interest in being a more active member of SESA, you can contact our president at aniela.opolski@gmail.com.
