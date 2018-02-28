@@ -20,7 +20,6 @@ gem 'jbuilder'
 gem 'actionview-encoded_mail_to'
 gem 'devise', github: 'plataformatec/devise'
 gem 'react-rails', '~> 1.10'
-gem 'nokogiri', '~> 1.8.1'
 
 group :development do
 	gem 'pry'
