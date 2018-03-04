@@ -6,14 +6,13 @@ class ApplicationsController < ApplicationController
       # render json: @application, status: :created, location: @application
       render json: @application, status: :created
     else
-      render json: { errors: 'Much Error. So Bad. Try Again Plz.' }, status: :unprocessable_entity
+      render json: {errors: 'Much Error. So Bad. Try Again Plz.'}, status: :unprocessable_entity
     end
   end
 
   private
-
     def permitted_application_params
-      params.require(:data).permit(:type,
+      params.require(:data).permit(:type, {
         attributes: [
          :firstName,
          :lastName,
@@ -26,10 +25,12 @@ class ApplicationsController < ApplicationController
          :whyGoodCandidate,
          :resumeUrl,
          :additionalInfo
-        ])
+        ]
+      })
     end
 
     def application_data
       permitted_application_params[:attributes] || {}
     end
+
 end
