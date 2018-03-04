@@ -31,10 +31,10 @@ class StaticPagesController < ApplicationController
         websiteUrl: 'http://jonathangb.com/',
         imgUrl: "#{view_context.asset_path('current_members/jonathon.jpg')}",
         yearsActive: '2014-present'},
-      {firstName: 'Leila',
-        lastName: 'Compoare',
-        role: 'VP Finance',
-        imgUrl: "#{view_context.asset_path('current_members/leila.jpg')}",
+      {firstName: 'Melody',
+        lastName: 'Habbouche',
+        role: 'VP Events',
+        imgUrl: "#{view_context.asset_path('default-female-photo.jpg')}",
         yearsActive: '2015-present'},
       {firstName: 'Anushka',
         lastName: 'Paliwal',
@@ -51,9 +51,21 @@ class StaticPagesController < ApplicationController
         role: 'Email Ninja',
         imgUrl: "#{view_context.asset_path('current_members/lucia.png')}",
         yearsActive: '2015-present'},
-      {firstName: 'Filip',
-        lastName: 'Slatinac',
-        role: 'Webmaster',
+      {firstName: 'Munir',
+        lastName: 'Aljawahari',
+        role: 'Graphics Designer',
+        imgUrl: "#{view_context.asset_path('default-male-photo.png')}",
+        yearsActive: '2017-present'},
+      {firstName: 'Zuraiz',
+        lastName: 'Zafar',
+        role: 'Web Director',
+        hasWebsite: true,
+        websiteUrl: 'https://digized.github.io',
+        imgUrl: "#{view_context.asset_path('default-male-photo.png')}",
+        yearsActive: '2017-present'},
+      {firstName: 'Ian',
+        lastName: 'Desson',
+        role: 'Web Director',
         imgUrl: "#{view_context.asset_path('default-male-photo.png')}",
         yearsActive: '2017-present'}
       # {firstName: 'Tayo',
@@ -87,7 +99,7 @@ class StaticPagesController < ApplicationController
 
         begin
           UserMailer.new_member_confirmation(@club_member.email,
-            @club_member.first_name, @club_member.last_name).deliver
+            @club_member.first_name, @club_member.last_name, @club_member.newsletter).deliver
           flash[:successful_join] = "You've successfully joined!"
         rescue Net::SMTPAuthenticationError, Net::SMTPServerBusy, Net::SMTPSyntaxError, Net::SMTPFatalError, Net::SMTPUnknownError => e
           @club_member.destroy
@@ -99,7 +111,7 @@ class StaticPagesController < ApplicationController
       render 'join'
     end
   end
-
+  
   def firstyearadvice; end
 
   def events
