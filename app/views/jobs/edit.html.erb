@@ -1,0 +1,15 @@
+<% provide(:title, "SESA | Edit Job")%>
+ 
+ <div id="job-board-form-1">
+	<%= simple_form_for(@job, html: { class: 'form-group' }) do |f|  %>
+	  <%= f.input :position, label: "Position" %>
+	  <%= f.input :company, label: "Company" %>
+	  <%= f.input :location, label: "Location" %>
+	  <%= f.input :job_type, label: "Type" %>
+	  <%= f.input :description, label: "Description", as: :text%>
+	  <%= f.input :contact, label: "Contact" %>
+	  <%= f.input :url, label: "Link to job" %>
+	  <%= f.button :submit %>
+  </div>
+  
+<% end %>

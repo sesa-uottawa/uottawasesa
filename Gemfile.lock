@@ -65,6 +65,8 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     bcrypt (3.1.11)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     coderay (1.1.1)
     coffee-script-source (1.12.2)
@@ -164,6 +166,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    simple_form (3.5.0)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
     slop (3.6.0)
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
@@ -195,6 +200,7 @@ PLATFORMS
 DEPENDENCIES
   actionview-encoded_mail_to
   aws-sdk
+  bootstrap-sass
   devise!
   font-awesome-rails
   foundation-rails
@@ -209,6 +215,7 @@ DEPENDENCIES
   rails (= 5.0.1)
   react-rails (~> 1.10)
   sass-rails
+  simple_form
   sprockets
   uglifier
 
@@ -216,4 +223,8 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
+<<<<<<< HEAD
    1.16.0
+=======
+   1.15.4
+>>>>>>> 4cf0f4d0c7deafb79f16fa15b8e9d6e2038d055d

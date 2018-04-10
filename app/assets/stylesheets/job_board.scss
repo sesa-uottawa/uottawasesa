@@ -1,0 +1,61 @@
+#job-board-container-1{
+	background-image: image-url('jobs-banner.jpg');
+	background-size: cover;
+	position: relative;	
+	text-transform: uppercase;
+	min-height: 480px;
+	height: 85vh;
+
+}
+#job-board-container-1 h1 {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	font-size: 	5rem;
+	font-weight: 200;
+	letter-spacing: 0.2em;
+	text-align: center;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#job-board-container-2 {
+	
+	height:20px;
+}
+#job-board-container-3 table{
+	
+	width:98%;
+	margin:10px;
+	border-collapse: collapse;
+	
+	th{
+		border: 1.5px solid #EEE;
+		color:#990012;
+	}
+	td{
+
+		border: 1.5px solid #EEE;
+		background-color:#FFF;
+		text-align:center;
+	}
+	a{
+		color:#000;
+	}
+	a:hover{
+		color:#7bc8a4;
+	}
+
+
+}
+/* style the new job form*/
+#job-board-form-1{
+	width:50%;
+	margin: 30px auto;
+
+}
