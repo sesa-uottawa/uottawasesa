@@ -1,0 +1,34 @@
+<% provide(:position, "| SESA")%>
+<%= link_to "Back to Jobs", jobs_path %>
+
+<%= link_to "Edit job", edit_job_path(@job.id) %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @job.position %>
+</p>
+ 
+<p>
+  <strong>Company:</strong>
+  <%= @job.company %>
+</p>
+<p>
+  <strong>Location:</strong>
+  <%= @job.location %>
+</p>
+<p>
+  <strong>Type:</strong>
+  <%= @job.job_type %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @job.description %>
+</p>
+<p>
+  <strong>Contact:</strong>
+  <%= @job.contact %>
+</p>
+<p>
+  <strong>Link:</strong>
+  <%= @job.url %>
+</p>
