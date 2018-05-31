@@ -25,6 +25,21 @@ $(document).ready(function(){
     });
   });
 
+  var toShow = $('.selected').prop('id').slice(5);
+  $('#'+toShow).show();
+
+  $('.enrollment').each(function() {
+    var containerId = $(this).prop('id').slice(5);
+    $(this).click(function(){
+      $('.selected').removeClass('selected');
+      $(this).addClass('selected');
+      $('.advice div').hide();
+      $('#'+containerId).fadeTo(1000, 1);
+
+    });
+
+  });
+
   //Course Advice page
   // $('.help-button').click( function(){
   //   $('.general-advice').hide();
