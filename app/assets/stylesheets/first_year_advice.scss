@@ -108,7 +108,7 @@
 	}
 }
 
-#fya-container-3 .row{
+#fya-container-3 .row, #fya-container-6 .row {
 	font-family: 'Open Sans', sans-serif;
 	color: #333;
 	font-size: 1.1rem;	
@@ -281,4 +281,42 @@
 	
 
 	}
+}
+
+.enrollment{
+	border:1px solid #aaa;
+	padding:15px;
+	margin-top: 20px;
+	border-radius: 1px;
+
+	&:hover{
+		color: #7bc8a4;
+		/*-webkit-transform: scale(1.05);
+		-moz-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		transform: scale(1.05);*/
+		background-color: #fff;
+		border: 1px solid #7bc8a4;
+
+	}
+}
+.advice{
+	border:1px solid #aaa;
+	padding:15px;
+	margin-top: 20px;
+	border-radius: 1px;
+
+}
+.advice div{
+	display: none;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+
+.selected{
+	background-color:#7bc8a4;
+	color:#FFF;
+}
+.advice span{
+	color:#990012;
 }

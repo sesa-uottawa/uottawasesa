@@ -3,6 +3,13 @@ $(document).ready(function(){
 
   //FIRST YEAR ADVICE CONTAINER 2
   $(".general-advice, .course-advice").hide();
+  
+  $('.hamburger2').click(function(){
+    $('.general-advice').hide();
+  });
+  $('.hamburger3').click(function(){
+    $('.course-advice').hide();
+  });
 
   $('.budgeting-button').click( function(){
     $('.general-advice').hide();
@@ -25,6 +32,22 @@ $(document).ready(function(){
     });
   });
 
+if($('.selected').prop('id')!=null){
+  var toShow = $('.selected').prop('id').slice(5);
+  $('#'+toShow).show();
+}
+  $('.enrollment').each(function() {
+    var containerId = $(this).prop('id').slice(5);
+    $(this).click(function(){
+      $('.selected').removeClass('selected');
+      $(this).addClass('selected');
+      $('.advice div').hide();
+      $('#'+containerId).fadeTo(1000, 1);
+
+    });
+
+  });
+
   //Course Advice page
   // $('.help-button').click( function(){
   //   $('.general-advice').hide();
@@ -35,11 +58,6 @@ $(document).ready(function(){
   //   $('#new-course').fadeTo(1000, 1);
   // });
 
-  $('.hamburger2').click(function(){
-    $('.general-advice').hide();
-  });
-  $('.hamburger3').click(function(){
-    $('.course-advice').hide();
-  });
+  
 
 });
