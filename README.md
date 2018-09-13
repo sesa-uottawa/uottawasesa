@@ -1,18 +1,18 @@
 Software Engineering Student Association (SESA) | L'Association des Étudiants en Génie Logiciel (AÉGL)
 ===
 # Welcome
-This is the repo for SESA website.
-You want to know more about SESA ? Go check our [*home page:*](http://uottawa-sesa.herokuapp.com/)
+This is the repo for the SESA website.
+Want to know more about SESA? Go check our [*home page*](http://sesa-uottawa.ca/)
 
 # Install guide
-This project work perfectly with ruby 2.3.3 and rails 5.0.1 that's why you will need to get these specifics versions.
+This project works perfectly with ruby 2.3.3 and rails 5.0.1, you will need to use these specific versions.
 
 
 ## First step :  install rbenv (ruby version manager)
 
-If you are on window 10 you can use [*Cygwin*](https://cygwin.com/) or [*Bash on Ubuntu on Windows*](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) to install rbenv.
+If you are on Windows 10, you can use [*Cygwin*](https://cygwin.com/) or [*Bash on Ubuntu on Windows*](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) to install rbenv.
 
-Then you just have to do the following commands (from this  [*tutorial*](https://gorails.com/setup/ubuntu/17.04) )
+Then you just have to run the following commands (from this  [*tutorial*](https://gorails.com/setup/ubuntu/17.04) )
 
 ```
 sudo apt-get update
