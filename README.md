@@ -44,6 +44,41 @@ cd [path to this project]
 bundler install
 ```
 
+## First step: install rbenv (ruby version manager) for mac with homebrew
+
+First install Homebrew if it's not already installed
+```
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
+Install rbenv
+```
+$ brew install rbenv ruby-build
+```
+Once done, add to your bash profile
+```
+$ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+```
+Apply to your terminal session.
+```
+$ source ~/.bash_profile
+```
+Install ruby
+```
+rbenv install 2.3.3
+
+rbenv global 2.3.3
+
+ruby -v
+
+gem install bundler
+
+gem install rails -v 5.0.1
+```
+To run application
+```
+cd [path to this project]
+bundler install
+```
 ## Second step :  install postgresql
 You will need to install postgresql and update the /config/database.yml to connect properly to the database.
 
