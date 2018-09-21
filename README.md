@@ -13,7 +13,7 @@ This project works perfectly with ruby 2.3.3 and rails 5.0.1, you will need to u
 ### For Windows
 Windows 10, you can use [*Cygwin*](https://cygwin.com/) or [*Bash on Ubuntu on Windows*](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) to install rbenv.
 
-Then you just have to run the following commands (from this  [*tutorial*](https://gorails.com/setup/ubuntu/17.04) )
+Then you just have to run the following commands (from the Linux [*tutorial*](https://gorails.com/setup/ubuntu/17.04) )
 
 
 ### For linux
@@ -78,7 +78,7 @@ gem install bundler
 
 gem install rails -v 5.0.1
 ```
-To run application
+Install Gems
 ```
 cd [path to this project]
 bundler install
