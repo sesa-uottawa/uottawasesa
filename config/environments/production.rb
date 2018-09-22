@@ -3,6 +3,8 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
+  config.assets.debug = true
+  config.assets.digest = true
 
   config.public_file_server.enabled = true
 
