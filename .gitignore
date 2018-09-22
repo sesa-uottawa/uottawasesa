@@ -21,8 +21,6 @@
 # Mac stuff
 ._*.*
 
-
-public/assets/
 shared/*
 vendor/bundle/
 puma.sh
