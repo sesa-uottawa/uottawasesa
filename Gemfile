@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-ruby '2.3.3'
+ruby '2.4.4'
 
 require 'rbconfig'
 
 gem 'wdm', '>=0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 
 gem 'rails', '5.0.1'
-gem 'pg'
+gem 'pg', '~>0.20'
 gem 'foundation-rails'
 gem 'sass-rails'
 gem 'puma'

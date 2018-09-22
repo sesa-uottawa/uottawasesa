@@ -111,7 +111,7 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
-    pg (0.19.0)
+    pg (0.21.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -202,7 +202,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   listen (~> 3.0, >= 3.0.6)
-  pg
+  pg (~> 0.20)
   pry
   puma
   rails (= 5.0.1)
@@ -212,7 +212,7 @@ DEPENDENCIES
   uglifier
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.4.4p296
 
 BUNDLED WITH
-   1.14.1
+   1.16.5
