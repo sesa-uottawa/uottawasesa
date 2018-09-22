@@ -9,10 +9,6 @@ Rails.application.configure do
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
-  config.cache_classes = true
-  config.serve_static_assets = true
-  config.assets.compile = true
-  config.assets.digest = true
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
