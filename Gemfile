@@ -23,4 +23,5 @@ gem 'react-rails', '~> 1.10'
 group :development do
 	gem 'pry'
   gem 'listen', '~> 3.0', '>= 3.0.6'
+  gem 'rails_12factor'
 end
