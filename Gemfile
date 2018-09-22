@@ -25,3 +25,5 @@ group :development do
   gem 'listen', '~> 3.0', '>= 3.0.6'
   gem 'rails_12factor'
 end
+gem 'puma'
+

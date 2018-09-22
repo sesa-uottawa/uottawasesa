@@ -116,6 +116,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    puma (3.12.0)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -208,6 +209,7 @@ DEPENDENCIES
   listen (~> 3.0, >= 3.0.6)
   pg (~> 0.20)
   pry
+  puma
   rails (= 5.0.1)
   rails_12factor
   react-rails (~> 1.10)
