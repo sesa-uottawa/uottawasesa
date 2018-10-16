@@ -5,6 +5,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 *.DS_Store
+/.env
 
 # Ignore bundler config.
 /.bundle
@@ -20,9 +21,8 @@
 # Mac stuff
 ._*.*
 
-
-public/assets/
 shared/*
 vendor/bundle/
 puma.sh
 __og.unicorn.sh
+.env

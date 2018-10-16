@@ -111,12 +111,12 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
-    pg (0.19.0)
+    pg (0.21.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    puma (3.6.2)
+    puma (3.12.0)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -137,6 +137,11 @@ GEM
       nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.0.1)
       actionpack (= 5.0.1)
       activesupport (= 5.0.1)
@@ -202,17 +207,18 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   listen (~> 3.0, >= 3.0.6)
-  pg
+  pg (~> 0.20)
   pry
   puma
   rails (= 5.0.1)
+  rails_12factor
   react-rails (~> 1.10)
   sass-rails
   sprockets
   uglifier
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.4.4p296
 
 BUNDLED WITH
-   1.14.1
+   1.16.5
