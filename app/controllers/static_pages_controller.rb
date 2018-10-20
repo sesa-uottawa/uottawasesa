@@ -77,7 +77,7 @@ class StaticPagesController < ApplicationController
         lastName: 'Owoturo',
         role: 'Web Director',
         hasWebsite: true,
-        websiteUrl:'www.timiowoturo.com',
+        websiteUrl:'https://www.timiowoturo.com',
         imgUrl: "#{view_context.asset_path('default-male-photo.png')}",
         yearsActive: '2018-present'},
       {firstName: 'Owen',
